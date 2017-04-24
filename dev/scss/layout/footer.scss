@@ -27,8 +27,8 @@
         float: left;
         width: 43px;
         height: 43px;
-        margin-right: 3px;
-        margin-bottom: 2px;
+        //margin-right: 3px;
+        //margin-bottom: 2px;
 
         svg {
             width: 100%;
@@ -95,7 +95,7 @@
 
         &:hover {
             .footer__enter-wrap-link {
-                color: #969696;
+                color: #b89f86;
                 &:hover {
                     color: #000;
                 }
@@ -119,7 +119,7 @@
                 width: 1px;
                 height: 66%;
                 @include position(absolute,4px null null -19px);
-                background: #969696;
+                background: #b89f86;
             }
 
         }
@@ -136,7 +136,7 @@
         font-family: $bignooble;
         font-size: 18px;
         letter-spacing: 1px;
-        color: #969696;
+        color: #b89f86;
         -webkit-transition: all 0.1s ease;
         transition: all 0.1s ease;
 
@@ -285,7 +285,7 @@
     @include position(absolute,null 0 0 null);
     width: 70px;
     height: 70px;
-    background: #c401b1;
+    background: #b89f86;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     &:hover {

@@ -76,6 +76,14 @@ $(function () {
         $('#adress-on-map').show().text(mapAdress);
     });
 
+    $( ".item-block__order" ).hover(
+        function() {
+            $( this ).parents('.item-block__img-block').children('.item-block__order-ico').addClass('order-invert');
+        }, function() {
+            $( this ).parents('.item-block__img-block').children('.item-block__order-ico').removeClass('order-invert');
+        }
+    );
+
 
     $('.js-catalog-slider').slick({
         infinite: true,

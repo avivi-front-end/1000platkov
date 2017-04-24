@@ -83,7 +83,7 @@
     letter-spacing: .75px;
     margin-left: 4px;
     &:hover {
-      color: #b3b3b3;
+      color: #b89f86;
     }
   }
 }
@@ -96,7 +96,7 @@
     position: relative;
     width: 100%;
     display: inline-block;
-    background-color: #c401b1;
+    background-color: #b89f86;
     color: #fff;
     padding: 25px 10px 25px 30px;
     letter-spacing: 1.1px;
@@ -195,12 +195,12 @@
         line-height: 25px;
       }
       &:hover {
-        color: #b3b3b3;
+        color: #b89f86;
       }
     }
     &__active {
       a {
-        color: #b3b3b3;
+        color: #b89f86;
       }
     }
   }
@@ -209,7 +209,7 @@
     display: inline-block;
     width: 100%;
     padding: 45px 10px 56px 30px;
-    background-color: #06ae84;
+    background-color: rgba(205,188,170,.7);
     margin-bottom: 14px;
     @media (max-width: 1270px) {
       padding: 30px 15px;
@@ -262,20 +262,17 @@
       }
     }
     &__btn {
-      &.btn-white {
-        background-color: #06ae84;
-        padding: 6px 0;
+      margin-top: 7px;
+      padding: 13px 8px;
+      background-color: $bro;
+      &:hover {
+        background-color: #000;
+      }
+      &.btn-black {
+        padding: 6px 8px;
+        margin-top: 7px;
         span {
           letter-spacing: 1px;
-        }
-        &:hover {
-          background-color: #fff;
-          span {
-            color: #06ae84;
-            &:after {
-              background-color: #06ae84;
-            }
-          }
         }
       }
     }
@@ -283,7 +280,7 @@
   &__question {
     display: inline-block;
     width: 100%;
-    background-color: #e6005c;
+    background-color: #000;
     padding: 43px 10px 55px 30px;
     @media (max-width: 1270px) {
       padding: 30px 15px;
@@ -329,18 +326,16 @@
     }
     &__btn {
       &.btn-white {
-        background-color: #e6005c;
-        padding: 6px 0;
+        background-color: #fff;
+        padding: 10px 13px;
         span {
           letter-spacing: 1px;
+          color: #000;
         }
         &:hover {
-          background-color: #fff;
+          background-color: $bro;
           span {
-            color: #e6005c;;
-            &:after {
-              background-color: #e6005c;
-            }
+            color: #fff;
           }
         }
       }

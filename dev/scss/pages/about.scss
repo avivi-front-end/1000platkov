@@ -28,7 +28,7 @@
             position: absolute;
             bottom: -39px;
             left: 40.4%;
-            background-color: rgba(56,190,157,.8);
+            background-color: rgba(184,159,134,.8);
             padding: 48px 107px 34px 21px;
             -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
@@ -50,7 +50,7 @@
             }
 
             &:hover {
-                background-color: rgba(56,190,157,.9);
+                background-color: rgba(184,159,134,1);
             }
 
             &:after {
@@ -100,25 +100,10 @@
 
             &__btn {
                 width: 100%;
-                background-color: transparent;
                 z-index: 2;
                 margin-top: 10px;
                 @media (max-width: $screen-sm-max) {
                     margin: 0;
-                }
-
-                &:hover {
-                    span {
-                        color: rgba(56,190,157,1);
-                    }
-                }
-
-                &:active {
-                    span {
-                        &:after {
-                            background-color: rgba(56,190,157,9);
-                        }
-                    }
                 }
             }
         }
@@ -131,7 +116,7 @@
         left: 0;
         text-align: left;
         font-family: $avantdemi;
-        color: #c401b1;
+        color: #000;
         text-transform: uppercase;
         font-size: 100px;
         padding-right: 14px;
@@ -254,7 +239,7 @@
             text-transform: uppercase;
             font-size: 18px;
             line-height: (24/18);
-            color: #848484;
+            color: #b89f86;
             letter-spacing: 0.8px;
             -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
@@ -402,7 +387,7 @@
 }
 
 .about-green {
-    background-color: #06ae84;
+    background-color: #b89f86;
     padding: 90px 0;
     @media (max-width: $screen-sm-max) {
         padding: 45px 0;
@@ -435,11 +420,11 @@
 
         &:hover {
             .about-green__title {
-                color: #e6005c;
+                color: #000;
             }
 
             .about-green__ico {
-                background-color: #e6005c;
+                background-color: #000;
             }
         }
     }
@@ -512,7 +497,7 @@
         height: 70px;
         left: 0;
         top: 0;
-        background-color: #06ae84;
+        background-color: #b89f86;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
 
@@ -573,7 +558,7 @@
         font-size: 12px;
         line-height: 20px;
         letter-spacing: 0.6px;
-        color: #000;
+        color: #b89f86;
         margin-top: 13px;
     }
 
@@ -629,18 +614,18 @@
 
             .about-reviews__main__name {
                 margin: 0 0 18px;
-                color: #b3b3b3;
+                color: #b89f86;
                 width: auto;
             }
 
             .about-reviews__main__text2 {
                 margin-top: 14px;
-                color: #b3b3b3;
+                color: #b89f86;
             }
 
             .about-reviews__market {
                 margin-top: 21px;
-                color: #b3b3b3;
+                color: #b89f86;
             }
 
             .about-reviews__main__logistic,
@@ -709,7 +694,7 @@
             font-family: $avantbook;
             font-size: 14px;
             line-height: 24px;
-            color: #848484;
+            color: #b89f86;
             letter-spacing: 0.8px;
             margin-left: 41px;
             @media (max-width: $screen-sm-max) {
@@ -755,13 +740,13 @@
             cursor: pointer;
             width: 70px;
             height: 70px;
-            background-color: rgba(196,1,177,.9);
+            background-color: rgba(184,159,134,.9);
             -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
             top: 0;
 
             &:hover {
-                background-color: rgba(196,1,177,1);
+                background-color: rgba(184,159,134,1);
             }
 
             &--prev {
@@ -815,7 +800,6 @@
         right: -31px;
         top: 82px;
         z-index: 2;
-        background-color: #f2f2f2;
         @media (max-width: $screen-sm-max) {
             right: 0;
         }
@@ -824,12 +808,6 @@
             width: 100%;
             text-align: center;
             top: 80px;
-        }
-
-        &:hover {
-            span {
-                color: #f2f2f2;
-            }
         }
     }
 

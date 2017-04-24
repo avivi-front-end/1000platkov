@@ -483,12 +483,12 @@
 
         &--cart {
             svg {
-                fill: #c401b1;
+                fill: #b89f86;
                 transition: fill 0.3s ease;
             }
 
             .header__right-icon-number {
-                color: #c401b1;
+                color: #b89f86;
             }
 
             &:hover {
@@ -810,28 +810,28 @@
             padding-bottom: 95px;
             background: #000;
             .header__category-wrap__before {
-                background: #fff;
+                background: #000;
             }
 
             .header__main-category,
             .header__menu-link {
-                color: #fff;
+                color: #000;
             }
 
             .header__main-category.active:before {
-                background: #fff;
+                background: #000;
             }
 
             .header__main-top-wrap:before {
-                background: #fff;
+                background: #000;
             }
 
             .header__search-input {
-                border-color: #fff;
+                border-color: #000;
             }
 
             .header__search-submit svg {
-                stroke: #fff;
+                stroke: #000;
             }
         }
     }
@@ -1082,7 +1082,7 @@
         -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
         &:hover {
-            color: #b3b3b3;
+            color: #b89f86;
         }
     }
 
@@ -1118,11 +1118,12 @@
         line-height: (107/100);
         text-transform: uppercase;
         font-family: $avantdemi;
-        color: #c401b1;
+        color: #000;
         letter-spacing: 5.4px;
         margin-bottom: 19px;
         @media (max-width: $screen-md-max) {
             font-size: 70px;
+            text-align: center;
 
             br {
                 display: none;
@@ -1142,12 +1143,14 @@
         text-transform: uppercase;
         letter-spacing: 1.5px;
         margin-bottom: 112px;
+        color: #000;
 
         b {
             font-family: $avantdemi;
         }
         @media (max-width: $screen-md-max) {
             font-size: 25px;
+            text-align: center;
 
             br {
                 display: none;

@@ -61,7 +61,7 @@ function reload() {
 }
 
 gulp.task('pug', function() {
-    gulp.src('./dev/templates/*.pug')
+    gulp.src('./dev/templates/statyi-detail.pug')
         .pipe(plumber({}))
         .pipe(pug({
             pretty: true

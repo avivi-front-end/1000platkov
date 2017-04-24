@@ -1,0 +1,113 @@
+.delivery
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Обмен и возврат
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help помощь покупателю
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link как купить ?
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link гарантии
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link доставка и оплата
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link обмен и возврат
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link преимущества регистрации
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link часто задаваемые вопросы
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link корпоративным клиентам
+                            .sidebar__opt
+                                span.sidebar__opt__text интересует опт
+                                a(href="#").btn-white.sidebar__opt__btn
+                                    span сайт оптового магазина
+                            .sidebar__question
+                                span.sidebar__question__title.
+                                    остались вопросы по способам покупки?
+                                span.sidebar__question__text.
+                                    Мы с радостью дадим консультацию в удобное для Вас время время!
+                                a(href="#" data-pop="#question").js-show-pop-up.btn-white.sidebar__question__btn
+                                    span задать вопрос
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title Обмен и возврат
+
+                    span.delivery__title При доставке заказа Вы можете сразу примерить вещь и отказаться от нее, если она Вам не подошла.
+                    span.delivery__title.returt-subtitle Возврат и обмен товаров надлежащего качества
+                    span.delivery__subtitle Условия возврата:
+                    ul.statyi-detail__list.delivery__courier__list
+                        li.statyi-detail__list__item.
+                            Возврат и обмен товара осуществляется в течение 14 дней с момента получения.
+                        li.statyi-detail__list__item.
+                            Товар принимается только вместе с упаковкой, без следов носки, с фабричными ярлыками.
+                        li.statyi-detail__list__item.
+                            Вам будет возвращена полная стоимость в течение 10 дней (срок рассчитывается со дня Вашего обращения с этим требованием).
+                        li.statyi-detail__list__item.
+                            Стоимость доставки при этом не возвращается.
+                        span.delivery__text.return__text-after-list
+                            | Если Вы решили обменять/вернуть товар, приобретенный в нашем магазине, отправьте нам на почту&nbsp;
+                            a(href="mailto:info@1000platkov.ru").delivery__text.return__tel info@1000platkov.ru
+                            | &nbsp;заявление в свободной форме (Не забудьте указать № заказа и артикул товара, который Вам не подошел. ) или позвоните нам по телефонам:
+                            a(href="tel:+74959309954").delivery__text.return__tel &nbsp;+7 (495) 930 99 54;
+                            a(href="tel:+79250702570").delivery__text.return__tel &nbsp;+7 (925) 070 25 70.
+                            <br><br>
+                            | или оставьте заявку он-лайн:
+                        a(href="#").btn-black.return__btn
+                            span Оставить заявку на возврат
+
+
+                    span.delivery__title.returt-subtitle Возврат и обмен товаров ненадлежащего качества
+                    span.delivery__subtitle Условия возврата:
+                    ul.statyi-detail__list.delivery__courier__list
+                        li.statyi-detail__list__item.
+                            Срок рассмотрения Вашего заявления и возврата уплаченной денежной суммы – 10 дней.
+                        li.statyi-detail__list__item.
+                            Стоимость доставки при возврате товаров ненадлежащего качества также подлежит компенсации.
+                        span.delivery__text.return__text-after-list
+                            | Если Вы приобрели в нашем магазине товар и нашли в нем недостатки (брак), то Вы можете отправить нам заявление в свободной форме на почту&nbsp;
+                            a(href="mailto:info@1000platkov.ru").delivery__text.return__tel info@1000platkov.ru
+                            | &nbsp;(Не забудьте указать № заказа и артикул товара, который Вам не подошел или оказался с недостатками) или позвонить по телефонам:
+                            a(href="tel:+74959309954").delivery__text.return__tel &nbsp;+7 (495) 930 99 54;
+                            a(href="tel:+79250702570").delivery__text.return__tel &nbsp;+7 (925) 070 25 70.
+                            <br><br>
+                            | или оставьте заявку он-лайн:
+                        a(href="#").btn-black.return__btn
+                            span Оставить заявку на возврат
+
+                    span.delivery__title.returt-subtitle Возврат и обмен товаров полученных по почте
+                    span.delivery__subtitle Условия возврата:
+                    ul.statyi-detail__list.delivery__courier__list
+                        li.statyi-detail__list__item.
+                            Для возврата Вам необходимо отправить товар самостоятельно Почтой России обычным почтовым отправлением, с минимальной оценкой на наш почтовый адрес.
+                        li.statyi-detail__list__item.
+                            На сайте Почты России Вы можете отслеживать ход своего почтового отправления.
+                        li.statyi-detail__list__item.
+                            Обращаем Ваше внимание на то, что при возврате товара надлежащего качества стоимость доставки Вы оплачиваете самостоятельно.
+                        li.statyi-detail__list__item.
+                            Обязательно сохраняйте документ, подтверждающий отправление посылки, до тех пор, пока мы не подтвердим факт его получения.
+                        li.statyi-detail__list__item.
+                            Деньги за товар Вам будут перечислены сразу, как только мы получим товар обратно.
+                        li.statyi-detail__list__item.
+                            Если Вы возвращаете товар с недостатками, то мы возместим Вам сумму на обратную пересылку.
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться
+
+
+

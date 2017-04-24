@@ -12,7 +12,7 @@
     position: relative;
   }
   &__btn {
-    padding: 13px 0;
+    padding: 13px 20px;
     top: 58px;
     position: absolute;
     left: 0;
@@ -229,7 +229,7 @@
       position: absolute;
       right: 0;
       top: -1px;
-      padding: 13px 0;
+      padding: 13px 20px;
       @media (max-width: 1270px) {
         position: relative;
         right: auto;

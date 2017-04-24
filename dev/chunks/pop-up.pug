@@ -1,0 +1,912 @@
+.pop-up-wrapper
+    .pop-up__overlay
+    .pop-up#return
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Заявка на возврат
+        .pop-up__return-form
+            .row
+                form
+                    .col-md-6
+                        .pop-up__form-group
+                            label.pop-up__form-label Номер вашего заказа <span>*</span>
+                            input(type="text" name="number" placeholder="____ _______").pop-up__input.pop-up__input--placeholder.js-order-num-mask
+                    .col-md-6
+                        .pop-up__form-group
+                            label.pop-up__form-label Артикул товара * <span>*</span>
+                            input(type="text" name="art" placeholder="____ _______").pop-up__input.pop-up__input--placeholder.pop-up__input--art.js-articul-mask
+                        a(href="#").pop-up__return-link.js-add-return  Добавить еще артикул
+                    .col-md-12
+                        .pop-up__form-group
+                            label.pop-up__form-label Комментарий к заявке * <span>*</span>
+                            textarea(name="comment").pop-up__textarea
+                        button(type="submit").pop-up__submit.btn-black
+                            span.
+                                получить консультацию
+                .col-md-12
+                    .pop-up__return-text
+                        p.
+                            Оформление возврата или обмена товара через личный кабинет намного удобнее и быстрее. <a href="#">Войдите</a>, если Вы зарегистрированы или <a href="#">пройдите регистрацию</a> для удобной работы с сайтом.
+    .pop-up#callback
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Заказать звонок
+        .pop-up__sub-title.
+            Наш менеджер свяжется с Вами в течение 30 минут
+        form.pop-up__callback-form
+            .clearfix
+                .row
+                    .pop-up__form-group.col-md-6
+                        label.pop-up__form-label Имя
+                        input(type="text" name="name").pop-up__input
+                    .pop-up__form-group.col-md-6
+                        label.pop-up__form-label Телефон
+                        input(type="phone" name="phone").pop-up__input
+            button(type="submit").pop-up__submit.btn-black
+                span.
+                    получить консультацию
+    .pop-up.pop-up--callback#callback-form
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Обратная связь
+        .pop-up__sub-title.
+            Наш менеджер свяжется с Вами в течение 30 минут
+        .pop-up__callback-main-form
+            form
+                .pop-up__form-group
+                    label.pop-up__form-label Имя
+                    input(type="text" name="name").pop-up__input
+                .pop-up__form-group
+                    label.pop-up__form-label Телефон
+                    input(type="phone" name="phone" placeholder="+7 (      )").pop-up__input.js-phone-mask
+                .pop-up__form-group
+                    label.pop-up__form-label Выберите тему
+                    select.js-styler
+                        option
+                        option Тема 1
+                        option Тема 2
+                        option Тема 3
+                        option и еще тема
+                .pop-up__form-group
+                    label.pop-up__form-label Ваш комментарий
+                    textarea(type="text" name="name").pop-up__textarea
+                .clearfix
+                    button(type="submit").pop-up__submit.btn-black
+                        span.
+                            Отправить
+                    .pop-up__helper.pop-up__helper--right.
+                        <span>*</span> - обязательные поля для заполнения
+    .pop-up#callback-success
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Спасибо за заявку!
+        .pop-up__sub-title.pop-up__sub-title--no-mb.
+            Ожидайте звонка от нашего менеджера в течении 30 минут
+    .pop-up#subscribe
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Спасибо за подписку!
+        .pop-up__sub-title.pop-up__sub-title--no-mb.
+            Настраивать и управлять подпиской можно в личном кабинете.
+        ul.footer__enter-wrap.clearfix.register-enter-btns
+            li.footer__enter-wrap-item
+                a(href="#").footer__enter-wrap-link.footer__enter-wrap-link--black.
+                    Вход
+            li.footer__enter-wrap-item
+                a(href="#").footer__enter-wrap-link.
+                    Регистрация
+    .pop-up#question
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Задать вопрос
+        .pop-up__sub-title.
+            Наш менеджер свяжется с Вами в течение 30 минут
+        .pop-up__callback-form
+            .clearfix
+                .row
+                    .pop-up__form-group.col-md-6
+                        label.pop-up__form-label Имя
+                        input(type="text" name="name").pop-up__input
+                    .pop-up__form-group.col-md-6
+                        label.pop-up__form-label Телефон
+                        input(type="phone" name="phone").pop-up__input
+                    .pop-up__form-group.col-md-12
+                        label.pop-up__form-label Напишите свой вопрос
+                        textarea(name="name").pop-up__textarea
+            button(type="submit").pop-up__submit.btn-black
+                span.
+                    Отправить
+            .pop-up__helper.
+                <span>*</span> - обязательные поля для заполнения
+    - var row1 = ['Размер', 'XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL']
+    - var row2 = ['Российский размер', '42', '42-44', '44-46', '46-48     ', '48-50', '50-52', '52-54']
+    .pop-up.pop-up--table#table
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.pop-up__title--table.
+            Таблица размеров
+        .pop-up__table-wrap
+            .pop-up__table-item
+                .pop-up__table-title.
+                    Аксессуары и платки
+                .pop-up__table-row
+                    table.pop-up__table
+                        tr
+                            each rowitem1 in row1
+                                td= rowitem1
+                        tr
+                            each rowitem2 in row2
+                                td= rowitem2
+            .pop-up__table-item
+                .pop-up__table-title.
+                    Головные уборы
+                .pop-up__table-row
+                    table.pop-up__table
+                        tr
+                            each rowitem1 in row1
+                                td= rowitem1
+                        tr
+                            each rowitem2 in row2
+                                td= rowitem2
+            .pop-up__table-item
+                .pop-up__table-title.
+                    Ремни
+                .pop-up__table-row
+                    table.pop-up__table
+                        tr
+                            each rowitem1 in row1
+                                td= rowitem1
+                        tr
+                            each rowitem2 in row2
+                                td= rowitem2
+    .pop-up#login
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Вход в личный кабинет
+        .row
+            .col-md-6.pop-up__login-left-wrap.clearfix
+                label(for="register__email").contacts__form__label
+                    span.contacts__form__text E-mail
+                    .register__wrap-input
+                        input(type="email", name="email").index-subscribe__form__input.register__input#register__email
+                        span.register__quest
+                            +icon("ico_quest")
+                            span.quest-info.
+                                e-mail, который Вы указали при регистрации
+                                является логином для входа на сайт
+                label(for="register__pass").contacts__form__label
+                    span.contacts__form__text.contacts__form__text--dec Пароль
+                    a(href="#").pop-up__forgot-pass.
+                        Забыли пароль?
+                    .register__wrap-input
+                        input(type="password", name="pass").index-subscribe__form__input.register__input#register__pass
+                        span.register__ico.js-pass-input
+                            +icon("ico-pass-true").ico-true
+                            +icon("ico-pass-false").ico-false
+                label.clearfix.register__subscribe.pop-up__login-remember
+                    input(type="checkbox").catalog-sidebar__check-item-input
+                    span.catalog-sidebar__check-icon
+                    span.catalog-sidebar__check-name.
+                        Запомнить меня
+                button(type="submit").pop-up__login-submit.btn-black
+                    span.
+                        войти
+            .col-md-6.pop-up__login-right-wrap
+                .pop-up__login-title
+                    | Войти через соц. сеть
+                    span.pop-up__login-link
+                        +icon("ico_quest-black")
+                        span.quest-info.
+                            Мы не будем делать публикации от вашего имени
+                -  var socials =  ["soc-vk", "soc-fb", "soc-tw", "soc-ok"]
+                .pop-up__socials.clearfix
+                    each social in socials
+                        a(href="#").footer__social-link
+                            +icon(social)
+                .pop-up__first-visit-title.
+                    <span>Впервые</span> на сайте?
+                a(href="#").pop-up__first-visit-link.
+                    Зарегистрироваться
+    .pop-up#add-favorite
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Чтобы добавить товар в избранное,<br>
+            войдите в свой аккаунт
+        .row
+            .col-md-6.pop-up__login-left-wrap.clearfix
+                label(for="register__email").contacts__form__label
+                    span.contacts__form__text E-mail
+                    .register__wrap-input
+                        input(type="email", name="email").index-subscribe__form__input.register__input#register__email
+                        span.register__quest
+                            +icon("ico_quest")
+                label(for="register__pass").contacts__form__label
+                    span.contacts__form__text.contacts__form__text--dec Пароль
+                    a(href="#").pop-up__forgot-pass.
+                        Забыли пароль?
+                    .register__wrap-input
+                        input(type="password", name="pass").index-subscribe__form__input.register__input#register__pass
+                        span.register__ico.js-pass-input
+                            +icon("ico-pass-true").ico-true
+                            +icon("ico-pass-false").ico-false
+                label.clearfix.register__subscribe.pop-up__login-remember
+                    input(type="checkbox").catalog-sidebar__check-item-input
+                    span.catalog-sidebar__check-icon
+                    span.catalog-sidebar__check-name.
+                        Запомнить меня
+                button(type="submit").pop-up__login-submit.btn-black
+                    span.
+                        войти
+            .col-md-6.pop-up__login-right-wrap
+                .pop-up__login-title
+                    | Войти через соц. сеть
+                    a(href="#").pop-up__login-link
+                        +icon("ico_quest-black")
+                -  var socials =  ["soc-vk", "soc-fb", "soc-tw", "soc-ok"]
+                .pop-up__socials.clearfix
+                    each social in socials
+                        a(href="#").footer__social-link
+                            +icon(social)
+                .pop-up__first-visit-title.
+                    <span>Впервые</span> на сайте?
+                .pop-up__first-visit-link.
+                    Зарегистрироваться
+    .pop-up#quick-buy
+        a(href="#").pop-up__close.js-pop-up-close
+        .row
+            .col-md-6
+                .pop-up__quick-image
+                    img(src="img/upload/quick-1.jpg" alt="")
+                .pop-up__quick-name.text-center.
+                    Платок VENERA <br>
+                    можно написать в 2 строки
+                .pop-up__quick-options.clearfix
+                    .col-sm-6
+                        .pop-up__quick-title Размер:
+                        .cart-reg__item__size__form
+                            select.cart-reg__item__size__select.cart-reg__item__size__select--quick.js-cart-select
+                                option(value="size_s") S
+                                option(value="size_m") M
+                                option(value="size_l") L
+                                option(value="size_xl") XL
+                                option(value="size_xxl" selected="selected") XXL
+                    .col-sm-6
+                        .pop-up__quick-title Количество:
+                        .item-detail__count-wrap.clearfix
+                            a(href="#" data-count="minus").item-detail__count-btn.js-number-input -
+                            input(type="number" value="1").item-detail__count-input
+                            a(href="#" data-count="plus").item-detail__count-btn.js-number-input +
+                .pop-up__quick-sum
+                    .pop-up__quick-sum-top.
+                        К оплате:	  <span>8 998 руб.</span>
+                    .pop-up__quick-sum-bottom.
+                        (без учета доставки )
+            .col-md-6
+                .pop-up__quick-main-title.
+                    Быстрая покупка
+                .pop-up__quick-sub-title.
+                    В ближайшее время наш менеджер свяжется с Вами для подтверждения заказа
+                .pop-up__quick-form
+                    form
+                        .pop-up__quick-form-group
+                            .pop-up__quick-form-title.
+                                Телефон <span>*</span>
+                            input(type="text" name="phone" placeholder="+7 (     )").pop-up__quick-input.js-phone-mask
+                        .pop-up__quick-form-group
+                            .pop-up__quick-form-title.
+                                Как к Вам обращаться? <span>*</span>
+                            input(type="text" name="name").pop-up__quick-input
+                        a(href="#").pop-up__quick-btn.js-make-order
+                            span.icon-wrap
+                                +icon('ico_cart')
+                            | Сделать заказ
+    .pop-up.pop-up--quick#quick-view
+        a(href="#").pop-up__close.js-pop-up-close
+        .item-detail
+            .container.item-detail__top-wrapper
+                .row
+                    .col-md-4.col-md-offset-1.item-detail__photo-wrap
+                        .item-detail__main-photo
+                            img(src="img/upload/detail-1.jpg" alt="detail image").item-detail__main-photo-image
+                        .item-detail__thumb-list
+                            a(href="img/upload/thumb-1.jpg").item-detail__thumb-link.js-show-big-photo.active
+                                img(src="img/upload/thumb-1.jpg" alt="thumb image").item-detail__thumb-image
+                            a(href="img/upload/thumb-2.jpg").item-detail__thumb-link.js-show-big-photo
+                                img(src="img/upload/thumb-2.jpg" alt="thumb image").item-detail__thumb-image
+                            a(href="img/upload/thumb-3.jpg").item-detail__thumb-link.js-show-big-photo
+                                img(src="img/upload/thumb-3.jpg" alt="thumb image").item-detail__thumb-image
+                            a(href="img/upload/thumb-4.jpg").item-detail__thumb-link.js-show-big-photo
+                                img(src="img/upload/thumb-4.jpg" alt="thumb image").item-detail__thumb-image
+                            a(href="img/upload/thumb-5.jpg").item-detail__thumb-link.js-show-big-photo
+                                img(src="img/upload/thumb-5.jpg" alt="thumb image").item-detail__thumb-image
+                        .item-detail__share
+                            .item-detail__share-title.
+                                Рассказать о товаре:
+                            .share-icons.clearfix
+                                a(href="#").clearfix.share-icons__icon.share-icons__icon--vk
+                                    +icon ("soc-vk")
+                                    span.share-icons__text.share-icons__text--vk 954
+                                a(href="#").clearfix.share-icons__icon.share-icons__icon--fb
+                                    +icon ("soc-fb")
+                                    span.share-icons__text.share-icons__text--fb 426
+                                a(href="#").clearfix.share-icons__icon.share-icons__icon--ok
+                                    +icon ("soc-ok")
+                                    span.share-icons__text.share-icons__text--ok 437
+                    .col-md-5.col-md-offset-1
+                        .item-detail__name.
+                            Платок VENERA (5700907-26)
+                        .item-detail__price.clearfix
+                            .item-detail__price-current.
+                                810 руб.
+                            .item-detail__price-old.
+                                1230 руб.
+                        .pop-up__quick-article
+                            .item-detail__art-name.
+                                Артикул: 3146895444
+                            .item-detail__art-name.
+                                Размер: (см) 140х140
+                            .item-detail__art-name.
+                                Состав: 100% п/эстер
+                        //.item-detail__table-wrap
+                        //    .item-detail__table-title.
+                        //        О товаре:
+                        //    table.item-detail__table
+                        //        tr
+                        //            td.item-detail__table-name.
+                        //                Цвет
+                        //            td.item-detail__table-value.
+                        //                Красный
+                        //        tr
+                        //            td.item-detail__table-name.
+                        //                Размер (см):
+                        //            td.item-detail__table-value.
+                        //                140х140
+                        //        tr
+                        //            td.item-detail__table-name.
+                        //                Состав
+                        //            td.item-detail__table-value.
+                        //                100% п/эст  ер
+                        //        tr
+                        //            td.item-detail__table-name.
+                        //                Цвет
+                        //            td.item-detail__table-value.
+                        //                Мультиколор
+                        //        tr
+                        //            td.item-detail__table-name.
+                        //                Производитель
+                        //            td.item-detail__table-value.
+                        //                Италия
+                        .pop-up__quick-size
+                            .item-detail__size
+                                .item-detail__size-title.
+                                    выбрать размер:
+                                a(href="#" data-pop="#table").js-show-pop-up.item-detail__find-size.
+                                    определить размер
+                                .item-detail__size-wrap.clearfix
+                                    label.item-detail__size-label
+                                        input(type="radio" name="size" checked).item-detail__size-input
+                                        span.item-detail__size-name
+                                            span.
+                                                s
+                                    label.item-detail__size-label
+                                        input(type="radio" name="size").item-detail__size-input
+                                        span.item-detail__size-name
+                                            span.
+                                                m
+                                    label.item-detail__size-label
+                                        input(type="radio" name="size").item-detail__size-input
+                                        span.item-detail__size-name
+                                            span.
+                                                l
+                                    label.item-detail__size-label
+                                        input(type="radio" name="size").item-detail__size-input
+                                        span.item-detail__size-name
+                                            span.
+                                                xl
+                                    label.item-detail__size-label
+                                        input(type="radio" name="size").item-detail__size-input
+                                        span.item-detail__size-name
+                                            span.
+                                                xxl
+                        .pop-up__quick-like.clearfix
+                            .item-detail__favorite
+                                a(href="#").item-detail__favorite-btn.js-item-favorite
+                                    span.item-detail__favorite-icon-wrapper
+                                        +icon('ico_like')
+                            .item-detail__buy.clearfix
+                                a(href="#").item-detail__buy-btn-fast.
+                                    Купить в 1 клик
+                                a(href="#").item-detail__buy-btn
+                                    +icon('ico_cart')
+                                    | Купить
+                        //.item-detail__gift
+                        //    .item-detail__gift-title.
+                        //        Покупайте в подарок?
+                        //    .item-detail__gift-text
+                        //        | Добавьте к заказу &nbsp
+                        //        a(href="#") подарочную упаковку
+            .container
+                .row
+                    .col-md-10.col-md-offset-1
+                        .catalog-slider__title.text-center.
+                            <b>похожие товары </b>(14)
+                        .small-margin
+                            .catalog-slider__btns
+                                a(href="#" data-slider="slickPrev").catalog-slider__btn.catalog-slider__btn--prev.js-quick-view-slider-arrows
+                                    +icon('ico_left')
+                                a(href="#" data-slider="slickNext").catalog-slider__btn.catalog-slider__btn--next.js-quick-view-slider-arrows
+                                    +icon('ico_right')
+                            .catalog-slider__wrapper.clearfix.js-quick-view-slider
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-1.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-2.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-3.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-4.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-1.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-2.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-3.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                a(href="#").catalog-slider__slide.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/slider-4.jpg").catalog-slider__image
+                                        span.catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+
+
+    .pop-up#pass-recovery.pass-recovery-pop
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Смена пароля
+        form.pass-recovery-pop__form.js-pass-recovery-validate
+            label(for="recovery__current").contacts__form__label
+                span.contacts__form__text.contacts__form__text--dec Текущий
+                .register__wrap-input
+                    input(type="password", name="recovery__current").index-subscribe__form__input.register__input#recovery__current
+                    span.register__ico.js-pass-input
+                        +icon("ico-pass-true")
+                        +icon("ico-pass-false")
+            label(for="recovery__new").contacts__form__label
+                span.contacts__form__text.contacts__form__text--dec Новый пароль
+                .register__wrap-input
+                    input(type="password", name="recovery__new").index-subscribe__form__input.register__input#recovery__new
+                    span.register__ico.js-pass-input
+                        +icon("ico-pass-true")
+                        +icon("ico-pass-false")
+            label(for="recovery__new__try").contacts__form__label
+                span.contacts__form__text.contacts__form__text--dec Повторите новый пароль
+                .register__wrap-input
+                    input(type="password", name="recovery__new__try").index-subscribe__form__input.register__input#recovery__new__try
+                    span.register__ico.js-pass-input
+                        +icon("ico-pass-true")
+                        +icon("ico-pass-false")
+            button(type="submit").btn-black.register__btn.pass-recovery-pop__btn
+                span изменить пароль
+    .pop-up#del-profile.del-profile.pass-recovery-pop
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            удалить личный кабинет
+        span.del-profile__text Вы собираетесь удалить личный кабинет на сайте venera-store.ru
+        span.del-profile__text Восстановление Личного Кабинета и сохраненной в нем информации после удаления невозможно.
+        form.del-profile__form.js-del-profile
+            label(for="del__profile").contacts__form__label
+                span.contacts__form__text.contacts__form__text--dec Введите пароль
+                .register__wrap-input
+                    input(type="password", name="del__profile").index-subscribe__form__input.register__input#del__profile
+                    span.register__ico.js-pass-input
+                        +icon("ico-pass-true")
+                        +icon("ico-pass-false")
+            button(type="submit").btn-black.register__btn.pass-recovery-pop__btn
+                span удалить кабинет
+
+    .pop-up#pop-order-del.pop-up__order-del
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Заказ № 12345-6789
+        .cart-reg__what.clearfix
+            span.cart-reg__what__text.cart-reg__what__photo Фото и название товара
+            span.cart-reg__what__text.cart-reg__what__size Размер
+            span.cart-reg__what__text.cart-reg__what__price Цена
+            span.cart-reg__what__text.cart-reg__what__quantity Количество
+            span.cart-reg__what__text.cart-reg__what__sum Сумма
+        .cart-reg__item.clearfix
+            a(href="#").cart-reg__item__block.cart-reg__item__img
+                img(src="img/index-item-6.jpg" alt="")
+            a(href="#").cart-reg__item__block.cart-reg__item__info
+                span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Артикул:
+                    span.cart-reg__item__info__text 3146895444
+                .clearfix
+                    span.cart-reg__item__info__grey Цает:
+                    span.cart-reg__item__info__text Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Размер:(см)
+                    span.cart-reg__item__info__text 140х140
+            .cart-reg__item__block.cart-reg__item__size
+                span.cart-reg__item__size__mobile Размер:
+                form.cart-reg__item__size__form
+                    select.cart-reg__item__size__select.js-cart-select
+                        option(value="size_s") S
+                        option(value="size_m") M
+                        option(value="size_l") L
+                        option(value="size_xl") XL
+                        option(value="size_xxl" selected="selected") XXL
+            a(href="#").cart-reg__item__block.cart-reg__item__price
+                span.cart-reg__item__price__mobile Цена:
+                span.cart-reg__item__price__text 1 054 руб.
+                span.cart-reg__item__price__text2 1 054 руб.
+            .cart-reg__item__block.cart-reg__item__quantity
+                span.cart-reg__item__quantity__mobile Количество:
+                form.cart-reg__item__quantity__form
+                    input(type="number" value="1" min="0" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                    span.pop-up__treatment__edit изменено количество товара
+            a(href="#").cart-reg__item__block.cart-reg__item__sum
+                span.cart-reg__item__sum__text-sum Сумма:
+                span.cart-reg__item__sum__text 1 054 руб.
+            span.cart-reg__item__close
+                +icon("ico_close")
+                span.close-info
+                    span.close-info__text Вы уверенны что хотите удалить данный товар из заказа?
+                    span.close-info__btn.btn-white
+                        span да
+                    span.close-info__btn.btn-white
+                        span нет
+
+        .cart-reg__item.clearfix
+            a(href="#").cart-reg__item__block.cart-reg__item__img
+                img(src="img/index-item-1.jpg" alt="")
+            a(href="#").cart-reg__item__block.cart-reg__item__info
+                span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Артикул:
+                    span.cart-reg__item__info__text 3146895444
+                .clearfix
+                    span.cart-reg__item__info__grey Цает:
+                    span.cart-reg__item__info__text Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Размер:(см)
+                    span.cart-reg__item__info__text 140х140
+            .cart-reg__item__block.cart-reg__item__size
+                span.cart-reg__item__size__mobile Размер:
+                form.cart-reg__item__size__form
+                    select.cart-reg__item__size__select.js-cart-select
+                        option(value="size_s" selected="selected") S
+                        option(value="size_m") M
+                        option(value="size_l") L
+                        option(value="size_xl") XL
+                        option(value="size_xxl") XXL
+            a(href="#").cart-reg__item__block.cart-reg__item__price
+                span.cart-reg__item__price__mobile Цена:
+                span.cart-reg__item__price__text.cart-reg__item__price__text--non-discount 540 руб.
+            .cart-reg__item__block.cart-reg__item__quantity
+                span.cart-reg__item__quantity__mobile Количество:
+                form.cart-reg__item__quantity__form
+                    input(type="number" value="2" min="0" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                    span.pop-up__treatment__edit изменено количество товара
+            a(href="#").cart-reg__item__block.cart-reg__item__sum
+                span.cart-reg__item__sum__text-sum Сумма:
+                span.cart-reg__item__sum__text 1080 руб.
+            span.cart-reg__item__close
+                +icon("ico_close")
+                span.close-info
+                    span.close-info__text Вы уверенны что хотите удалить данный товар из заказа?
+                    span.close-info__btn.btn-white
+                        span да
+                    span.close-info__btn.btn-white
+                        span нет
+        .pop-up__order-del__btn.btn-black
+            span подтвердить изменения
+        .pop-up__order-del__info Менеджер получит информацию об изменениях в составе заказа
+
+    .pop-up#pop-cancel.pop-up__cancel
+        .pop-up__title.
+            ваш заказ отменен
+        p.pop-up__cancel__text Наш менеджер свяжется с Вами в ближайшее время
+
+    .pop-up#pop-return-success.pop-up__cancel
+        .pop-up__title.
+            Заявка на возврат успешно отправлена
+        p.pop-up__cancel__text Наш менеджер свяжется с Вами в ближайшее время
+
+
+    .pop-up#pop-return.pop-up__return
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Заказ № 12345-6789
+        form.pop-up__return__form.js-return-form
+            .cart-reg__what.clearfix
+                span.cart-reg__what__text.cart-reg__what__photo Фото и название товара
+                span.cart-reg__what__text.cart-reg__what__size Размер
+                span.cart-reg__what__text.cart-reg__what__price Цена
+                span.cart-reg__what__text.cart-reg__what__quantity Количество
+                span.cart-reg__what__text.cart-reg__what__sum Сумма
+                span.cart-reg__what__text.cart-reg__what__sum.pop-up__return__title Оформить заказ
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-6.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    span.cart-reg__item__size__mobile Размер:
+                    span.pop-up__return__txt XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text 1 054 руб.
+                    span.cart-reg__item__price__text2 1 054 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    span.cart-reg__item__quantity__mobile Количество:
+                    span.pop-up__return__txt 2
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1 054 руб.
+                .pop-up__return__block
+                    label.clearfix.register__subscribe
+                        input(type="checkbox", name="check").catalog-sidebar__check-item-input
+                        span.catalog-sidebar__check-icon
+
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-1.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    span.cart-reg__item__size__mobile Размер:
+                    span.pop-up__return__txt S
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text.cart-reg__item__price__text--non-discount 540 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    span.cart-reg__item__quantity__mobile Количество:
+                    span.pop-up__return__txt 2
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1080 руб.
+                .pop-up__return__block
+                    label.clearfix.register__subscribe
+                        input(type="checkbox", name="check").catalog-sidebar__check-item-input
+                        span.catalog-sidebar__check-icon
+
+            span.pop-up__return__textarea-title Ваш коментарий
+            textarea(placeholder="При желании Вы можете указать причину возврата. Мы учтем Ваше мнение и пожелания").pop-up__return__textarea
+
+            button(type="submit").pop-up__return__btn.btn-black
+                span оформить возврат
+
+
+    .pop-up#pop-return-finish.pop-up__return
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Заказ № 12345-6789
+        form.pop-up__return__form
+            .cart-reg__what.clearfix
+                span.cart-reg__what__text.cart-reg__what__photo Фото и название товара
+                span.cart-reg__what__text.cart-reg__what__size Размер
+                span.cart-reg__what__text.cart-reg__what__price Цена
+                span.cart-reg__what__text.cart-reg__what__quantity Количество
+                span.cart-reg__what__text.cart-reg__what__sum Сумма
+                span.cart-reg__what__text.cart-reg__what__sum.pop-up__return__title Оформить заказ
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-6.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    span.cart-reg__item__size__mobile Размер:
+                    span.pop-up__return__txt XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text 1 054 руб.
+                    span.cart-reg__item__price__text2 1 054 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    span.cart-reg__item__quantity__mobile Количество:
+                    span.pop-up__return__txt 2
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1 054 руб.
+                .pop-up__return__block
+                    label.clearfix.register__subscribe
+                        input(type="checkbox").catalog-sidebar__check-item-input
+                        span.catalog-sidebar__check-icon
+
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-1.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    span.cart-reg__item__size__mobile Размер:
+                    span.pop-up__return__txt S
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text.cart-reg__item__price__text--non-discount 540 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    span.cart-reg__item__quantity__mobile Количество:
+                    span.pop-up__return__txt 2
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1080 руб.
+                .pop-up__return__block
+                    label.clearfix.register__subscribe
+                        input(type="checkbox").catalog-sidebar__check-item-input
+                        span.catalog-sidebar__check-icon
+
+
+
+    .pop-up#pop-treatment.pop-up__order-del.pop-up__treatment
+        a(href="#").pop-up__close.js-pop-up-close
+        .pop-up__title.
+            Заказ № 12345-6789
+        .cart-reg__what.clearfix
+            span.cart-reg__what__text.cart-reg__what__photo Фото и название товара
+            span.cart-reg__what__text.cart-reg__what__size Размер
+            span.cart-reg__what__text.cart-reg__what__price Цена
+            span.cart-reg__what__text.cart-reg__what__quantity Количество
+            span.cart-reg__what__text.cart-reg__what__sum Сумма
+        .cart-reg__item.clearfix
+            a(href="#").cart-reg__item__block.cart-reg__item__img
+                img(src="img/index-item-6.jpg" alt="")
+            a(href="#").cart-reg__item__block.cart-reg__item__info
+                span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Артикул:
+                    span.cart-reg__item__info__text 3146895444
+                .clearfix
+                    span.cart-reg__item__info__grey Цает:
+                    span.cart-reg__item__info__text Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Размер:(см)
+                    span.cart-reg__item__info__text 140х140
+            .cart-reg__item__block.cart-reg__item__size
+                span.cart-reg__item__size__mobile Размер:
+                form.cart-reg__item__size__form
+                    select.cart-reg__item__size__select.js-cart-select
+                        option(value="size_s") S
+                        option(value="size_m") M
+                        option(value="size_l") L
+                        option(value="size_xl") XL
+                        option(value="size_xxl" selected="selected") XXL
+            a(href="#").cart-reg__item__block.cart-reg__item__price
+                span.cart-reg__item__price__mobile Цена:
+                span.cart-reg__item__price__text 1 054 руб.
+                span.cart-reg__item__price__text2 1 054 руб.
+            .cart-reg__item__block.cart-reg__item__quantity
+                span.cart-reg__item__quantity__mobile Количество:
+                form.cart-reg__item__quantity__form.pop-up__treatment__form
+                    input(type="number" value="1" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                    span.pop-up__treatment__edit изменено количество товара
+            a(href="#").cart-reg__item__block.cart-reg__item__sum
+                span.cart-reg__item__sum__text-sum Сумма:
+                span.cart-reg__item__sum__text 1 054 руб.
+            span.cart-reg__item__close
+                +icon("ico_close")
+                span.close-info
+                    //span.close-info__text Вы уверенны что хотите удалить данный товар из заказа?
+                    //span.close-info__btn.btn-white
+                    //    span да
+                    //span.close-info__btn.btn-white
+                    //    span нет
+
+        .cart-reg__item.clearfix
+            a(href="#").cart-reg__item__block.cart-reg__item__img
+                img(src="img/index-item-4.jpg" alt="")
+            a(href="#").cart-reg__item__block.cart-reg__item__info
+                span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Артикул:
+                    span.cart-reg__item__info__text 3146895444
+                .clearfix
+                    span.cart-reg__item__info__grey Цает:
+                    span.cart-reg__item__info__text Красный
+                .clearfix
+                    span.cart-reg__item__info__grey Размер:(см)
+                    span.cart-reg__item__info__text 140х140
+            .cart-reg__item__block.cart-reg__item__size
+                span.cart-reg__item__size__mobile Размер:
+                form.cart-reg__item__size__form
+                    select.cart-reg__item__size__select.js-cart-select
+                        option(value="size_s") S
+                        option(value="size_m") M
+                        option(value="size_l") L
+                        option(value="size_xl") XL
+                        option(value="size_xxl" selected="selected") XXL
+            a(href="#").cart-reg__item__block.cart-reg__item__price
+                span.cart-reg__item__price__mobile Цена:
+                span.cart-reg__item__price__text 800 руб.
+                span.cart-reg__item__price__text2 800 руб.
+            .cart-reg__item__block.cart-reg__item__quantity
+                span.cart-reg__item__quantity__mobile Количество:
+                form.cart-reg__item__quantity__form.pop-up__treatment__form
+                    input(type="number" value="1" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                    span.pop-up__treatment__edit изменено количество товара
+            a(href="#").cart-reg__item__block.cart-reg__item__sum
+                span.cart-reg__item__sum__text-sum Сумма:
+                span.cart-reg__item__sum__text 800 руб.
+            span.cart-reg__item__close
+                +icon("ico_close")
+                span.close-info
+                    //span.close-info__text Вы уверенны что хотите удалить данный товар из заказа?
+                    //span.close-info__btn.btn-white
+                    //    span да
+                    //span.close-info__btn.btn-white
+                    //    span нет
+
+        .pop-up__order-del__btn.btn-black
+            span подтвердить изменения
+        .pop-up__order-del__info Менеджер получит информацию об изменениях в составе заказа

@@ -1,0 +1,28 @@
+.pass-recovery
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Поиск
+        .pass-recovery__title
+            span.subtitle__text восстановление
+            span.subtitle__text.subtitle--b.subtitle__right-text пароля
+        form.pass-recovery__form.js-password-recovery
+            label(for="pass_recovery")
+                .pass-recovery__wrap
+                    span.pass-recovery__form__text Email
+                    span.pass-recovery__form__dec *
+                    span.pass-recovery__form__info (который был указан при регистрации)
+                input(type="email", name="pass_recovery").index-subscribe__form__input.pass-recovery__form__input#pass_recovery
+                span.pass-recovery__form__message
+                    | Мы вышлем Вам инструкцию для восстановления пароля на электронную почту указанную при регистрации
+                button(type="submit").pass-recovery__form__btn.btn-black
+                    span восстановить пароль
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

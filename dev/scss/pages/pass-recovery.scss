@@ -1,0 +1,119 @@
+.pass-recovery {
+  margin-bottom: 69px;
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 40px;
+  }
+  &__title {
+    margin: 36px 0 32px 0;
+    letter-spacing: 1.6px;
+    text-align: center;
+    @media (max-width: $screen-xs-max) {
+      margin: 15px 0;
+      span {
+        font-size: 30px;
+        letter-spacing: .4px;
+        line-height: 1.5em;
+        margin: 0;
+      }
+    }
+  }
+  &__form {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 0;
+    }
+    &__text {
+      display: inline-block;
+      font-family: $avantdemi;
+      font-size: 14px;
+      color: #000;
+      letter-spacing: .7px;
+    }
+    &__dec {
+      display: inline-block;
+      font-family: $avantdemi;
+      font-size: 14px;
+      color: #e6005c;
+      margin: 0 17px 0 4px;
+      @media (max-width: $screen-xs-max) {
+        margin: 0 0 0 4px;
+      }
+    }
+    &__info {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      color: #b3b3b3;
+      letter-spacing: .78px;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+    &__input {
+      display: inline-block!important;
+      width: 391px;
+      padding: 9px 23px 8px;
+      margin-bottom: 41px;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+      }
+    }
+    &__message {
+      display: block;
+      text-align: center;
+      max-width: 580px;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: .7px;
+      margin-bottom: 45px;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__wrap {
+    display: block;
+    max-width: 393px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    margin-bottom: 16px;
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      //text-align: center;
+    }
+  }
+}
+#pass_recovery-error {
+  display: inline-block!important;
+  position: absolute;
+  color: #e6005c;
+  font-family: $avantbook;
+  font-size: 12px;
+  line-height: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 86px;
+  width: 391px;
+  text-align: left;
+  padding-left: 25px;
+  @media (max-width: $screen-xs-max) {
+    width: 100%;
+    top: 110px;
+    padding: 0;
+    text-align: center;
+  }
+  @media (max-width: 331px) {
+    top: 128px;
+  }
+}

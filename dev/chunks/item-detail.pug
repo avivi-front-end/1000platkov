@@ -1,0 +1,694 @@
+.container
+    ul.bread-crumbs.clearfix
+        li.bread-crumbs__item
+            a(href="#").bread-crumbs__link Главная
+        li.bread-crumbs__item
+            a(href="#").bread-crumbs__link Женщинам
+        li.bread-crumbs__item
+            a(href="#").bread-crumbs__link Платки
+        li.bread-crumbs__item
+            a(href="#").bread-crumbs__link Шейные
+        li.bread-crumbs__item.current
+            a(href="#").bread-crumbs__link Название товара
+section.item-detail
+    .container.item-detail__top-wrapper
+        .row
+            .col-md-4.item-detail__photo-wrap
+                .item-detail__name.sm-show.
+                    Платок VENERA (5700907-26)
+                .item-detail__art-name.sm-show.
+                    Артикул: 6700272-24
+                .item-detail__main-photo
+                    img(src="img/upload/detail-1.jpg" alt="detail image").item-detail__main-photo-image
+                .item-detail__thumb-list
+                    a(href="img/upload/thumb-1.jpg").item-detail__thumb-link.js-show-big-photo.active
+                        img(src="img/upload/thumb-1.jpg" alt="thumb image").item-detail__thumb-image
+                    a(href="img/upload/thumb-2.jpg").item-detail__thumb-link.js-show-big-photo
+                        img(src="img/upload/thumb-2.jpg" alt="thumb image").item-detail__thumb-image
+                    a(href="img/upload/thumb-3.jpg").item-detail__thumb-link.js-show-big-photo
+                        img(src="img/upload/thumb-3.jpg" alt="thumb image").item-detail__thumb-image
+                    a(href="img/upload/thumb-4.jpg").item-detail__thumb-link.js-show-big-photo
+                        img(src="img/upload/thumb-4.jpg" alt="thumb image").item-detail__thumb-image
+                    a(href="img/upload/thumb-5.jpg").item-detail__thumb-link.js-show-big-photo
+                        img(src="img/upload/thumb-5.jpg" alt="thumb image").item-detail__thumb-image
+                .item-detail__share.sm-hide
+                    .item-detail__share-title.
+                        Рассказать о товаре:
+                    .share-icons.clearfix
+                        a(href="#").clearfix.share-icons__icon.share-icons__icon--vk
+                            +icon ("soc-vk")
+                            span.share-icons__text.share-icons__text--vk 954
+                        a(href="#").clearfix.share-icons__icon.share-icons__icon--fb
+                            +icon ("soc-fb")
+                            span.share-icons__text.share-icons__text--fb 426
+                        a(href="#").clearfix.share-icons__icon.share-icons__icon--ok
+                            +icon ("soc-ok")
+                            span.share-icons__text.share-icons__text--ok 437
+            .col-md-5
+                .item-detail__name.sm-hide.
+                    Платок VENERA (5700907-26)
+                .item-detail__art-name.sm-hide.
+                    Артикул: 6700272-24
+                .item-detail__table-wrap
+                    .item-detail__table-title.
+                        О товаре:
+                    table.item-detail__table
+                        tr
+                            td.item-detail__table-name.
+                                Цвет
+                            td.item-detail__table-value.
+                                Красный
+                        tr
+                            td.item-detail__table-name.
+                                Размер (см):
+                            td.item-detail__table-value.
+                                140х140
+                        tr
+                            td.item-detail__table-name.
+                                Состав
+                            td.item-detail__table-value.
+                                100% п/эстер
+                        tr
+                            td.item-detail__table-name.
+                                Цвет
+                            td.item-detail__table-value.
+                                Мультиколор
+                        tr
+                            td.item-detail__table-name.
+                                Производитель
+                            td.item-detail__table-value.
+                                Италия
+                .item-detail__size
+                    .item-detail__size-title.
+                        выбрать размер:
+                    a(href="#" data-pop="#table").js-show-pop-up.item-detail__find-size.
+                        определить размер
+                    .item-detail__size-wrap.clearfix
+                        label.item-detail__size-label
+                            input(type="radio" name="size" checked).item-detail__size-input
+                            span.item-detail__size-name
+                                span.
+                                    s
+                        label.item-detail__size-label
+                            input(type="radio" name="size").item-detail__size-input
+                            span.item-detail__size-name
+                                span.
+                                    m
+                        label.item-detail__size-label
+                            input(type="radio" name="size").item-detail__size-input
+                            span.item-detail__size-name
+                                span.
+                                    l
+                        label.item-detail__size-label
+                            input(type="radio" name="size").item-detail__size-input
+                            span.item-detail__size-name
+                                span.
+                                    xl
+                        label.item-detail__size-label
+                            input(type="radio" name="size").item-detail__size-input
+                            span.item-detail__size-name
+                                span.
+                                    xxl
+                .item-detail__gift
+                    .item-detail__gift-title.
+                        Покупайте в подарок?
+                    .item-detail__gift-text
+                        | Добавьте к заказу &nbsp
+                        a(href="#gift-pack").scrollto#gift-pack подарочную упаковку
+
+                .item-detail__share.sm-show
+                    .item-detail__share-title.
+                        Рассказать о товаре:
+                    .share-icons.clearfix
+                        a(href="#").clearfix.share-icons__icon.share-icons__icon--vk
+                            +icon ("soc-vk")
+                            span.share-icons__text.share-icons__text--vk 954
+                        a(href="#").clearfix.share-icons__icon.share-icons__icon--fb
+                            +icon ("soc-fb")
+                            span.share-icons__text.share-icons__text--fb 426
+                        a(href="#").clearfix.share-icons__icon.share-icons__icon--ok
+                            +icon ("soc-ok")
+                            span.share-icons__text.share-icons__text--ok 437
+
+            .col-md-3.item-detail__right-wrap
+                .unreg-wrapper.unreg-wrapper--discount
+                    | Ваша скидка на данный товар <b> 10%</b> <br>
+                    a(href="#").unreg-wrapper__link Мои скидки
+                .unreg-wrapper
+                    a(href="#").unreg-wrapper__close
+                    a(href="#").unreg-wrapper__link Войдите
+                    |, чтобы увидеть цену <br>
+                    | с Вашей скидкой
+                    a(href="#").unreg-wrapper__link о системе скидок
+                .item-detail__price.clearfix
+                    .item-detail__price-current.
+                        810 руб.
+                    .item-detail__price-old.
+                        1230 руб.
+                .item-detail__count
+                    .item-detail__count-wrap.clearfix
+                        a(href="#" data-count="minus").item-detail__count-btn.js-number-input -
+                        input(type="number" value="1").item-detail__count-input
+                        a(href="#" data-count="plus").item-detail__count-btn.js-number-input +
+                .item-detail__buy.clearfix
+                    a(href="#").item-detail__buy-btn-fast.
+                        Купить в 1 клик
+                    a(href="#").item-detail__buy-btn
+                        +icon('ico_cart')
+                        | Купить
+                .item-detail__favorite
+                    a(href="#").item-detail__favorite-btn.js-item-favorite
+                        span.item-detail__favorite-icon-wrapper
+                            +icon('ico_like')
+                        span.item-detail__favorite-text Добавить в избранное
+    .container
+        .row
+            .col-md-7
+                .item-tab-wrapper
+                    .item-tab-wrapper__head.clearfix
+                        a(href="#info-1").item-tab-wrapper__link.js-item-tab.active.
+                            Описание товара
+                        a(href="#info-2").item-tab-wrapper__link.js-item-tab.
+                            Характеристики и уход
+                        a(href="#info-3").item-tab-wrapper__link.js-item-tab.
+                            Отзывы
+                    .item-tab-wrapper__body
+                        .item-tab-wrapper__item#info-1.active
+                            p.
+                                1 Красивым, стильным и по-весеннему ярким аксессуаром станет этот чудесный платок из полиэстера, универсального размера 90х90.
+                            p.
+                                Это легкий и нежный платок имеет превосходный рисунок больших цветов, которые будто насыщенны душой и настроением художника. Безупречная цветовая гамма позволяет сочетать аксессуар с одеждой любого цвета и стиля, с таким платком Вы всегда будете неотразимой, нежной и романтичной натурой.
+                        .item-tab-wrapper__item#info-2
+                            p.
+                                2 Красивым, стильным и по-весеннему ярким аксессуаром станет этот чудесный платок из полиэстера, универсального размера 90х90.
+                            p.
+                                Это легкий и нежный платок имеет превосходный рисунок больших цветов, которые будто насыщенны душой и настроением художника. Безупречная цветовая гамма позволяет сочетать аксессуар с одеждой любого цвета и стиля, с таким платком Вы всегда будете неотразимой, нежной и романтичной натурой.
+                        .item-tab-wrapper__item#info-3
+                            p.
+                                3 Красивым, стильным и по-весеннему ярким аксессуаром станет этот чудесный платок из полиэстера, универсального размера 90х90.
+                            p.
+                                Это легкий и нежный платок имеет превосходный рисунок больших цветов, которые будто насыщенны душой и настроением художника. Безупречная цветовая гамма позволяет сочетать аксессуар с одеждой любого цвета и стиля, с таким платком Вы всегда будете неотразимой, нежной и романтичной натурой.
+            .col-md-5
+                .item-tab-wrapper
+                    .item-tab-wrapper__head.clearfix
+                        a(href="#info-4").item-tab-wrapper__link.js-item-tab.active.
+                            Доставка
+                        a(href="#info-5").item-tab-wrapper__link.js-item-tab.
+                            Оплата
+                    .item-tab-wrapper__body
+                        .item-tab-wrapper__item#info-4.active
+                            p.
+                                Доставка по Москве и Санкт-Петербургу <br>
+                                <b>от 250 рублей</b> <br>
+                                <b>1-3 дня с момента оформления</b>
+                            p.
+                                Доставка в регионы России почтой или Ems (дополнительная скидка на заказ <b>10%</b>)
+                            p.
+                                Самовывоз в Москве проспект Вернадского 12
+                                <b>100 рублей</b>
+                        .item-tab-wrapper__item#info-5
+                            p.
+                                2 Красивым, стильным и по-весеннему ярким аксессуаром станет этот чудесный платок из полиэстера, универсального размера 90х90.
+                            p.
+                                Это легкий и нежный платок имеет превосходный рисунок больших цветов, которые будто насыщенны душой и настроением художника. Безупречная цветовая гамма позволяет сочетать аксессуар с одеждой любого цвета и стиля, с таким платком Вы всегда будете неотразимой, нежной и романтичной натурой.
+section.present-wrap#gift-pack
+    .container
+        .row
+            .col-lg-6.col-xl-5.clearfix
+                .present-wrap__left-item
+                    .present-wrap__left-icon
+                        +icon ('ico_present')
+                    .present-wrap__right-icon.
+                        ?
+                    .present-wrap__text.present-wrap__text--left
+                        .present-wrap__title.
+                            Покупаете товар в подарок
+                        .present-wrap__sub-title
+                            a(href="#").present-wrap__link.btn-white.js-show-present
+                                span.show-present.
+                                    показать варианты упаковки
+                                span.hide-present.
+                                    Скрыть
+            .col-lg-12.col-xl-7.clearfix
+                .present-wrap__right-item
+
+                    .present-wrap__text
+                        .present-wrap__title.
+                            Подберите красивую подарочную упаковку
+    .container.present-wrap__slider
+        .row
+            .col-md-10.col-md-offset-1
+                .small-margin
+                    .catalog-slider__btns
+                        a(href="#" data-slider="slickPrev").catalog-slider__btn.catalog-slider__btn--prev.js-present-arrows
+                            +icon('ico_left')
+                        a(href="#" data-slider="slickNext").catalog-slider__btn.catalog-slider__btn--next.js-present-arrows
+                            +icon('ico_right')
+                    .catalog-slider__wrapper.clearfix.js-present-slider
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-1.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-2.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-3.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-4.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-5.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-1.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-2.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/present-3.jpg").catalog-slider__image
+                                    span.catalog-slider__buy-wrapper.clearfix
+                                        a(href="#").catalog-slider__buy-wrapper-icon
+                                            svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                        a(href="#").catalog-slider__buy-wrapper-link.
+                                            купить
+                                a(href="#").catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+section.items-row
+    .container
+        .items-row__wrapper
+            a(href="#").items-row__show-more.btn-black
+                span.
+                    еще 10 товаров
+            .items-row__title.
+                <b>похожие товары</b> (14)
+    .container
+        .slider-btns
+            .shop-slider__slider-btns
+                a(href="#" data-slider="slickPrev").index-shares__slider-btn.js-shop-arrows
+                    +icon ('ico_left')
+                a(href="#" data-slider="slickNext").index-shares__slider-btn.js-shop-arrows
+                    +icon ('ico_right')
+        .row.small-margin.shop-slider
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-1.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                                span.item-block__title можно написать в 2 строки
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-2.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                                span.item-block__title можно написать в 2 строки
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-3.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-3.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+section.items-row
+    .container
+        .items-row__wrapper
+            .items-row__title.
+                <b>Рекомендуем с этим</b> товаром
+    .container
+        .slider-btns
+            .shop-slider__slider-btns
+                a(href="#" data-slider="slickPrev").index-shares__slider-btn.js-shop-arrows-2
+                    +icon ('ico_left')
+                a(href="#" data-slider="slickNext").index-shares__slider-btn.js-shop-arrows-2
+                    +icon ('ico_right')
+        .row.small-margin.shop-slider-2
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block.item-block__in-cart
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-4.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                                span.item-block__title можно написать в 2 строки
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            span.item-block__discount.item-block__discount10 10%
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-5.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                                span.item-block__title можно написать в 2 строки
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block.item-block__in-cart
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            span.item-block__discount.item-block__discount20 20%
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-6.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+            .col-md-6.col-lg-3.small-padding
+                .wrap-item-block
+                    span.item-block
+                        span.item-block__img-block
+                            span.item-block__like.js-like
+                                +icon ("ico_like")
+                            a(href="#" data-pop="#quick-view").js-show-pop-up.item-block__order-ico.js-order
+                                +icon ("ico_order")
+                            a(href="#").item-block__order
+                                span.item-block__order__text заказать
+                                span.item-block__order__text в 1 клик
+                            a(href="#").item-block__model
+                                span.item-block__model__text Артикул: 3146895444
+                                span.item-block__model__text Размер: (см) 140х140
+                                span.item-block__model__text Состав: 100% п/эстер
+                            a(href="#")
+                                img(src="img/index-item-7.jpg" alt="").item-block__img-block__img
+                        a(href="#").item-block__info
+                            span.item-block__title-wrap
+                                span.item-block__title Платок VENERA
+                    form.item-block__form
+                        span.item-block__price 810 руб.
+                        input(type="text" value="1").item-block__input
+                        span.item-block__quantity шт
+                        .wrap-btn
+                            button(type="submit").btn.item-block__buy
+                                span купить
+                            a(href="#").item-block__cart-quantity В корзине 5 шт.
+.catalog-slider.catalog-slider--item
+    .container
+        .row
+            .col-md-10.col-md-offset-1
+                .catalog-slider__title.text-center.
+                    недавно вы <b>смотрели</b>
+                .small-margin
+                    .catalog-slider__btns
+                        a(href="#" data-slider="slickPrev").catalog-slider__btn.catalog-slider__btn--prev.js-catalog-arrows
+                            +icon('ico_left')
+                        a(href="#" data-slider="slickNext").catalog-slider__btn.catalog-slider__btn--next.js-catalog-arrows
+                            +icon('ico_right')
+                    .catalog-slider__wrapper.clearfix.js-catalog-slider
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-1.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-2.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-3.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-4.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-1.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-2.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-3.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+                        a(href="#").catalog-slider__slide.small-padding
+                            .catalog-slider__slide-inner
+                                span.catalog-slider__image-wrapper
+                                    img(src="img/upload/slider-4.jpg").catalog-slider__image
+                                span.catalog-slider__name.text-center.
+                                    Платок VENERA
+                                    можно в 2-3 строки
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

@@ -1,0 +1,343 @@
+.cart-reg
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Корзина
+        .cart-reg__title
+            a(href="cart-reg.html").cart-reg__order ваш заказ
+            a(href="favorite.html").cart-reg__favorite избранное(12)
+
+        .wrapper-cart
+
+            .cart-reg__what.clearfix
+                span.cart-reg__what__text.cart-reg__what__photo Фото и название товара
+                span.cart-reg__what__text.cart-reg__what__size Размер
+                span.cart-reg__what__text.cart-reg__what__price Цена
+                span.cart-reg__what__text.cart-reg__what__quantity Количество
+                span.cart-reg__what__text.cart-reg__what__sum Сумма
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-6.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s") S
+                            option(value="size_m") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl" selected="selected") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text 1 054 руб.
+                    span.cart-reg__item__price__text2 1 054 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="1" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1 054 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    span.item-block__discount.cart-reg__item__img__discount.item-block__discount30 30%
+                    img(src="img/index-item-1.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s" selected="selected") S
+                            option(value="size_m") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text.cart-reg__item__price__text--non-discount 540 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="2" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1080 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/cart-item.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s") S
+                            option(value="size_m" selected="selected") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text.cart-reg__item__price__text--non-discount 540 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="2" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1080 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-3.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s") S
+                            option(value="size_m") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl" selected="selected") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text 1 054 руб.
+                    span.cart-reg__item__price__text2 1 054 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="1" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1 054 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+    .cart-reg__gift.clearfix
+        .container
+            span.cart-reg__gift__text.cart-reg__gift__text--b Покупаете в подарок?
+            span.cart-reg__gift__text Подберите красивую подарочную упаковку
+
+            a(href="#").present-wrap__link.cart-reg__gift__link.cart-reg__gift__btn.btn-black.js-show-present
+                span.show-present.
+                    показать варианты упаковки
+                span.hide-present.
+                    Скрыть
+
+            .present-wrap__slider
+                .row
+                    .col-md-10.col-md-offset-1
+                        .small-margin
+                            .catalog-slider__btns
+                                a(href="#" data-slider="slickPrev").catalog-slider__btn.catalog-slider__btn--prev.js-present-arrows
+                                    +icon('ico_left')
+                                a(href="#" data-slider="slickNext").catalog-slider__btn.catalog-slider__btn--next.js-present-arrows
+                                    +icon('ico_right')
+                            .catalog-slider__wrapper.clearfix.js-present-slider
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-1.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-2.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-3.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-4.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-5.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-1.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-2.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+                                .catalog-slider__slide.catalog-slider__slide--item.small-padding
+                                    .catalog-slider__slide-inner
+                                        span.catalog-slider__image-wrapper
+                                            img(src="img/upload/present-3.jpg").catalog-slider__image
+                                            span.catalog-slider__buy-wrapper.clearfix
+                                                a(href="#").catalog-slider__buy-wrapper-icon
+                                                    svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='29', height='29', viewbox='0 0 29 29')
+                                                        image#Vector_Smart_Object_copy_2(data-name='Vector Smart Object copy 2', width='29', height='29', xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAQwKDQWuKfubAAABzElEQVQ4y52Uv2tTURSAv8QSGkgzKOIraBYXyVTp4iRY6n+RrSDErYPO3arQsSDiIoKDTk2Xdii4JNhSmsW1UKGhdKhDSbAYTD+H95Lmx0vy8GznnPvd8+veA0PiouvW/KVq07qbPjfNNPGZ+8bJsSVT47GsH3pHL/3mJz+663nPtmcQD971IDqy5bK3Bgp4b1vVhsW4iAeRcyn24qJHkb8w7ApT/eG9seXMuq3qd2cGmxPeOBYEMGNN1dV+Y9jVJaaIBVvqhbmbNqhuTZ0c4JqqK111XdXlRGjgX3Wnq9bUy/5xTISrajN8HmkeAfVUJxnKIZDjfojeBk4TgtAA4E6IAlwnRvuyS9MCgsToPADNsPC6ep6UdFf9E70oN1VdTATO+VutdhOuAPAiUdASWYgIMO2x2o75UMMx856pV31v3ZKqR85OQT+rutFvSrmn6raZCeAbVU/MD5oDG6rWRr5yN9UwYse3o85iBLdcG9xBzln2LAJVy11Pb89Z4AtPAOiwzyGnXBOwwFOyAPzkK68BeJl6Nxx5xlUvYpfplRvmwXKklxkVc664Y6sHta366mYcE+Go5w9c8LEPB5ZYMnjifEO48h8oWLZi5h8egcCHvNGJfQAAAABJRU5ErkJggg==')
+
+                                                a(href="#").catalog-slider__buy-wrapper-link.
+                                                    купить
+                                        a(href="#").catalog-slider__name.text-center.
+                                            Платок VENERA
+                                            можно в 2-3 строки
+
+    .container.clearfix
+        .cart-reg__promo.clearfix
+            .cart-reg__promo__quastion
+                span.quest-info.
+                    Информация
+            form.cart-reg__promo__form.js-promocode-form
+                label(for="promocode")
+                    span.cart-reg__promo__text Промо-код на скидку
+                    input(type="text" name="promo" placeholder="____  _______").cart-reg__promo__input.js-promo-input#promocode
+                    button(type="submit").btn-black.cart-reg__promo__btn
+                        span применить
+        .cart-reg__buy
+            span.cart-reg__buy__text Сумма заказа:
+            span.cart-reg__buy__price 8 748 руб.
+            .clearfix
+            span.cart-reg__buy__text Ваша скидка:
+            span.cart-reg__buy__price 250 руб.
+            .clearfix
+            .cart-reg__buy__sum
+                span.cart-reg__buy__text Сумма к оплате:
+                span.cart-reg__buy__sum__text 8 998 руб.
+                    span.cart-reg__buy__sum__delivery (без учета доставки)
+            a(href="#").btn.cart-reg__buy__btn
+                span оформить заказ
+    .index-subscribe.cart-reg__subscribe
+        .container
+            span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+            form.index-subscribe__form.js-index-subscribe__form
+                input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+                button(type="submit").btn-white.index-subscribe__form__submit
+                    span подписаться
+
+
+
+
+
+
+
+

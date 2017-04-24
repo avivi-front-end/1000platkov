@@ -1,0 +1,90 @@
+.ordering {
+  &__block {
+    padding: 64px 25px 69px 104px;
+    @media (max-width: 1270px) {
+      padding: 50px 25px 50px 50px;
+    }
+    @media (max-width: $screen-md-max) {
+      padding: 50px 25px;
+    }
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 15px;
+    }
+    &--pink {
+      background-color: #c401b1;
+      .ordering__btn {
+        background-color: #c401b1;
+        &:hover {
+          span {
+            color: #fff;
+          }
+        }
+        &:active {
+          span {
+            &:after {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+    &--green{
+      background-color: #06ae84;
+      .ordering__btn {
+        background-color: #06ae84;
+        &:hover {
+          span {
+            color: #fff;
+          }
+        }
+        &:active {
+          span {
+            &:after {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__text-b {
+    font-family: $avantdemi;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-family: $avantbook;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+  &__btn {
+    margin-top: 15px;
+    padding: 13px 0;
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 15px;
+    }
+  }
+  &__text-small {
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    letter-spacing: 0.6px;
+  }
+  &__dec {
+    display: inline-block;
+    margin: 0 23px;
+  }
+  &__subscribe {
+    margin-top: 90px;
+    @media (max-width: $screen-sm-max) {
+      margin-top: 40px;
+    }
+  }
+}

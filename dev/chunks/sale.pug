@@ -1,0 +1,374 @@
+.container
+    ul.bread-crumbs.clearfix
+        li.bread-crumbs__item
+            a(href="#").bread-crumbs__link Главная
+        li.bread-crumbs__item.current
+            a(href="#").bread-crumbs__link Акции
+section.catalog
+    .container
+        .row
+            aside.col-md-3.catalog-sidebar
+                form
+                    a(href="#").catalog-sidebar__top-btn.sidebar__help.sidebar__help--green.
+                        Выберите категорию товара
+                    a(href="#").js-show-sidebar.catalog-sidebar__mobile-filter
+                        +icon('filter')
+                        | Фильтр
+                    .catalog-sidebar__main-wrapper
+                        .catalog-sidebar__main-wrapper-inner
+                            .catalog-sidebar__item-wrapper.catalog-sidebar__item-wrapper--can-open.active
+                                .catalog-sidebar__title-wrapper.clearfix
+                                    a(href="#").catalog-sidebar__item-wrapper-title.js-show-options.
+                                        Платки
+                                .catalog-sidebar__item-wrapper-inner.catalog-sidebar__item-wrapper-inner--sales
+                                    - var saleList1 = ["Платки на голову","Шейные платки","Шелковые","Арафатки","Косынки","Платки-картины","Большие платки"]
+                                    each saleItem1 in saleList1
+                                        a(href="#").catalog-sidebar__item-wrapper-link= saleItem1
+                            .catalog-sidebar__item-wrapper.catalog-sidebar__item-wrapper--can-open.active
+                                .catalog-sidebar__title-wrapper.clearfix
+                                    a(href="#").catalog-sidebar__item-wrapper-title.js-show-options.
+                                        Шарфы
+                                .catalog-sidebar__item-wrapper-inner.catalog-sidebar__item-wrapper-inner--sales
+                                    - var saleList2 = ["Шарфы-снуды","Шарфы с мехом"]
+                                    each saleItem2 in saleList2
+                                        a(href="#").catalog-sidebar__item-wrapper-link= saleItem2
+                            .catalog-sidebar__item-wrapper
+                                .catalog-sidebar__title-wrapper.clearfix
+                                    a(href="#").catalog-sidebar__item-wrapper-title.catalog-sidebar__item-wrapper-title--sales.
+                                        Шали
+                            .catalog-sidebar__item-wrapper.catalog-sidebar__item-wrapper--can-open.active
+                                .catalog-sidebar__title-wrapper.clearfix
+                                    a(href="#").catalog-sidebar__item-wrapper-title.js-show-options.
+                                        Пляжная мода
+                                .catalog-sidebar__item-wrapper-inner.catalog-sidebar__item-wrapper-inner--sales
+                                    - var saleList3 = ["Пляжные туники","Парео","Пляжные брюки","Платки на голову для пляжа","Пляжные сумки","Пляжные комплекты"]
+                                    each saleItem3 in saleList3
+                                        a(href="#").catalog-sidebar__item-wrapper-link= saleItem3
+                            .catalog-sidebar__item-wrapper.catalog-sidebar__item-wrapper--can-open.active
+                                .catalog-sidebar__title-wrapper.clearfix
+                                    a(href="#").catalog-sidebar__item-wrapper-title.js-show-options.
+                                        Головные уборы
+                                .catalog-sidebar__item-wrapper-inner.catalog-sidebar__item-wrapper-inner--sales
+                                    - var saleList4 = ["Береты","Шапки","Шляпы","Повязки","Комплекты"]
+                                    each saleItem4 in saleList4
+                                        a(href="#").catalog-sidebar__item-wrapper-link= saleItem4
+                    .catalog-sidebar__sales(style="background: url(img/upload/sales-bg.jpg);background-size:cover;")
+                        .catalog-sidebar__sales-title.
+                            Актуальные акции
+                            магазина
+                        .catalog-sidebar__sales-text.
+                            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit.
+                        a(href="#").catalog-sidebar__sales-btn.btn-white
+                            span.
+                                подробнее
+
+            .col-md-9.catalog-main
+                .catalog-main__title.
+                    Распродажа
+                .catalog-main__filter-wrapper.clearfix
+                    .catalog-main__filter-wrapper-inner
+                        .catalog-main__filter-count.
+                            1600 товаров
+                    .catalog-main__filter-wrapper-inner
+                        .catalog-main__filter-list.clearfix
+                            a(href="#").catalog-main__filter-link.active.
+                                Сначала дешевле
+                            a(href="#").catalog-main__filter-link.
+                                Сначала  дороже
+                            a(href="#").catalog-main__filter-link.
+                                Популярные
+                            a(href="#").catalog-main__filter-link.
+                                Со скидкой
+                    .catalog-main__filter-wrapper-inner
+                        .catalog-main__per-page
+                            a(href="#").catalog-main__per-page-link.active.
+                                20
+                            a(href="#").catalog-main__per-page-link.
+                                50
+                            a(href="#").catalog-main__per-page-link.
+                                100
+                            span.catalog-main__per-page-text.
+                                товаров на странице
+                .row.small-margin
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-1.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                                        span.item-block__title можно написать в 2 строки
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-2.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                                        span.item-block__title можно написать в 2 строки
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-3.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block.item-block__in-cart
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-4.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                                        span.item-block__title можно написать в 2 строки
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    span.item-block__discount.item-block__discount10 10%
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-5.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                                        span.item-block__title можно написать в 2 строки
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block.item-block__in-cart
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    span.item-block__discount.item-block__discount20 20%
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-6.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-7.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    span.item-block__discount.item-block__discount30 30%
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-8.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                                        span.item-block__title можно написать в 2 строки
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+                    .col-md-6.col-lg-4.small-padding
+                        .wrap-item-block
+                            span.item-block
+                                span.item-block__img-block
+                                    span.item-block__like.js-like
+                                        +icon ("ico_like")
+                                    a(href="#").item-block__order-ico.js-order
+                                        +icon ("ico_order")
+                                    a(href="#").item-block__order
+                                        span.item-block__order__text заказать
+                                        span.item-block__order__text в 1 клик
+                                    a(href="#").item-block__model
+                                        span.item-block__model__text Артикул: 3146895444
+                                        span.item-block__model__text Размер: (см) 140х140
+                                        span.item-block__model__text Состав: 100% п/эстер
+                                    a(href="#")
+                                        img(src="img/index-item-3.jpg" alt="").item-block__img-block__img
+                                a(href="#").item-block__info
+                                    span.item-block__title-wrap
+                                        span.item-block__title Платок VENERA
+                            form.item-block__form
+                                span.item-block__price 810 руб.
+                                input(type="text" value="1").item-block__input
+                                span.item-block__quantity шт
+                                .wrap-btn
+                                    button(type="submit").btn.item-block__buy
+                                        span купить
+                                    a(href="#").item-block__cart-quantity В корзине 5 шт.
+.pagination.catalog-pagination
+    .container
+        ul.pagination__list.clearfix
+            li.pagination__item.pagination__active
+                a(href="#").pagination__link 1
+            li.pagination__item
+                a(href="#").pagination__link 2
+            li.pagination__item
+                a(href="#").pagination__link 3
+            li.pagination__item
+                a(href="#").pagination__link 4
+            li.pagination__other
+                span.pagination__link ...
+            li.pagination__item.pagination__last
+                a(href="#").pagination__link 67
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

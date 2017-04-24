@@ -1,0 +1,8 @@
+.favorite {
+  &__slim {
+    margin-right: 70px;
+  }
+  .item-block__like {
+    transform: translateX(0);
+  }
+}

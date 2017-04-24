@@ -1,0 +1,128 @@
+.history
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Личный кабинет
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link История заказов
+
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help Личный кабинет
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link информация о пользователе
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link реквизиты компании
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link история заказов
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link выход
+                            .history-opt__your-manager
+                                .history-opt__your-manager-title.
+                                    Ваш личный менеджер
+                                .history-opt__your-manager-info
+                                    .history-opt__your-manager-info-item Зайцева Наталья
+                                    .history-opt__your-manager-info-item Телефон: + 7 495 000 00 00
+                                    .history-opt__your-manager-info-item Еmail: info@vs.ru
+                                a(href="#").history-opt__manager-btn.btn-white
+                                    span обратиться
+
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title история заказов
+
+                    .history-opt__period-wrap.clearfix
+                        .history-opt__period-item.history-opt__period-item--kod
+                            .history-opt__period-title.
+                                Код заказа
+                            input(type="text" name="number" placeholder="____ _______").pop-up__input.pop-up__input--placeholder.js-order-num-mask
+                        .history-opt__period-item.history-opt__period-item--period
+                            .history-opt__period-title.
+                                Период
+                            .history-opt__period-wrapper.clearfix
+                                label
+                                    input(type="text").pop-up__input.js-input-period
+                                    span.history-opt__period-btn.js-open-calendar
+                        .history-opt__period-item.history-opt__period-item--status
+                            .history-opt__period-title.
+                                Статус
+                            select.cart-reg__item__size__select.js-cart-select
+                                option Выбрать статус
+                                option  Выбрать статус
+
+                        a(href="#").history-opt__reset-btn Сбросить параметры
+                    .history__wrap-title.clearfix
+                        span.history__t-order Заказ
+                        span.history__t-summ Сумма
+                        span.history__t-date Дата
+                        span.history__t-status Статус
+                        span.history__t-action Действие
+
+                    .history__item.clearfix.history__item--pink
+                        span.js-show-pop-up.history__text.text-underline.history__order № 12345-6789
+                        span.history__text.history__text--b.history__summ 1 054 руб.
+                        span.history__text.history__date 08.09.2016
+                        span.history__status--mob.history__mob Статус
+                        span.history__text.history__text--b.history__status Принят
+                        span.history__action--mob.history__mob Действие
+                        .history__action
+                            a(href="#" data-pop="#pop-order-del").js-show-pop-up.js-show-pop-up.history__action__link
+                                span.history__action__ico
+                                    +icon("ico-edit")
+                                span.history__action__text Изменить
+                            .js-del-order.history__action__link.history__action__del
+                                span.history__action__ico
+                                    +icon("ico_close")
+                                span.history__action__text Удалить
+
+                    .history__item.clearfix.history__item--violet
+                        span.js-show-pop-up.history__text.text-underline.history__order № 12345-6789
+                        span.history__text.history__text--b.history__summ 1 054 руб.
+                        span.history__text.history__date 08.09.2016
+                        span.history__status--mob.history__mob Статус
+                        span.history__text.history__text--b.history__status В обработке
+                        span.history__action--mob.history__mob Действие
+                        .history__action
+                            a(href="#" data-pop="#pop-order-del").js-show-pop-up.history__action__link
+                                span.history__action__ico
+                                    +icon("ico-edit")
+                                span.history__action__text Изменить
+                            .js-del-order.history__action__link.history__action__del
+                                span.history__action__ico
+                                    +icon("ico_close")
+                                span.history__action__text Удалить
+
+                    .history__item.clearfix.history__item--red
+                        span.js-show-pop-up.history__text.text-underline.history__order № 12345-6789
+                        span.history__text.history__text--b.history__summ 1 054 руб.
+                        span.history__text.history__date 08.09.2016
+                        span.history__status--mob.history__mob Статус
+                        span.history__text.history__text--b.history__status Разрешена оплата
+                        span.history__action--mob.history__mob Действие
+                        a(href="#" data-pop="#pop-return-finish").js-show-pop-up.history__action
+                            .history__action__link
+                                span.history__action__ico.history__action__cards
+                                    +icon("ico_cards")
+                                span.history__action__text Изменить
+
+                    .history__item.clearfix.history__item--green
+                        span.js-show-pop-up.history__text.text-underline.history__order № 12345-6789
+                        span.history__text.history__text--b.history__summ 1 054 руб.
+                        span.history__text.history__date 08.09.2016
+                        span.history__status--mob.history__mob Статус
+                        span.history__text.history__text--b.history__status Отправлен
+                        span.history__action--mob.history__mob Действие
+                        .history__action
+                            a(href="#" data-pop="#pop-return").js-show-pop-up.history__action__link
+                                span.history__action__ico.history__action__return
+                                    +icon("ico_return")
+                                span.history__action__text Оформить возврат

@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'AvantGarde-Book';
+    src: url('fonts/AvantGarge-Book/AvantGardeC-Book.eot');
+    src: url('fonts/AvantGarge-Book/AvantGardeC-Book.eot?#iefix') format('embedded-opentype'), url('fonts/AvantGarge-Book/AvantGardeC-Book.woff') format('woff'), url('fonts/AvantGarge-Book/AvantGardeC-Book.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvantGardeGothicC-Demi';
+    src: url('fonts/AvantGardeGothicC-Demi/AvantGardeGothicC-Demi.eot');
+    src: url('fonts/AvantGardeGothicC-Demi/AvantGardeGothicC-Demi.eot?#iefix') format('embedded-opentype'), url('fonts/AvantGardeGothicC-Demi/AvantGardeGothicC-Demi.woff') format('woff'), url('fonts/AvantGardeGothicC-Demi/AvantGardeGothicC-Demi.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BigNoodleTitlingCyr';
+    src: url('fonts/BigNoodleTitlingCyr/BigNoodleTitlingCyr.eot');
+    src: url('fonts/BigNoodleTitlingCyr/BigNoodleTitlingCyr.eot?#iefix') format('embedded-opentype'),
+    url('fonts/BigNoodleTitlingCyr/BigNoodleTitlingCyr.woff2') format('woff2'),
+    url('fonts/BigNoodleTitlingCyr/BigNoodleTitlingCyr.woff') format('woff'),
+    url('fonts/BigNoodleTitlingCyr/BigNoodleTitlingCyr.ttf') format('truetype'),
+    url('fonts/BigNoodleTitlingCyr/BigNoodleTitlingCyr.svg#BigNoodleTitlingCyr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/// Шрифт AvantGarde-Book
+///
+/// @group Avivi FrontEnd
+/// @author Yuriy Kovalchuk
+///
+/// @example scss - Sizing `.foo`
+///   .foo {
+///     font-family: $avantbook;
+///   }
+$avantbook: 'AvantGarde-Book',Arial,sans-serif;
+/// Шрифт AvantGardeGothicC-Demi
+///
+/// @group Avivi FrontEnd
+/// @author Yuriy Kovalchuk
+///
+/// @example scss - Sizing `.foo`
+///   .foo {
+///     font-family: $avantdemi;
+///   }
+$avantdemi: 'AvantGardeGothicC-Demi',Arial,sans-serif;
+/// Шрифт BigNoodleTitlingCyr
+///
+/// @group Avivi FrontEnd
+/// @author Andrey Shevtsov
+///
+/// @example scss - Sizing `.foo`
+///   .foo {
+///     font-family: $bignooble;
+///   }
+$bignooble: 'BigNoodleTitlingCyr',Arial,sans-serif;

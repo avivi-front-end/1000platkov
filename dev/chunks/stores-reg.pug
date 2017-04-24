@@ -1,0 +1,191 @@
+.stores
+    form.stores__form.js-stores-form
+        .container
+                ul.bread-crumbs.clearfix
+                    li.bread-crumbs__item
+                        a(href="#").bread-crumbs__link Главная
+                    li.bread-crumbs__item
+                        a(href="#").bread-crumbs__link Контакты
+                    li.bread-crumbs__item.current
+                        a(href="#").bread-crumbs__link Оформление заказа
+                span.stores__title оформление заказа
+                .clearfix
+                    .stores__item
+                        span.stores__number 1.
+                        span.stores__subtitle контактные данные
+                        .row
+                            .col-lg-3.col-md-6
+                                label(for="stores__name").contacts__form__label
+                                    span.contacts__form__text.stores__name.contacts__form__text--dec Ваше имя
+                                    .register__wrap-input
+                                        input(type="text", name="name").index-subscribe__form__input.stores__input#stores__name
+                                label(for="stores__phone").contacts__form__label
+                                    span.contacts__form__text.stores__name.contacts__form__text--dec Телефон
+                                    .register__wrap-input
+                                        input(type="phone", name="phone" placeholder="+7 (___) ___-____").index-subscribe__form__input.stores__input.placeholder-black#stores__phone
+                                label(for="stores__email").contacts__form__label
+                                    span.contacts__form__text.stores__name.contacts__form__text--dec E-mail
+                                    span.contacts__form__text--grey (вышлем детализацию о заказе)
+                                    .register__wrap-input
+                                        input(type="email", name="email").index-subscribe__form__input.stores__input#stores__email
+
+                    .stores__item
+                        span.stores__number 2.
+                        span.stores__subtitle способ доставки
+                        label.clearfix.register__subscribe
+                            input(type="radio" name="delivery").catalog-sidebar__check-item-input.js-stores-delivery.checked
+                            span.catalog-sidebar__check-icon.stores__checkbox
+                            .stores__checkbox-name
+                                span.stores__checkbox-name__title Доставка курьером по Москве, СПб, МО
+                                span.stores__checkbox-name__text 250 руб. в пределах МКАД И КАД  l  1-3 дн
+                        .stores__courier.stores__item__block
+                            .clearfix
+                                span.stores__courier__title ваш адрес
+                                .stores__grey-wrap
+                                    span.stores__courier__grey (стоимость доставки за МКАД  отдельно рассчитает менеджер, в соответствии с&nbsp;
+                                    a(href="#").stores__courier__grey.text-underline тарифами
+                                    span.stores__courier__grey &nbsp;курьерской службы)
+                            span.contacts__form__text.stores__name.contacts__form__text--dec Город
+                            .register__wrap-input
+                                select(size="4" name="stores__select").cart-reg__item__size__select.js-delivery-select.stores__select
+                                    option(value="town-1") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                                    option(value="town-2") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                                    option(value="town-3") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                                    option(value="town-4") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                                    option(value="town-5") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                                    option(value="town-6") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                                    option(value="town-7") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                                    option(value="town-8") Москва, ул. Ленина, дом 21 корпус 5, квартира 76, подъезд 1
+                            span.contacts__form__text.stores__name.stores__comments Комментарий к заказу
+                            textarea.stores__textarea
+
+                        label.clearfix.register__subscribe.js-map-show
+                            input(type="radio" name="delivery").catalog-sidebar__check-item-input.js-stores-delivery
+                            span.catalog-sidebar__check-icon.stores__checkbox
+                            .stores__checkbox-name
+                                span.stores__checkbox-name__title Пункты выдачи заказов
+                                span.stores__checkbox-name__text 100 руб.
+                                span.stores__checkbox-name__text#adress-on-map
+                        .stores__map.stores__item__block.clearfix
+                            .stores__map__subblock
+                                span.stores__map__title адреса пункта выдачи
+                                .stores__map__item(data-lat="55.683961", data-lng="37.512864").js-map-item
+                                    span.stores__number 1.
+                                    span.stores__subtitle Москва, проспект Вернадского 12/Д
+                                    span.stores__map__text День доставки заказа в пункт выдачи заказов оговаривается при подтверждении заказа.
+                                    .clearfix
+                                        span.stores__map__day Понедельник-Пятница:
+                                        span.stores__map__time с 12:00 до 18:00
+                                    .clearfix
+                                        span.stores__map__day Суббота:
+                                        span.stores__map__time с 12:00 до 17:00
+                                    a(href="#").btn-black.stores__map__btn
+                                        span забрать отсюда
+
+                                .stores__map__item(data-lat="55.753559", data-lng="37.609218").js-map-item.active
+                                    span.stores__number 2.
+                                    span.stores__subtitle Москва, проспект Вернадского 12/Д
+                                    span.stores__map__text День доставки заказа в пункт выдачи заказов оговаривается при подтверждении заказа.
+                                    .clearfix
+                                        span.stores__map__day Понедельник-Пятница:
+                                        span.stores__map__time с 12:00 до 18:00
+                                    .clearfix
+                                        span.stores__map__day Суббота:
+                                        span.stores__map__time с 12:00 до 17:00
+                                    a(href="#").btn-black.stores__map__btn
+                                        span забрать отсюда
+
+                                .stores__map__item(data-lat="55.553559", data-lng="37.409218").js-map-item
+                                    span.stores__number 3.
+                                    span.stores__subtitle Москва, проспект Вернадского 12/Д
+                                    span.stores__map__text День доставки заказа в пункт выдачи заказов оговаривается при подтверждении заказа.
+                                    .clearfix
+                                        span.stores__map__day Понедельник-Пятница:
+                                        span.stores__map__time с 12:00 до 18:00
+                                    .clearfix
+                                        span.stores__map__day Суббота:
+                                        span.stores__map__time с 12:00 до 17:00
+                                    a(href="#").btn-black.stores__map__btn
+                                        span забрать отсюда
+                            .stores__onmap
+                                #map
+
+                        label.clearfix.register__subscribe
+                            input(type="radio" name="delivery").catalog-sidebar__check-item-input.js-stores-delivery
+                            span.catalog-sidebar__check-icon.stores__checkbox
+                            .stores__checkbox-name
+                                span.stores__checkbox-name__title Почта России
+                                span.stores__checkbox-name__text (предоплата 100%, дополнительная скидка 10%)
+
+                        label.clearfix.register__subscribe
+                            input(type="radio" name="delivery").catalog-sidebar__check-item-input.js-stores-delivery
+                            span.catalog-sidebar__check-icon.stores__checkbox
+                            .stores__checkbox-name
+                                span.stores__checkbox-name__title EMS Почта России
+                                span.stores__checkbox-name__text (предоплата 100%, дополнительная скидка 10%)
+
+                        label.clearfix.register__subscribe
+                            input(type="radio" name="delivery").catalog-sidebar__check-item-input.js-stores-delivery
+                            span.catalog-sidebar__check-icon.stores__checkbox
+                            .stores__checkbox-name
+                                span.stores__checkbox-name__title Транспортная компания (СП и организации)
+                                span.stores__checkbox-name__text (предоплата 100%, дополнительная скидка 10%)
+
+                    .stores__item
+                        span.stores__number 3.
+                        span.stores__subtitle оплата
+                        label.clearfix.register__subscribe
+                            input(type="radio" name="payment").catalog-sidebar__check-item-input.checked
+                            span.catalog-sidebar__check-icon.stores__checkbox
+                            .stores__checkbox-name
+                                span.stores__checkbox-name__title Оплата наличными / банковской картой при получении заказа
+
+                        label.clearfix.register__subscribe
+                            input(type="radio" name="payment").catalog-sidebar__check-item-input
+                            span.catalog-sidebar__check-icon.stores__checkbox
+                            .stores__checkbox-name
+                                span.stores__checkbox-name__title Он-лайн оплата на сайте
+                                span.stores__checkbox-name__text (ссылка на оплату будет выслана Вам после подтверждения наличия заказа менеджером)
+                        .stores__payments
+                            .payment.clearfix
+                                a(href="#").payment__item.payment--mastercard
+                                    +icon("ico-mastercard")
+                                a(href="#").payment__item.payment--visa
+                                    +icon("ico-visa")
+                                a(href="#").payment__item.payment--paypal
+                                    +icon("ico-paypal")
+        .stores__noun
+            .container
+                .stores__noun__wrap
+                    .stores__noun__title
+                        span.subtitle__text.subtitle--b проверьте
+                        span.subtitle__text.subtitle__right-text сумму заказа
+                    .stores__noun__block
+                        span.cart-reg__buy__text Сумма заказа:
+                        span.cart-reg__buy__price 8 748 руб.
+                        .clearfix
+                        span.cart-reg__buy__text Ваша скидка:
+                        span.cart-reg__buy__price 250 руб.
+                        .clearfix
+                        .cart-reg__buy__sum
+                            span.cart-reg__buy__text Сумма к оплате:
+                            span.cart-reg__buy__sum__text 8 998 руб.
+                                span.cart-reg__buy__sum__delivery (без учета доставки)
+                        .clearfix
+                            button(type="submit").btn.cart-reg__buy__btn.stores__noun__btn
+                                span оформить заказ
+                            .stores__noun__text
+                                |   Нажимая кнопку "Оформить заказ", <br>
+                                |   Вы соглашаетесь с
+                                a(href="#").text-underline
+                                    |   условиями публичной оферты
+
+
+
+
+
+
+
+
+
+

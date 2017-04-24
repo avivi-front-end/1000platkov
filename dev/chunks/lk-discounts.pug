@@ -1,0 +1,56 @@
+.lk-discountss
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Личный кабинет
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Ваши скидки
+
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help Личный кабинет
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link личные данные
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link адреса доставки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link история заказов
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link скидки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link подписка
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link совместные и оптовые покупки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link выход
+
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title ваши скидки
+                    .lk-discounts__block
+                        .lk-discounts__item.lk-discounts__item--green
+                            span.lk-discounts__item__title Ваша скидка, как зарегистрированного пользователя составляет - 10 %
+                            ul.lk-discounts__item__list
+                                li.lk-discounts__item__text Распространяется на все товары;
+                                li.lk-discounts__item__text Суммируется с другими скидками.
+
+                        .lk-discounts__item.lk-discounts__item--violet
+                            span.lk-discounts__item__title При доставке почтой или ems, мы дарим Вам скидку  - 10 %
+                            ul.lk-discounts__item__list
+                                li.lk-discounts__item__text Распространяется на все товары;
+                                li.lk-discounts__item__text Суммируется с другими скидками.
+
+                        .lk-discounts__item.lk-discounts__item--red
+                            span.lk-discounts__item__title Вы являетесь организвтором "совместных покупок"
+                            ul.lk-discounts__item__list
+                                li.lk-discounts__item__text Ваша скидка на все товары составляет - до 50 %;
+                                li.lk-discounts__item__text Вам доступны оптовые цены на сайте.

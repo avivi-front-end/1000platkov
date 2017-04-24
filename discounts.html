@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie-detector.js"></script>
+    <script src="js/modernizr.js"></script><!--[if lt IE 7]>  <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <![endif]-->
+  </head>
+  <div class="page-wrapper" id="page-wrapper">
+    <div class="pop-up-wrapper">
+      <div class="pop-up__overlay"></div>
+      <div class="pop-up" id="return"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Заявка на возврат</div>
+        <div class="pop-up__return-form">
+          <div class="row">
+            <form>
+              <div class="col-md-6">
+                <div class="pop-up__form-group">
+                  <label class="pop-up__form-label">Номер вашего заказа <span>*</span></label>
+                  <input class="pop-up__input pop-up__input--placeholder js-order-num-mask" type="text" name="number" placeholder="____ _______">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="pop-up__form-group">
+                  <label class="pop-up__form-label">Артикул товара * <span>*</span></label>
+                  <input class="pop-up__input pop-up__input--placeholder pop-up__input--art js-articul-mask" type="text" name="art" placeholder="____ _______">
+                </div><a class="pop-up__return-link js-add-return" href="#"> Добавить еще артикул</a>
+              </div>
+              <div class="col-md-12">
+                <div class="pop-up__form-group">
+                  <label class="pop-up__form-label">Комментарий к заявке * <span>*</span></label>
+                  <textarea class="pop-up__textarea" name="comment"></textarea>
+                </div>
+                <button class="pop-up__submit btn-black" type="submit"><span>получить консультацию</span></button>
+              </div>
+            </form>
+            <div class="col-md-12">
+              <div class="pop-up__return-text">
+                <p>Оформление возврата или обмена товара через личный кабинет намного удобнее и быстрее. <a href="#">Войдите</a>, если Вы зарегистрированы или <a href="#">пройдите регистрацию</a> для удобной работы с сайтом.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pop-up" id="callback"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Заказать звонок</div>
+        <div class="pop-up__sub-title">Наш менеджер свяжется с Вами в течение 30 минут</div>
+        <form class="pop-up__callback-form">
+          <div class="clearfix">
+            <div class="row">
+              <div class="pop-up__form-group col-md-6">
+                <label class="pop-up__form-label">Имя</label>
+                <input class="pop-up__input" type="text" name="name">
+              </div>
+              <div class="pop-up__form-group col-md-6">
+                <label class="pop-up__form-label">Телефон</label>
+                <input class="pop-up__input" type="phone" name="phone">
+              </div>
+            </div>
+          </div>
+          <button class="pop-up__submit btn-black" type="submit"><span>получить консультацию</span></button>
+        </form>
+      </div>
+      <div class="pop-up pop-up--callback" id="callback-form"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Обратная связь</div>
+        <div class="pop-up__sub-title">Наш менеджер свяжется с Вами в течение 30 минут</div>
+        <div class="pop-up__callback-main-form">
+          <form>
+            <div class="pop-up__form-group">
+              <label class="pop-up__form-label">Имя</label>
+              <input class="pop-up__input" type="text" name="name">
+            </div>
+            <div class="pop-up__form-group">
+              <label class="pop-up__form-label">Телефон</label>
+              <input class="pop-up__input js-phone-mask" type="phone" name="phone" placeholder="+7 (      )">
+            </div>
+            <div class="pop-up__form-group">
+              <label class="pop-up__form-label">Выберите тему</label>
+              <select class="js-styler">
+                <option></option>
+                <option>Тема 1</option>
+                <option>Тема 2</option>
+                <option>Тема 3</option>
+                <option>и еще тема</option>
+              </select>
+            </div>
+            <div class="pop-up__form-group">
+              <label class="pop-up__form-label">Ваш комментарий</label>
+              <textarea class="pop-up__textarea" type="text" name="name"></textarea>
+            </div>
+            <div class="clearfix">
+              <button class="pop-up__submit btn-black" type="submit"><span>Отправить</span></button>
+              <div class="pop-up__helper pop-up__helper--right"><span>*</span> - обязательные поля для заполнения</div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="pop-up" id="callback-success"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Спасибо за заявку!</div>
+        <div class="pop-up__sub-title pop-up__sub-title--no-mb">Ожидайте звонка от нашего менеджера в течении 30 минут</div>
+      </div>
+      <div class="pop-up" id="subscribe"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Спасибо за подписку!</div>
+        <div class="pop-up__sub-title pop-up__sub-title--no-mb">Настраивать и управлять подпиской можно в личном кабинете.</div>
+        <ul class="footer__enter-wrap clearfix register-enter-btns">
+          <li class="footer__enter-wrap-item"><a class="footer__enter-wrap-link footer__enter-wrap-link--black" href="#">Вход</a></li>
+          <li class="footer__enter-wrap-item"><a class="footer__enter-wrap-link" href="#">Регистрация</a></li>
+        </ul>
+      </div>
+      <div class="pop-up" id="question"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Задать вопрос</div>
+        <div class="pop-up__sub-title">Наш менеджер свяжется с Вами в течение 30 минут</div>
+        <div class="pop-up__callback-form">
+          <div class="clearfix">
+            <div class="row">
+              <div class="pop-up__form-group col-md-6">
+                <label class="pop-up__form-label">Имя</label>
+                <input class="pop-up__input" type="text" name="name">
+              </div>
+              <div class="pop-up__form-group col-md-6">
+                <label class="pop-up__form-label">Телефон</label>
+                <input class="pop-up__input" type="phone" name="phone">
+              </div>
+              <div class="pop-up__form-group col-md-12">
+                <label class="pop-up__form-label">Напишите свой вопрос</label>
+                <textarea class="pop-up__textarea" name="name"></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="pop-up__submit btn-black" type="submit"><span>Отправить</span></button>
+          <div class="pop-up__helper"><span>*</span> - обязательные поля для заполнения</div>
+        </div>
+      </div>
+      <div class="pop-up pop-up--table" id="table"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title pop-up__title--table">Таблица размеров</div>
+        <div class="pop-up__table-wrap">
+          <div class="pop-up__table-item">
+            <div class="pop-up__table-title">Аксессуары и платки</div>
+            <div class="pop-up__table-row">
+              <table class="pop-up__table">
+                <tr>
+                  <td>Размер</td>
+                  <td>XS</td>
+                  <td>S</td>
+                  <td>M</td>
+                  <td>L</td>
+                  <td>XL</td>
+                  <td>XXL</td>
+                  <td>XXXL</td>
+                </tr>
+                <tr>
+                  <td>Российский размер</td>
+                  <td>42</td>
+                  <td>42-44</td>
+                  <td>44-46</td>
+                  <td>46-48     </td>
+                  <td>48-50</td>
+                  <td>50-52</td>
+                  <td>52-54</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="pop-up__table-item">
+            <div class="pop-up__table-title">Головные уборы</div>
+            <div class="pop-up__table-row">
+              <table class="pop-up__table">
+                <tr>
+                  <td>Размер</td>
+                  <td>XS</td>
+                  <td>S</td>
+                  <td>M</td>
+                  <td>L</td>
+                  <td>XL</td>
+                  <td>XXL</td>
+                  <td>XXXL</td>
+                </tr>
+                <tr>
+                  <td>Российский размер</td>
+                  <td>42</td>
+                  <td>42-44</td>
+                  <td>44-46</td>
+                  <td>46-48     </td>
+                  <td>48-50</td>
+                  <td>50-52</td>
+                  <td>52-54</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="pop-up__table-item">
+            <div class="pop-up__table-title">Ремни</div>
+            <div class="pop-up__table-row">
+              <table class="pop-up__table">
+                <tr>
+                  <td>Размер</td>
+                  <td>XS</td>
+                  <td>S</td>
+                  <td>M</td>
+                  <td>L</td>
+                  <td>XL</td>
+                  <td>XXL</td>
+                  <td>XXXL</td>
+                </tr>
+                <tr>
+                  <td>Российский размер</td>
+                  <td>42</td>
+                  <td>42-44</td>
+                  <td>44-46</td>
+                  <td>46-48     </td>
+                  <td>48-50</td>
+                  <td>50-52</td>
+                  <td>52-54</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pop-up" id="login"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Вход в личный кабинет</div>
+        <div class="row">
+          <div class="col-md-6 pop-up__login-left-wrap clearfix">
+            <label class="contacts__form__label" for="register__email"><span class="contacts__form__text">E-mail</span>
+              <div class="register__wrap-input">
+                <input class="index-subscribe__form__input register__input" type="email" name="email" id="register__email"><span class="register__quest">
+                  <svg class="icon icon-ico_quest ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico_quest"></use>
+                  </svg><span class="quest-info">
+                    e-mail, который Вы указали при регистрации
+                    является логином для входа на сайт</span></span>
+              </div>
+            </label>
+            <label class="contacts__form__label" for="register__pass"><span class="contacts__form__text contacts__form__text--dec">Пароль</span><a class="pop-up__forgot-pass" href="#">Забыли пароль?</a>
+              <div class="register__wrap-input">
+                <input class="index-subscribe__form__input register__input" type="password" name="pass" id="register__pass"><span class="register__ico js-pass-input">
+                  <svg class="icon icon-ico-pass-true ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-pass-true"></use>
+                  </svg>
+                  <svg class="icon icon-ico-pass-false ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-pass-false"></use>
+                  </svg></span>
+              </div>
+            </label>
+            <label class="clearfix register__subscribe pop-up__login-remember">
+              <input class="catalog-sidebar__check-item-input" type="checkbox"><span class="catalog-sidebar__check-icon"></span><span class="catalog-sidebar__check-name">Запомнить меня</span>
+            </label>
+            <button class="pop-up__login-submit btn-black" type="submit"><span>войти</span></button>
+          </div>
+          <div class="col-md-6 pop-up__login-right-wrap">
+            <div class="pop-up__login-title">Войти через соц. сеть<span class="pop-up__login-link">
+                <svg class="icon icon-ico_quest-black ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico_quest-black"></use>
+                </svg><span class="quest-info">Мы не будем делать публикации от вашего имени</span></span></div>
+            <div class="pop-up__socials clearfix"><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-vk ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-vk"></use>
+                </svg></a><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-fb ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-fb"></use>
+                </svg></a><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-tw ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-tw"></use>
+                </svg></a><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-ok ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-ok"></use>
+                </svg></a>
+            </div>
+            <div class="pop-up__first-visit-title"><span>Впервые</span> на сайте?</div><a class="pop-up__first-visit-link" href="#">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+      <div class="pop-up" id="add-favorite"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">
+          Чтобы добавить товар в избранное,<br>
+          войдите в свой аккаунт
+        </div>
+        <div class="row">
+          <div class="col-md-6 pop-up__login-left-wrap clearfix">
+            <label class="contacts__form__label" for="register__email"><span class="contacts__form__text">E-mail</span>
+              <div class="register__wrap-input">
+                <input class="index-subscribe__form__input register__input" type="email" name="email" id="register__email"><span class="register__quest">
+                  <svg class="icon icon-ico_quest ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico_quest"></use>
+                  </svg></span>
+              </div>
+            </label>
+            <label class="contacts__form__label" for="register__pass"><span class="contacts__form__text contacts__form__text--dec">Пароль</span><a class="pop-up__forgot-pass" href="#">Забыли пароль?</a>
+              <div class="register__wrap-input">
+                <input class="index-subscribe__form__input register__input" type="password" name="pass" id="register__pass"><span class="register__ico js-pass-input">
+                  <svg class="icon icon-ico-pass-true ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-pass-true"></use>
+                  </svg>
+                  <svg class="icon icon-ico-pass-false ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-pass-false"></use>
+                  </svg></span>
+              </div>
+            </label>
+            <label class="clearfix register__subscribe pop-up__login-remember">
+              <input class="catalog-sidebar__check-item-input" type="checkbox"><span class="catalog-sidebar__check-icon"></span><span class="catalog-sidebar__check-name">Запомнить меня</span>
+            </label>
+            <button class="pop-up__login-submit btn-black" type="submit"><span>войти</span></button>
+          </div>
+          <div class="col-md-6 pop-up__login-right-wrap">
+            <div class="pop-up__login-title">Войти через соц. сеть<a class="pop-up__login-link" href="#">
+                <svg class="icon icon-ico_quest-black ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico_quest-black"></use>
+                </svg></a></div>
+            <div class="pop-up__socials clearfix"><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-vk ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-vk"></use>
+                </svg></a><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-fb ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-fb"></use>
+                </svg></a><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-tw ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-tw"></use>
+                </svg></a><a class="footer__social-link" href="#">
+                <svg class="icon icon-soc-ok ">
+                  <use xlink:href="img/svgsprite/sprite.svg#soc-ok"></use>
+                </svg></a>
+            </div>
+            <div class="pop-up__first-visit-title"><span>Впервые</span> на сайте?</div>
+            <div class="pop-up__first-visit-link">Зарегистрироваться</div>
+          </div>
+        </div>
+      </div>
+      <div class="pop-up" id="quick-buy"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="pop-up__quick-image"><img src="img/upload/quick-1.jpg" alt=""></div>
+            <div class="pop-up__quick-name text-center">
+              Платок VENERA <br>
+              можно написать в 2 строки
+            </div>
+            <div class="pop-up__quick-options clearfix">
+              <div class="col-sm-6">
+                <div class="pop-up__quick-title">Размер:</div>
+                <div class="cart-reg__item__size__form">
+                  <select class="cart-reg__item__size__select cart-reg__item__size__select--quick js-cart-select">
+                    <option value="size_s">S</option>
+                    <option value="size_m">M</option>
+                    <option value="size_l">L</option>
+                    <option value="size_xl">XL</option>
+                    <option value="size_xxl" selected="selected">XXL</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="pop-up__quick-title">Количество:</div>
+                <div class="item-detail__count-wrap clearfix"><a class="item-detail__count-btn js-number-input" href="#" data-count="minus">-</a>
+                  <input class="item-detail__count-input" type="number" value="1"><a class="item-detail__count-btn js-number-input" href="#" data-count="plus">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="pop-up__quick-sum">
+              <div class="pop-up__quick-sum-top">К оплате:	  <span>8 998 руб.</span></div>
+              <div class="pop-up__quick-sum-bottom">(без учета доставки )</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="pop-up__quick-main-title">Быстрая покупка</div>
+            <div class="pop-up__quick-sub-title">В ближайшее время наш менеджер свяжется с Вами для подтверждения заказа</div>
+            <div class="pop-up__quick-form">
+              <form>
+                <div class="pop-up__quick-form-group">
+                  <div class="pop-up__quick-form-title">Телефон <span>*</span></div>
+                  <input class="pop-up__quick-input js-phone-mask" type="text" name="phone" placeholder="+7 (     )">
+                </div>
+                <div class="pop-up__quick-form-group">
+                  <div class="pop-up__quick-form-title">Как к Вам обращаться? <span>*</span></div>
+                  <input class="pop-up__quick-input" type="text" name="name">
+                </div><a class="pop-up__quick-btn js-make-order" href="#"><span class="icon-wrap">
+                    <svg class="icon icon-ico_cart ">
+                      <use xlink:href="img/svgsprite/sprite.svg#ico_cart"></use>
+                    </svg></span>Сделать заказ</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pop-up pop-up--quick" id="quick-view"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="item-detail">
+          <div class="container item-detail__top-wrapper">
+            <div class="row">
+              <div class="col-md-4 col-md-offset-1 item-detail__photo-wrap">
+                <div class="item-detail__main-photo"><img class="item-detail__main-photo-image" src="img/upload/detail-1.jpg" alt="detail image"></div>
+                <div class="item-detail__thumb-list"><a class="item-detail__thumb-link js-show-big-photo active" href="img/upload/thumb-1.jpg"><img class="item-detail__thumb-image" src="img/upload/thumb-1.jpg" alt="thumb image"></a><a class="item-detail__thumb-link js-show-big-photo" href="img/upload/thumb-2.jpg"><img class="item-detail__thumb-image" src="img/upload/thumb-2.jpg" alt="thumb image"></a><a class="item-detail__thumb-link js-show-big-photo" href="img/upload/thumb-3.jpg"><img class="item-detail__thumb-image" src="img/upload/thumb-3.jpg" alt="thumb image"></a><a class="item-detail__thumb-link js-show-big-photo" href="img/upload/thumb-4.jpg"><img class="item-detail__thumb-image" src="img/upload/thumb-4.jpg" alt="thumb image"></a><a class="item-detail__thumb-link js-show-big-photo" href="img/upload/thumb-5.jpg"><img class="item-detail__thumb-image" src="img/upload/thumb-5.jpg" alt="thumb image"></a></div>
+                <div class="item-detail__share">
+                  <div class="item-detail__share-title">Рассказать о товаре:</div>
+                  <div class="share-icons clearfix"><a class="clearfix share-icons__icon share-icons__icon--vk" href="#">
+                      <svg class="icon icon-soc-vk ">
+                        <use xlink:href="img/svgsprite/sprite.svg#soc-vk"></use>
+                      </svg><span class="share-icons__text share-icons__text--vk">954</span></a><a class="clearfix share-icons__icon share-icons__icon--fb" href="#">
+                      <svg class="icon icon-soc-fb ">
+                        <use xlink:href="img/svgsprite/sprite.svg#soc-fb"></use>
+                      </svg><span class="share-icons__text share-icons__text--fb">426</span></a><a class="clearfix share-icons__icon share-icons__icon--ok" href="#">
+                      <svg class="icon icon-soc-ok ">
+                        <use xlink:href="img/svgsprite/sprite.svg#soc-ok"></use>
+                      </svg><span class="share-icons__text share-icons__text--ok">437</span></a></div>
+                </div>
+              </div>
+              <div class="col-md-5 col-md-offset-1">
+                <div class="item-detail__name">Платок VENERA (5700907-26)</div>
+                <div class="item-detail__price clearfix">
+                  <div class="item-detail__price-current">810 руб.</div>
+                  <div class="item-detail__price-old">1230 руб.</div>
+                </div>
+                <div class="pop-up__quick-article">
+                  <div class="item-detail__art-name">Артикул: 3146895444</div>
+                  <div class="item-detail__art-name">Размер: (см) 140х140</div>
+                  <div class="item-detail__art-name">Состав: 100% п/эстер</div>
+                </div>
+                <!--.item-detail__table-wrap-->
+                <!--    .item-detail__table-title.-->
+                <!--        О товаре:-->
+                <!--    table.item-detail__table-->
+                <!--        tr-->
+                <!--            td.item-detail__table-name.-->
+                <!--                Цвет-->
+                <!--            td.item-detail__table-value.-->
+                <!--                Красный-->
+                <!--        tr-->
+                <!--            td.item-detail__table-name.-->
+                <!--                Размер (см):-->
+                <!--            td.item-detail__table-value.-->
+                <!--                140х140-->
+                <!--        tr-->
+                <!--            td.item-detail__table-name.-->
+                <!--                Состав-->
+                <!--            td.item-detail__table-value.-->
+                <!--                100% п/эст  ер-->
+                <!--        tr-->
+                <!--            td.item-detail__table-name.-->
+                <!--                Цвет-->
+                <!--            td.item-detail__table-value.-->
+                <!--                Мультиколор-->
+                <!--        tr-->
+                <!--            td.item-detail__table-name.-->
+                <!--                Производитель-->
+                <!--            td.item-detail__table-value.-->
+                <!--                Италия-->
+                <div class="pop-up__quick-size">
+                  <div class="item-detail__size">
+                    <div class="item-detail__size-title">выбрать размер:</div><a class="js-show-pop-up item-detail__find-size" href="#" data-pop="#table">определить размер</a>
+                    <div class="item-detail__size-wrap clearfix">
+                      <label class="item-detail__size-label">
+                        <input class="item-detail__size-input" type="radio" name="size" checked><span class="item-detail__size-name"><span>s</span></span>
+                      </label>
+                      <label class="item-detail__size-label">
+                        <input class="item-detail__size-input" type="radio" name="size"><span class="item-detail__size-name"><span>m</span></span>
+                      </label>
+                      <label class="item-detail__size-label">
+                        <input class="item-detail__size-input" type="radio" name="size"><span class="item-detail__size-name"><span>l</span></span>
+                      </label>
+                      <label class="item-detail__size-label">
+                        <input class="item-detail__size-input" type="radio" name="size"><span class="item-detail__size-name"><span>xl</span></span>
+                      </label>
+                      <label class="item-detail__size-label">
+                        <input class="item-detail__size-input" type="radio" name="size"><span class="item-detail__size-name"><span>xxl</span></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="pop-up__quick-like clearfix">
+                  <div class="item-detail__favorite"><a class="item-detail__favorite-btn js-item-favorite" href="#"><span class="item-detail__favorite-icon-wrapper">
+                        <svg class="icon icon-ico_like ">
+                          <use xlink:href="img/svgsprite/sprite.svg#ico_like"></use>
+                        </svg></span></a></div>
+                  <div class="item-detail__buy clearfix"><a class="item-detail__buy-btn-fast" href="#">Купить в 1 клик</a><a class="item-detail__buy-btn" href="#">
+                      <svg class="icon icon-ico_cart ">
+                        <use xlink:href="img/svgsprite/sprite.svg#ico_cart"></use>
+                      </svg>Купить</a></div>
+                </div>
+                <!--.item-detail__gift-->
+                <!--    .item-detail__gift-title.-->
+                <!--        Покупайте в подарок?-->
+                <!--    .item-detail__gift-text-->
+                <!--        | Добавьте к заказу &nbsp-->
+                <!--        a(href="#") подарочную упаковку-->
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="catalog-slider__title text-center"><b>похожие товары </b>(14)</div>
+                <div class="small-margin">
+                  <div class="catalog-slider__btns"><a class="catalog-slider__btn catalog-slider__btn--prev js-quick-view-slider-arrows" href="#" data-slider="slickPrev">
+                      <svg class="icon icon-ico_left ">
+                        <use xlink:href="img/svgsprite/sprite.svg#ico_left"></use>
+                      </svg></a><a class="catalog-slider__btn catalog-slider__btn--next js-quick-view-slider-arrows" href="#" data-slider="slickNext">
+                      <svg class="icon icon-ico_right ">
+                        <use xlink:href="img/svgsprite/sprite.svg#ico_right"></use>
+                      </svg></a></div>
+                  <div class="catalog-slider__wrapper clearfix js-quick-view-slider"><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-1.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки</span></div></a><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-2.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки</span></div></a><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-3.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки</span></div></a><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-4.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки</span></div></a><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-1.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки</span></div></a><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-2.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки</span></div></a><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-3.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки</span></div></a><a class="catalog-slider__slide small-padding" href="#">
+                      <div class="catalog-slider__slide-inner"><span class="catalog-slider__image-wrapper"><img class="catalog-slider__image" src="img/upload/slider-4.jpg"></span><span class="catalog-slider__name text-center">
+                          Платок VENERA
+                          можно в 2-3 строки
+                          
+                          </span></div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pop-up pass-recovery-pop" id="pass-recovery"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Смена пароля</div>
+        <form class="pass-recovery-pop__form js-pass-recovery-validate">
+          <label class="contacts__form__label" for="recovery__current"><span class="contacts__form__text contacts__form__text--dec">Текущий</span>
+            <div class="register__wrap-input">
+              <input class="index-subscribe__form__input register__input" type="password" name="recovery__current" id="recovery__current"><span class="register__ico js-pass-input">
+                <svg class="icon icon-ico-pass-true ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-true"></use>
+                </svg>
+                <svg class="icon icon-ico-pass-false ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-false"></use>
+                </svg></span>
+            </div>
+          </label>
+          <label class="contacts__form__label" for="recovery__new"><span class="contacts__form__text contacts__form__text--dec">Новый пароль</span>
+            <div class="register__wrap-input">
+              <input class="index-subscribe__form__input register__input" type="password" name="recovery__new" id="recovery__new"><span class="register__ico js-pass-input">
+                <svg class="icon icon-ico-pass-true ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-true"></use>
+                </svg>
+                <svg class="icon icon-ico-pass-false ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-false"></use>
+                </svg></span>
+            </div>
+          </label>
+          <label class="contacts__form__label" for="recovery__new__try"><span class="contacts__form__text contacts__form__text--dec">Повторите новый пароль</span>
+            <div class="register__wrap-input">
+              <input class="index-subscribe__form__input register__input" type="password" name="recovery__new__try" id="recovery__new__try"><span class="register__ico js-pass-input">
+                <svg class="icon icon-ico-pass-true ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-true"></use>
+                </svg>
+                <svg class="icon icon-ico-pass-false ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-false"></use>
+                </svg></span>
+            </div>
+          </label>
+          <button class="btn-black register__btn pass-recovery-pop__btn" type="submit"><span>изменить пароль</span></button>
+        </form>
+      </div>
+      <div class="pop-up del-profile pass-recovery-pop" id="del-profile"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">удалить личный кабинет</div><span class="del-profile__text">Вы собираетесь удалить личный кабинет на сайте venera-store.ru</span><span class="del-profile__text">Восстановление Личного Кабинета и сохраненной в нем информации после удаления невозможно.</span>
+        <form class="del-profile__form js-del-profile">
+          <label class="contacts__form__label" for="del__profile"><span class="contacts__form__text contacts__form__text--dec">Введите пароль</span>
+            <div class="register__wrap-input">
+              <input class="index-subscribe__form__input register__input" type="password" name="del__profile" id="del__profile"><span class="register__ico js-pass-input">
+                <svg class="icon icon-ico-pass-true ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-true"></use>
+                </svg>
+                <svg class="icon icon-ico-pass-false ">
+                  <use xlink:href="img/svgsprite/sprite.svg#ico-pass-false"></use>
+                </svg></span>
+            </div>
+          </label>
+          <button class="btn-black register__btn pass-recovery-pop__btn" type="submit"><span>удалить кабинет</span></button>
+        </form>
+      </div>
+      <div class="pop-up pop-up__order-del" id="pop-order-del"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Заказ № 12345-6789</div>
+        <div class="cart-reg__what clearfix"><span class="cart-reg__what__text cart-reg__what__photo">Фото и название товара</span><span class="cart-reg__what__text cart-reg__what__size">Размер</span><span class="cart-reg__what__text cart-reg__what__price">Цена</span><span class="cart-reg__what__text cart-reg__what__quantity">Количество</span><span class="cart-reg__what__text cart-reg__what__sum">Сумма</span></div>
+        <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-6.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+          <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span>
+            <form class="cart-reg__item__size__form">
+              <select class="cart-reg__item__size__select js-cart-select">
+                <option value="size_s">S</option>
+                <option value="size_m">M</option>
+                <option value="size_l">L</option>
+                <option value="size_xl">XL</option>
+                <option value="size_xxl" selected="selected">XXL</option>
+              </select>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text">1 054 руб.</span><span class="cart-reg__item__price__text2">1 054 руб.</span></a>
+          <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span>
+            <form class="cart-reg__item__quantity__form">
+              <input class="js-cart-quantity cart-reg__item__quantity__input" type="number" value="1" min="0" step="1"><span class="pop-up__treatment__edit">изменено количество товара</span>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">1 054 руб.</span></a><span class="cart-reg__item__close">
+            <svg class="icon icon-ico_close ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_close"></use>
+            </svg><span class="close-info"><span class="close-info__text">Вы уверенны что хотите удалить данный товар из заказа?</span><span class="close-info__btn btn-white"><span>да</span></span><span class="close-info__btn btn-white"><span>нет</span></span></span></span>
+        </div>
+        <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-1.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+          <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span>
+            <form class="cart-reg__item__size__form">
+              <select class="cart-reg__item__size__select js-cart-select">
+                <option value="size_s" selected="selected">S</option>
+                <option value="size_m">M</option>
+                <option value="size_l">L</option>
+                <option value="size_xl">XL</option>
+                <option value="size_xxl">XXL</option>
+              </select>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text cart-reg__item__price__text--non-discount">540 руб.</span></a>
+          <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span>
+            <form class="cart-reg__item__quantity__form">
+              <input class="js-cart-quantity cart-reg__item__quantity__input" type="number" value="2" min="0" step="1"><span class="pop-up__treatment__edit">изменено количество товара</span>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">1080 руб.</span></a><span class="cart-reg__item__close">
+            <svg class="icon icon-ico_close ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_close"></use>
+            </svg><span class="close-info"><span class="close-info__text">Вы уверенны что хотите удалить данный товар из заказа?</span><span class="close-info__btn btn-white"><span>да</span></span><span class="close-info__btn btn-white"><span>нет</span></span></span></span>
+        </div>
+        <div class="pop-up__order-del__btn btn-black"><span>подтвердить изменения</span></div>
+        <div class="pop-up__order-del__info">Менеджер получит информацию об изменениях в составе заказа</div>
+      </div>
+      <div class="pop-up pop-up__cancel" id="pop-cancel">
+        <div class="pop-up__title">ваш заказ отменен</div>
+        <p class="pop-up__cancel__text">Наш менеджер свяжется с Вами в ближайшее время</p>
+      </div>
+      <div class="pop-up pop-up__cancel" id="pop-return-success">
+        <div class="pop-up__title">Заявка на возврат успешно отправлена</div>
+        <p class="pop-up__cancel__text">Наш менеджер свяжется с Вами в ближайшее время</p>
+      </div>
+      <div class="pop-up pop-up__return" id="pop-return"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Заказ № 12345-6789</div>
+        <form class="pop-up__return__form js-return-form">
+          <div class="cart-reg__what clearfix"><span class="cart-reg__what__text cart-reg__what__photo">Фото и название товара</span><span class="cart-reg__what__text cart-reg__what__size">Размер</span><span class="cart-reg__what__text cart-reg__what__price">Цена</span><span class="cart-reg__what__text cart-reg__what__quantity">Количество</span><span class="cart-reg__what__text cart-reg__what__sum">Сумма</span><span class="cart-reg__what__text cart-reg__what__sum pop-up__return__title">Оформить заказ</span></div>
+          <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-6.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+            <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span><span class="pop-up__return__txt">XXL</span></div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text">1 054 руб.</span><span class="cart-reg__item__price__text2">1 054 руб.</span></a>
+            <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span><span class="pop-up__return__txt">2</span></div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">1 054 руб.</span></a>
+            <div class="pop-up__return__block">
+              <label class="clearfix register__subscribe">
+                <input class="catalog-sidebar__check-item-input" type="checkbox" name="check"><span class="catalog-sidebar__check-icon"></span>
+              </label>
+            </div>
+          </div>
+          <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-1.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+            <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span><span class="pop-up__return__txt">S</span></div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text cart-reg__item__price__text--non-discount">540 руб.</span></a>
+            <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span><span class="pop-up__return__txt">2</span></div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">1080 руб.</span></a>
+            <div class="pop-up__return__block">
+              <label class="clearfix register__subscribe">
+                <input class="catalog-sidebar__check-item-input" type="checkbox" name="check"><span class="catalog-sidebar__check-icon"></span>
+              </label>
+            </div>
+          </div><span class="pop-up__return__textarea-title">Ваш коментарий</span>
+          <textarea class="pop-up__return__textarea" placeholder="При желании Вы можете указать причину возврата. Мы учтем Ваше мнение и пожелания"></textarea>
+          <button class="pop-up__return__btn btn-black" type="submit"><span>оформить возврат</span></button>
+        </form>
+      </div>
+      <div class="pop-up pop-up__return" id="pop-return-finish"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Заказ № 12345-6789</div>
+        <form class="pop-up__return__form">
+          <div class="cart-reg__what clearfix"><span class="cart-reg__what__text cart-reg__what__photo">Фото и название товара</span><span class="cart-reg__what__text cart-reg__what__size">Размер</span><span class="cart-reg__what__text cart-reg__what__price">Цена</span><span class="cart-reg__what__text cart-reg__what__quantity">Количество</span><span class="cart-reg__what__text cart-reg__what__sum">Сумма</span><span class="cart-reg__what__text cart-reg__what__sum pop-up__return__title">Оформить заказ</span></div>
+          <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-6.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+            <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span><span class="pop-up__return__txt">XXL</span></div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text">1 054 руб.</span><span class="cart-reg__item__price__text2">1 054 руб.</span></a>
+            <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span><span class="pop-up__return__txt">2</span></div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">1 054 руб.</span></a>
+            <div class="pop-up__return__block">
+              <label class="clearfix register__subscribe">
+                <input class="catalog-sidebar__check-item-input" type="checkbox"><span class="catalog-sidebar__check-icon"></span>
+              </label>
+            </div>
+          </div>
+          <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-1.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+              <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+            <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span><span class="pop-up__return__txt">S</span></div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text cart-reg__item__price__text--non-discount">540 руб.</span></a>
+            <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span><span class="pop-up__return__txt">2</span></div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">1080 руб.</span></a>
+            <div class="pop-up__return__block">
+              <label class="clearfix register__subscribe">
+                <input class="catalog-sidebar__check-item-input" type="checkbox"><span class="catalog-sidebar__check-icon"></span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="pop-up pop-up__order-del pop-up__treatment" id="pop-treatment"><a class="pop-up__close js-pop-up-close" href="#"></a>
+        <div class="pop-up__title">Заказ № 12345-6789</div>
+        <div class="cart-reg__what clearfix"><span class="cart-reg__what__text cart-reg__what__photo">Фото и название товара</span><span class="cart-reg__what__text cart-reg__what__size">Размер</span><span class="cart-reg__what__text cart-reg__what__price">Цена</span><span class="cart-reg__what__text cart-reg__what__quantity">Количество</span><span class="cart-reg__what__text cart-reg__what__sum">Сумма</span></div>
+        <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-6.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+          <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span>
+            <form class="cart-reg__item__size__form">
+              <select class="cart-reg__item__size__select js-cart-select">
+                <option value="size_s">S</option>
+                <option value="size_m">M</option>
+                <option value="size_l">L</option>
+                <option value="size_xl">XL</option>
+                <option value="size_xxl" selected="selected">XXL</option>
+              </select>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text">1 054 руб.</span><span class="cart-reg__item__price__text2">1 054 руб.</span></a>
+          <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span>
+            <form class="cart-reg__item__quantity__form pop-up__treatment__form">
+              <input class="js-cart-quantity cart-reg__item__quantity__input" type="number" value="1" min="1" step="1"><span class="pop-up__treatment__edit">изменено количество товара</span>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">1 054 руб.</span></a><span class="cart-reg__item__close">
+            <svg class="icon icon-ico_close ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_close"></use>
+            </svg><span class="close-info">
+              <!--span.close-info__text Вы уверенны что хотите удалить данный товар из заказа?-->
+              <!--span.close-info__btn.btn-white-->
+              <!--    span да-->
+              <!--span.close-info__btn.btn-white-->
+              <!--    span нет--></span></span>
+        </div>
+        <div class="cart-reg__item clearfix"><a class="cart-reg__item__block cart-reg__item__img" href="#"><img src="img/index-item-4.jpg" alt=""></a><a class="cart-reg__item__block cart-reg__item__info" href="#"><span class="cart-reg__item__info__title">Платок VENERA (57007-26) Красный Красный Красный</span>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Артикул:</span><span class="cart-reg__item__info__text">3146895444</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Цает:</span><span class="cart-reg__item__info__text">Красный</span></div>
+            <div class="clearfix"><span class="cart-reg__item__info__grey">Размер:(см)</span><span class="cart-reg__item__info__text">140х140</span></div></a>
+          <div class="cart-reg__item__block cart-reg__item__size"><span class="cart-reg__item__size__mobile">Размер:</span>
+            <form class="cart-reg__item__size__form">
+              <select class="cart-reg__item__size__select js-cart-select">
+                <option value="size_s">S</option>
+                <option value="size_m">M</option>
+                <option value="size_l">L</option>
+                <option value="size_xl">XL</option>
+                <option value="size_xxl" selected="selected">XXL</option>
+              </select>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__price" href="#"><span class="cart-reg__item__price__mobile">Цена:</span><span class="cart-reg__item__price__text">800 руб.</span><span class="cart-reg__item__price__text2">800 руб.</span></a>
+          <div class="cart-reg__item__block cart-reg__item__quantity"><span class="cart-reg__item__quantity__mobile">Количество:</span>
+            <form class="cart-reg__item__quantity__form pop-up__treatment__form">
+              <input class="js-cart-quantity cart-reg__item__quantity__input" type="number" value="1" min="1" step="1"><span class="pop-up__treatment__edit">изменено количество товара</span>
+            </form>
+          </div><a class="cart-reg__item__block cart-reg__item__sum" href="#"><span class="cart-reg__item__sum__text-sum">Сумма:</span><span class="cart-reg__item__sum__text">800 руб.</span></a><span class="cart-reg__item__close">
+            <svg class="icon icon-ico_close ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_close"></use>
+            </svg><span class="close-info">
+              <!--span.close-info__text Вы уверенны что хотите удалить данный товар из заказа?-->
+              <!--span.close-info__btn.btn-white-->
+              <!--    span да-->
+              <!--span.close-info__btn.btn-white-->
+              <!--    span нет--></span></span>
+        </div>
+        <div class="pop-up__order-del__btn btn-black"><span>подтвердить изменения</span></div>
+        <div class="pop-up__order-del__info">Менеджер получит информацию об изменениях в составе заказа</div>
+      </div>
+    </div>
+    <header class="wrapper header" id="header">
+      <div class="header__top"><a class="header__mobile-menu js-show-menu" href="#"><span></span></a>
+        <div class="header__right-wrapper clearfix">
+          <div class="header__right-icon header__right-icon--cart">
+            <svg class="icon icon-ico_cart ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_cart"></use>
+            </svg><span class="header__right-icon-number">3</span>
+            <div class="cart-info">
+              <div class="cart-info__wrapper">
+                <div class="cart-info__title">4 товара на сумму: 2 848 руб.</div><a class="cart-info__item clearfix" href="#"><img class="cart-info__image" src="img/upload/cart-small-1.jpg" alt="cart preview image"><span class="cart-info__text"><span class="cart-info__text-wrapper"><span class="cart-info__item-name">Платок VENERA</span><span class="cart-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="cart-info__price"><span class="cart-info__text-wrapper"><span class="cart-info__current-price">1 054 руб.</span></span></span></a><a class="cart-info__item clearfix" href="#"><img class="cart-info__image" src="img/upload/cart-small-2.jpg" alt="cart preview image"><span class="cart-info__text"><span class="cart-info__text-wrapper"><span class="cart-info__item-name">Платок VENERA (5700</span><span class="cart-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="cart-info__price"><span class="cart-info__text-wrapper"><span class="cart-info__current-price">1 054 руб.</span></span></span></a><a class="cart-info__item clearfix" href="#"><img class="cart-info__image" src="img/upload/cart-small-3.jpg" alt="cart preview image"><span class="cart-info__text"><span class="cart-info__text-wrapper"><span class="cart-info__item-name">Платок VENERA (5700</span><span class="cart-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="cart-info__price"><span class="cart-info__text-wrapper"><span class="cart-info__current-price">1 054 руб.</span><span class="cart-info__old-price">1 054 руб.</span></span></span></a><a class="cart-info__item clearfix" href="#"><img class="cart-info__image" src="img/upload/cart-small-1.jpg" alt="cart preview image"><span class="cart-info__text"><span class="cart-info__text-wrapper"><span class="cart-info__item-name">Платок VENERA</span><span class="cart-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="cart-info__price"><span class="cart-info__text-wrapper"><span class="cart-info__current-price">1 054 руб.</span></span></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="header__right-icon header__right-icon--likes">
+            <svg class="icon icon-ico_head-likes ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_head-likes"></use>
+            </svg><span class="header__right-icon-number">25</span>
+            <div class="likes-info">
+              <div class="likes-info__wrapper">
+                <div class="likes-info__title">4 товара на сумму: 2 848 руб.</div><a class="likes-info__item clearfix" href="#"><img class="likes-info__image" src="img/upload/cart-small-1.jpg" alt="cart preview image"><span class="likes-info__text"><span class="likes-info__text-wrapper"><span class="likes-info__item-name">Платок VENERA</span><span class="likes-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="likes-info__buy-status">
+                    <svg class="icon icon-buy-status ">
+                      <use xlink:href="img/svgsprite/sprite.svg#buy-status"></use>
+                    </svg></span><span class="likes-info__price"><span class="likes-info__text-wrapper"><span class="likes-info__current-price">1 054 руб.</span></span></span></a><a class="likes-info__item clearfix" href="#"><img class="likes-info__image" src="img/upload/cart-small-2.jpg" alt="cart preview image"><span class="likes-info__text"><span class="likes-info__text-wrapper"><span class="likes-info__item-name">Платок VENERA</span><span class="likes-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="likes-info__buy-status active">
+                    <svg class="icon icon-buy-status-active ">
+                      <use xlink:href="img/svgsprite/sprite.svg#buy-status-active"></use>
+                    </svg></span><span class="likes-info__price"><span class="likes-info__text-wrapper"><span class="likes-info__current-price">1 054 руб.</span></span></span></a><a class="likes-info__item clearfix" href="#"><img class="likes-info__image" src="img/upload/cart-small-3.jpg" alt="cart preview image"><span class="likes-info__text"><span class="likes-info__text-wrapper"><span class="likes-info__item-name">Платок VENERA</span><span class="likes-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="likes-info__buy-status">
+                    <svg class="icon icon-buy-status ">
+                      <use xlink:href="img/svgsprite/sprite.svg#buy-status"></use>
+                    </svg></span><span class="likes-info__price"><span class="likes-info__text-wrapper"><span class="cart-info__current-price">1 054 руб.</span><span class="cart-info__old-price">1 054 руб.</span></span></span></a><a class="likes-info__item clearfix" href="#"><img class="likes-info__image" src="img/upload/cart-small-2.jpg" alt="cart preview image"><span class="likes-info__text"><span class="likes-info__text-wrapper"><span class="likes-info__item-name">Платок VENERA</span><span class="likes-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="likes-info__buy-status">
+                    <svg class="icon icon-buy-status ">
+                      <use xlink:href="img/svgsprite/sprite.svg#buy-status"></use>
+                    </svg></span><span class="likes-info__price"><span class="likes-info__text-wrapper"><span class="likes-info__current-price">
+                        1 054 руб.
+                        </span></span></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="header__right-icon header__right-icon--user">
+            <svg class="icon icon-ico_head-user ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_head-user"></use>
+            </svg>
+            <div class="user-info">
+              <ul class="user-info__menu">
+                <li class="user-info__item"><a class="user-info__link" href="#">личные данные</a></li>
+                <li class="user-info__item"><a class="user-info__link" href="#">Адреса доставки</a></li>
+                <li class="user-info__item"><a class="user-info__link" href="#">Мои заказы</a></li>
+                <li class="user-info__item"><a class="user-info__link" href="#">Подписка</a></li>
+                <li class="user-info__item"><a class="user-info__link" href="#">Скидки</a></li>
+                <li class="user-info__item"><a class="user-info__link" href="#">Выход</a></li>
+              </ul>
+            </div>
+          </div><a class="header__mobile-phone" href="#">
+            <svg class="icon icon-ico_phone ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_phone"></use>
+            </svg></a>
+        </div>
+        <div class="container">
+          <ul class="header__top-list">
+            <li class="header__top-list-item"><a class="header__top-link" href="#">Доставка и оплата</a></li>
+            <li class="header__top-list-item"><a class="header__top-link" href="#">Помощь</a></li>
+            <li class="header__top-list-item"><a class="header__top-link" href="#">Скидки</a></li>
+            <li class="header__top-list-item"><a class="header__top-link" href="#">Контакты</a></li>
+            <li class="header__top-list-item"><a class="header__top-link" href="#">Опт</a></li>
+          </ul>
+          <div class="header__top-right-wrap"><span class="header__top-work-time">пн-пт (10°° - 18°°)</span><a class="header__top-phone" href="#">+7 (495) 930-9954</a></div>
+          <ul class="header__top-enter-wrap">
+            <li class="header__top-enter-item"><a class="js-show-pop-up header__top-enter-link header__top-enter-link--white" href="#" data-pop="#login">Вход</a></li>
+            <li class="header__top-enter-item"><a class="header__top-enter-link" href="#">
+                Регистрация
+                </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="container header__main-container"><a class="header__logo" href="index.html">
+            <svg class="icon icon-ico_logo-black ">
+              <use xlink:href="img/svgsprite/sprite.svg#ico_logo-black"></use>
+            </svg></a>
+          <div class="header__main-wrapper clearfix">
+            <div class="header__main-top-wrap clearfix">
+              <div class="row">
+                <div class="header__search-wrap bg-white">
+                  <form class="header__search-form">
+                    <input class="header__search-input js-header-search" type="text">
+                    <button class="header__search-submit" type="submit">
+                      <svg class="icon icon-ico_zoom ">
+                        <use xlink:href="img/svgsprite/sprite.svg#ico_zoom"></use>
+                      </svg>
+                    </button>
+                    <div class="header__search-block"><span class="header__search-block__title">Товары</span><a class="likes-info__item clearfix" href="#"><img class="likes-info__image" src="img/upload/cart-small-1.jpg" alt="cart preview image"><span class="likes-info__text"><span class="likes-info__text-wrapper"><span class="likes-info__item-name">Платок VENERA</span><span class="likes-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="likes-info__buy-status">
+                          <svg class="icon icon-buy-status ">
+                            <use xlink:href="img/svgsprite/sprite.svg#buy-status"></use>
+                          </svg></span><span class="likes-info__price"><span class="likes-info__text-wrapper"><span class="likes-info__current-price">1 054 руб.</span></span></span></a><a class="likes-info__item clearfix" href="#"><img class="likes-info__image" src="img/upload/cart-small-2.jpg" alt="cart preview image"><span class="likes-info__text"><span class="likes-info__text-wrapper"><span class="likes-info__item-name">Платок VENERA</span><span class="likes-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="likes-info__buy-status active">
+                          <svg class="icon icon-buy-status-active ">
+                            <use xlink:href="img/svgsprite/sprite.svg#buy-status-active"></use>
+                          </svg></span><span class="likes-info__price"><span class="likes-info__text-wrapper"><span class="likes-info__current-price">1 054 руб.</span></span></span></a><a class="likes-info__item clearfix" href="#"><img class="likes-info__image" src="img/upload/cart-small-3.jpg" alt="cart preview image"><span class="likes-info__text"><span class="likes-info__text-wrapper"><span class="likes-info__item-name">Платок VENERA</span><span class="likes-info__item-art">Артикул: <b>3146895444</b></span></span></span><span class="likes-info__buy-status">
+                          <svg class="icon icon-buy-status ">
+                            <use xlink:href="img/svgsprite/sprite.svg#buy-status"></use>
+                          </svg></span><span class="likes-info__price"><span class="likes-info__text-wrapper"><span class="cart-info__current-price">1 054 руб.</span><span class="cart-info__old-price">1 054 руб.</span></span></span></a><a class="header__search-block__all-items" href="#">Все товары</a><span class="header__search-block__subtitle">Статьи</span><a class="header__search-block__text" href="#">Как подобрать платок</a><a class="header__search-block__text" href="#">Как правильно завязывать платок</a><span class="header__search-block__subtitle">Акции</span><a class="header__search-block__text" href="#">Скидка на шелковые платки 20%</a></div>
+                  </form>
+                </div>
+                <div class="col-lg-12 header__category-wrap clearfix"><a class="header__main-category active" href="#" data-cat="kat1">Женщинам</a><a class="header__main-category" href="#" data-cat="kat2">Мужчинам</a><a class="header__main-category" href="#" data-cat="kat3">Детям</a>
+                  <div class="header__category-wrap__before"></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__main-bottom-wrap">
+              <ul class="header__menu active-kat" id="kat1">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Платки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Палантины и шарфы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Пляжная мода</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Пончо и накидки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Головные уборы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Перчатки и варежки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Аксессуары</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Распродажа</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Акции</a></li>
+              </ul>
+              <ul class="header__menu" id="kat2">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Пляжная мода</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Пончо и накидки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Головные уборы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Перчатки и варежки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Аксессуары</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Распродажа</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Акции</a></li>
+              </ul>
+              <ul class="header__menu" id="kat3">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Палантины и шарфы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Пляжная мода</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Пончо и накидки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Головные уборы</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Перчатки и варежки</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Аксессуары</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Распродажа</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Акции</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a class="mobile-menu__link js-show-mobile-sub-menu" href="#">Женщинам
+                <svg class="icon icon-down-arrow ">
+                  <use xlink:href="img/svgsprite/sprite.svg#down-arrow"></use>
+                </svg></a>
+              <ul class="mobile-menu__down-menu">
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Платки</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Палантины и шарфы</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Пляжная мода</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Пончо и накидки</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Головные уборы</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Перчатки и варежки</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Аксессуары</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Распродажа</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Акции</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link js-show-mobile-sub-menu" href="#">Мужчинам
+                <svg class="icon icon-down-arrow ">
+                  <use xlink:href="img/svgsprite/sprite.svg#down-arrow"></use>
+                </svg></a>
+              <ul class="mobile-menu__down-menu">
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Пляжная мода</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Пончо и накидки</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Головные уборы</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Перчатки и варежки</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Аксессуары</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Распродажа</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Акции</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link js-show-mobile-sub-menu" href="#">Детям
+                <svg class="icon icon-down-arrow ">
+                  <use xlink:href="img/svgsprite/sprite.svg#down-arrow"></use>
+                </svg></a>
+              <ul class="mobile-menu__down-menu">
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Палантины и шарфы</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Пляжная мода</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Пончо и накидки</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Головные уборы</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Перчатки и варежки</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Аксессуары</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Распродажа</a></li>
+                <li class="mobile-menu__down-menu-item"><a class="mobile-menu__down-menu-link" href="#">Акции</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Доставка и оплата</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Помощь</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Скидки</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакты</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Опт</a></li>
+          </ul>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a class="js-show-pop-up mobile-menu__link" href="#" data-pop="#login">Вход</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Регистрация</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="page-body" id="page-body">
+      <div class="discounts">
+        <div class="container">
+          <ul class="bread-crumbs clearfix">
+            <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="#">Главная</a></li>
+            <li class="bread-crumbs__item current"><a class="bread-crumbs__link" href="#">Система скидок</a></li>
+          </ul><span class="subtitle__text subtitle--b discounts__title">система скидок</span>
+          <div class="discounts__subtitle"><span class="discounts__subtitle__text">Внимание! Скидки</span><span class="discounts__subtitle__text discounts__subtitle__text--red">не</span><span class="discounts__subtitle__text">распространяются на стоимость доставки.</span></div>
+        </div>
+      </div>
+      <div class="discounts__wrap">
+        <div class="container">
+          <div class="row small-margin">
+            <div class="col-lg-4 col-md-12 small-padding">
+              <div class="discounts__block js-discounts-block discounts__block discounts__block--green"><span class="discounts__block__number">-10%</span><span class="discounts__block__title">скидка<span class="discounts__block__title discounts__block__title--modify">&#32;зарегистрированным<br></span>пользователям</span>
+                <ul class="discounts__block__list">
+                  <li class="discounts__block__item">Для получения скидки Вам надо пройти регистрацию на нашем сайте и самостоятельно оформить заказ.</li>
+                  <li class="discounts__block__item">Распространяется на все товары магазина, в том числе и на акционные товары и товары со скидками.</li>
+                  <li class="discounts__block__item">Скидка не распространяется на заказы,</li>
+                </ul><a class="btn-black discounts__block__btn" href="#"><span>Зарегистрироваться и платить меньше</span></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 small-padding">
+              <div class="discounts__block js-discounts-block discounts__block--red"><span class="discounts__block__number">-10%</span><span class="discounts__block__title">скидка на<span class="discounts__block__title discounts__block__title--modify">
+                    заказы <br>
+                    с предопдатой</span></span>
+                <ul class="discounts__block__list">
+                  <li class="discounts__block__item">Если Вы живете в другом регионе и доставка к Вам возможна только после 100% оплаты заказа почтовыми службами, мы предоставляем Вам эту скидку.</li>
+                  <li class="discounts__block__item">Скидка зарегистрированным покупателям и скидка на заказ с предоплатой суммируются, т.е. если Вы оформили заказ с доставкой Почтой России или Почтой EMS,  то Ваша скидка будет составлять 20% от стоимости.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 small-padding">
+              <div class="discounts__block js-discounts-block discounts__block--purple"><span class="discounts__block__number">%</span><span class="discounts__block__title discounts__block__title--modify">индивидуальные <br></span><span class="discounts__block__title">скидки</span>
+                <ul class="discounts__block__list">
+                  <li class="discounts__block__item">Интернет-магазин оставляет за собой право дарить индивидуальные скидки покупателям.</li>
+                  <li class="discounts__block__item">Если Ваш заказ предназначается для коллективных подарков или для корпоративного использования и количество однотипного товара в заказе не менее 10 единиц, то мы готовы предоставить Вам дополнительную скидку!</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-12 small-padding">
+              <div class="discounts__block discounts__block--violet"><span class="discounts__block__number">50%</span><span class="discounts__block__title">программа</span><span class="discounts__block__title discounts__block__title--modify">&#32;"совместная покупка"&#32;</span><span class="discounts__block__title">Для организаторов совместных покупок</span><span class="discounts__block__text discounts__block__text--bold">Для кого?</span><span class="discounts__block__text">Для организаторов совместных покупок и покупателей, не являющихся индивидуальными предпринимателями.</span><span class="discounts__block__text discounts__block__text--bold">Условия совместной покупки:</span>
+                <ul class="discounts__block__list discounts__block__list--small">
+                  <li class="discounts__block__item">Минимальная сумма заказа - 5.000 рублей (в оптовых ценах). (Для справки – разница с розничными ценами – до 50%.)</li>
+                  <li class="discounts__block__item">Цены действительны на момент оформления заказа на сайте.</li>
+                  <li class="discounts__block__item">После оформления заказа наш менеджер собирает заказ, отправляет Вам счет, который Вы можете оплатить через любой банк.</li>
+                  <li class="discounts__block__item">Доставка осуществляется после 100% предоплаты и подтверждения банком поступления денежных средств на расчетный счет  Интернет - магазина.</li>
+                  <li class="discounts__block__item">Доставка осуществляется на один адрес (адрес Организатора покупки).</li>
+                  <li class="discounts__block__item">Доставка в другие города осуществляется почтой или транспортными компаниями по Вашему выбору.</li>
+                  <li class="discounts__block__item">Доставка до ТК по Москве бесплатно, доставка на московский адрес оплачивается в соответствии с действующими тарифами доставки магазина.</li>
+                  <li class="discounts__block__item">Данные условия распространяются на весь ассортимент, включая товар со скидками.</li>
+                </ul><span class="discounts__block__text discounts__block__text--bold">Как получить скидку?</span>
+                <div class="clearfix">
+                  <div class="discounts__inset"><span class="discounts__inset__number">1</span><span class="discounts__inset__text">
+                      Войдите в личный кабинет на сайте, или пройдите регистрацию, если еще не являетесь нашим постоянным покупателем.
+                      </span>
+                    <ul class="footer__enter-wrap clearfix discounts__inset__links">
+                      <li class="footer__enter-wrap-item"><a class="footer__enter-wrap-link footer__enter-wrap-link--black" href="#">Вход</a></li>
+                      <li class="footer__enter-wrap-item"><a class="footer__enter-wrap-link" href="#">
+                          Регистрация
+                          
+                          </a></li>
+                    </ul>
+                  </div>
+                  <div class="discounts__inset"><span class="discounts__inset__number">2</span><span class="discounts__inset__text discounts__inset__margin">  В разделе личного кабинета:<a class="discounts__inset--underline discounts__inset--link-black" href="#">  "Совместная покупка"</a>, заполните и отправте карту партнера.</span><span class="discounts__inset__text">Так же Вы можете отправить&#32;<a class="discounts__inset__link--grey discounts__inset--underline" href="#">карту партнера</a>&#32;на почту<a class="discounts__inset--link-black" href="mailto:info@1000platkov.ru."> info@1000platkov.ru.&#32;</a>с темой письма «Совместная покупка»</span></div>
+                  <div class="discounts__inset"><span class="discounts__inset__number">3</span><span class="discounts__inset__text">В течении 1-2 дней мы откроем Вам доступ к оптовым ценам на сайте, о чем сообщим Вам по почте, а так же уведомлением в личном кабинете в разделе&#32;<a class="discounts__inset--link-black discounts__inset--underline" href="#">Скидки</a>&#32;и&#32;<a class="discounts__inset--link-black discounts__inset--underline" href="#">Совместная покупка</a>.</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="discounts__opt">
+        <div class="container"><span class="discounts__opt__title">интересует опт</span><span class="discounts__opt__text">Если Вы являетесь ИП или юридическим лицом, Вы найдете выгодные предложения по опту на нашем сайте по оптовой торговле</span><a class="btn-white discounts__opt__btn" href="#"><span>перейти на оптовый сайт</span></a></div>
+      </div>
+      <div class="index-subscribe">
+        <div class="container"><span class="index-subscribe__text">Подпишитесь на рассылку и получайте скидки на покупки!</span>
+          <form class="index-subscribe__form js-index-subscribe__form">
+            <input class="index-subscribe__form__input" type="email" placeholder="Введите e-mail" name="email">
+            <button class="btn-white index-subscribe__form__submit" type="submit"><span>подписаться</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="wrapper footer" id="footer"><a class="scroll-up-btn js-scroll-up" href="#">
+        <svg class="icon icon-ico_arrow-up ">
+          <use xlink:href="img/svgsprite/sprite.svg#ico_arrow-up"></use>
+        </svg></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer__item js-height"><a class="footer__logo" href="index.html"><img src="img/footer_logo.png"></a><a class="footer__phone" href="#">7 (495) 930-99-54</a><a class="footer__phone" href="#">8 (925) 070-25-70</a>
+            <div class="footer__work-info-wrapper">
+              <div class="footer__work-info">Пн-пт: 10:00 - 18:00</div>
+              <div class="footer__work-info"><span>Email:</span><a href="#">info@veneras-tore.ru</a></div>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__socials-title">Мы в социальных сетях:</div>
+              <div class="footer__socials-wrapper clearfix"><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-vk ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-vk"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-fb ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-fb"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-inst ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-inst"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-ytube ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-ytube"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-ok ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-ok"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-tw ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-tw"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-pinterest ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-pinterest"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-watsup ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-watsup"></use>
+                  </svg></a><a class="footer__social-link" href="#">
+                  <svg class="icon icon-soc-viber ">
+                    <use xlink:href="img/svgsprite/sprite.svg#soc-viber"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 footer__item js-height">
+            <div class="footer__category-wrapper"><a class="footer__category-title" href="#">женщинам</a><a class="footer__category-item" href="#">Платки на голову</a><a class="footer__category-item" href="#">Шейные платки</a><a class="footer__category-item" href="#">Арафатки</a><a class="footer__category-item" href="#">Платки-картины</a><a class="footer__category-item" href="#">Большие платки</a><a class="footer__category-item" href="#">Шали</a>
+            </div>
+            <div class="footer__category-wrapper"><a class="footer__category-title" href="#">Мужчинам</a><a class="footer__category-item" href="#">Шейные платки</a><a class="footer__category-item" href="#">Платки и палантины</a><a class="footer__category-item" href="#">Галстуки</a><a class="footer__category-item" href="#">Шапки</a>
+            </div>
+            <ul class="footer__enter-wrap clearfix">
+              <li class="footer__enter-wrap-item"><a class="footer__enter-wrap-link footer__enter-wrap-link--black" href="#">Вход</a></li>
+              <li class="footer__enter-wrap-item"><a class="footer__enter-wrap-link" href="#">Регистрация</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer__item js-height">
+            <div class="footer__category-wrapper"><a class="footer__category-title" href="#">Детям</a><a class="footer__category-item" href="#">Головные уборы </a><a class="footer__category-item" href="#">Платки</a><a class="footer__category-item" href="#">Перчатки и варежки</a><a class="footer__category-item" href="#">Ремни</a><a class="footer__category-item" href="#">Подтяжки</a><a class="footer__category-item" href="#">Бижутерия</a>
+            </div>
+            <div class="footer__category-wrapper"><a class="footer__category-title" href="#">Покупателям</a><a class="footer__category-item" href="#">Доставка и оплата</a><a class="footer__category-item" href="#">Условия возврата</a><a class="footer__category-item" href="#">Гарантии</a><a class="footer__category-item" href="#">Частые вопросы</a><a class="footer__category-item" href="#">Опт</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 footer__item js-height">
+            <div class="footer__category-wrapper"><a class="footer__category-title" href="#">Компания</a><a class="footer__category-item" href="#">О нас</a><a class="footer__category-item" href="#">Отзывы</a><a class="footer__category-item" href="#">Новости</a><a class="footer__category-item" href="#">Статьи</a><a class="footer__category-item" href="#">Контакты</a>
+            </div>
+            <div class="footer__category-wrapper footer__category-wrapper--present"><a class="footer__category-item footer__category-item--bold" href="#">Подарочная упаковка</a><a class="footer__category-item footer__category-item--bold" href="#">Скидки</a><a class="footer__category-item footer__category-item--bold" href="#">Акции</a><a class="footer__category-item footer__category-item--bold" href="#">Распродажа товаров</a>
+            </div>
+            <div class="footer__category-wrapper"><span class="footer__category-title">Способы оплаты</span>
+              <div class="footer__payment payment clearfix"><a class="payment__item payment--mastercard" href="#">
+                  <svg class="icon icon-ico-mastercard ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-mastercard"></use>
+                  </svg></a><a class="payment__item payment--visa" href="#">
+                  <svg class="icon icon-ico-visa ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-visa"></use>
+                  </svg></a><a class="payment__item payment--paypal" href="#">
+                  <svg class="icon icon-ico-paypal ">
+                    <use xlink:href="img/svgsprite/sprite.svg#ico-paypal"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="container copyright__container">
+        <div class="copyright__wrapper"><span class="copyright__item"><span>© 2016 venera-store.ru</span></span><a class="copyright__item" href="#"><span>Политика конфиденциальности</span></a><a class="copyright__item" href="#"><span>Публичная оферта</span></a><a class="copyright__item" href="#"><span>Карта сайта</span></a><a class="copyright__item" href="#"><span>Разработка сайта Webtrend</span></a></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/libs.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/jquery.daterangepicker.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/app.js"></script>
+  <script src="//localhost:35729/livereload.js"></script>
+</html>

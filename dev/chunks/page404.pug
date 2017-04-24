@@ -1,0 +1,31 @@
+.page404
+    .container
+        .page404__wrap
+            ul.bread-crumbs.clearfix
+                li.bread-crumbs__item
+                    a(href="#").bread-crumbs__link Главная
+                li.bread-crumbs__item.current
+                    a(href="#").bread-crumbs__link Поиск
+            .page404__title
+                span.subtitle__text страница
+                span.subtitle__text.subtitle--b.subtitle__right-text не найдена
+            span.page404__text
+                |   Вы перешли по неправильной ссылке или страница была удалена
+            ul.nav-category.clearfix.page404__list
+                li.nav-category__item
+                    a(href="#").nav-category__link.nav-category-index__link главная
+                li.nav-category__item
+                    a(href="#").nav-category__link.nav-category-index__link женщинам
+                li.nav-category__item
+                    a(href="#").nav-category__link.nav-category-index__link мужчинам
+                li.nav-category__item
+                    a(href="#").nav-category__link.nav-category-index__link детям
+                li.nav-category__item
+                    a(href="#").nav-category__link.nav-category-index__link распродажа
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

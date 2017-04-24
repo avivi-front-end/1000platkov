@@ -1,0 +1,241 @@
+.purchases {
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000;
+    letter-spacing: .6px;
+    cursor: pointer;
+    &:after {
+      content: '';
+      position: absolute;
+      border-bottom: 1px dashed #000;
+      left: 0;
+      bottom: 1px;
+      width: 100%;
+      height: 1px;
+    }
+    &:not(:last-of-type) {
+      margin: 33px 0 5px;
+    }
+    &__text {
+      display: none;
+      width: 100%;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 25px;
+      color: #000;
+      letter-spacing: .6px;
+      margin-top: 10px;
+    }
+  }
+  &__subtitle {
+    display: inline-block;
+    margin-top: 56px;
+    font-family: $avantbook;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    &--b {
+      font-family: $avantdemi;
+    }
+    &--text-right {
+      margin-left: 5px;
+    }
+  }
+  &__form {
+    margin: 33px 0 58px;
+  }
+  &__check {
+    margin: 0 0 10px;
+    &__block {
+      .catalog-sidebar__check-icon {
+        border-radius: 100%;
+      }
+      &:not(:last-child) {
+        margin-right: 44px;
+      }
+    }
+  }
+  &__name {
+    position: relative;
+    display: block;
+    &--transport {
+      position: absolute;
+      display: inline-block;
+      color: #000;
+      cursor: pointer;
+      font-family: $avantbook;
+      font-size: 12px;
+      &:hover{
+        .quest-info{
+          display: block;
+          line-height: 16px;
+        }
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        border: 2px solid #000;
+        border-radius: 100%;
+        right: -39px;
+        top: -3px;
+      }
+      &:after {
+        content: '?';
+        position: absolute;
+        font-family: $bignooble;
+        font-size: 18px;
+        color: #000;
+        right: -28px;
+        top: 0;
+      }
+    }
+  }
+  &__garant {
+    margin-top: 53px;
+    background-color: #f2f2f2;
+    padding: 63px 70px 63px 75px;
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: $screen-xs-max) {
+      padding: 15px;
+    }
+    &__title {
+      display: block;
+      font-family: $avantdemi;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .75px;
+      margin-bottom: 24px;
+    }
+    &__text {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .75px;
+      a {
+        color: #000;
+      }
+      &:not(last-of-type) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  &__label {
+    display: block;
+    position: relative;
+    width: 100%;
+    label.error {
+      display: inline-block !important;
+      position: absolute;
+      bottom: -35px;
+      left: 20px;
+      color: #e6005c;
+      font-family: $avantbook;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+  }
+  &__input {
+    width: 100%;
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    background-color: #fff;
+    outline: none;
+    padding: 9px 19px 8px;
+    letter-spacing: .8px;
+    border: 2px solid #000;
+    transition: all 0.2s ease;
+    &.error {
+      border: 2px solid #e6005c;
+      color: #e6005c;
+    }
+  }
+  &__passport {
+    &__input {
+      width: 128px;
+    }
+    .purchases__label {
+      display: block;
+    }
+    .register__wrap-input {
+      display: inline-block;
+      &:not(:last-of-type) {
+        margin-right: 25px;
+      }
+    }
+  }
+  &__textarea {
+    height: 86px;
+  }
+  &__btn {
+    padding: 13px 0;
+    span {
+      letter-spacing: 1px;
+    }
+  }
+  &__success {
+    display: none;
+    &__block {
+      margin-bottom: 61px;
+      padding: 9px 19px;
+      background-color: #f2f2f2;
+    }
+    &__text {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .75px;
+    }
+    &__ico {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 19px;
+        height: 15px;
+        background: url("../img/svg/ico_ok.svg") no-repeat center;
+        background-size: 100%;
+        right: -41px;
+        top: -1px;
+      }
+    }
+    &__title {
+      display: block;
+      font-family: $avantdemi;
+      margin-bottom: 24px;
+    }
+  }
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 29px;
+    }
+  }
+}
+#pur__passport1-error,
+#pur__passport2-error {
+  display: none!important;
+}
+#pur__adress-error,
+#pur__vidan-error {
+  top: auto!important;
+  bottom: -16px!important;
+}

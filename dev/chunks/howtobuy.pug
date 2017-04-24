@@ -1,0 +1,90 @@
+.howtobuy
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Как купить
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help помощь покупателю
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link как купить ?
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link гарантии
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link доставка и оплата
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link обмен и возврат
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link преимущества регистрации
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link часто задаваемые вопросы
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link корпоративным клиентам
+                            .sidebar__opt
+                                span.sidebar__opt__text интересует опт
+                                a(href="#").btn-white.sidebar__opt__btn
+                                    span сайт оптового магазина
+                            .sidebar__question
+                                span.sidebar__question__title.
+                                    остались вопросы по способам покупки?
+                                span.sidebar__question__text.
+                                    Мы с радостью дадим консультацию в удобное для Вас время время!
+                                a(href="#" data-pop="#question").js-show-pop-up.btn-white.sidebar__question__btn
+                                    span задать вопрос
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title как купить
+                    div
+                        span.with-sidebar__subtitle оформить заказ через интернет
+                        p.with-sidebar__text.
+                            Выберите товар и нажмите кнопку «в корзину» или « купить». Не забудьте указать размер и кол-во товара. На шапке нашего магазина указывается кол-во и сумма выбранного товара. Нажмите на эту строчку и Вы перейдете к оформлению заказа. Вы можете изменить количество, удалить товары. Далее пошагово оформляйте заказ. Если Вы новый покупатель, то Вам будет предложено пройти регистрацию и получить скидку для постоянных покупателей 10%. Если Вы уже проходили регистрацию – введите логин и пароль и скидка 10% будет рассчитана на заказ автоматически.
+                        p.with-sidebar__text.
+                            После получения и сборки заказа наш оператор свяжется с Вами по указанным номерам телефонов и договорится о времени доставки заказа. Если в течение 2-х дней связаться с Вами оператор не сможет, Вам на электронный адрес, указанный при регистрации будет отправлено письмо. Срок резервирования заказа 7 дней.
+                    .howtobuy__images.clearfix
+                        .howtobuy__images__block
+                            a(rel="group" href="img/howtobuy-img.jpg").fancybox.howtobuy__images__block__ico
+                                +icon("ico_order")
+                            img(src="img/howtobuy-img.jpg" alt="")
+                        .howtobuy__images__block
+                            a(rel="group" href="img/howtobuy-img.jpg").fancybox.howtobuy__images__block__ico
+                                +icon("ico_order")
+                            img(src="img/howtobuy-img.jpg" alt="")
+                        .howtobuy__images__block
+                            a(rel="group" href="img/howtobuy-img.jpg").fancybox.howtobuy__images__block__ico
+                                +icon("ico_order")
+                            img(src="img/howtobuy-img.jpg" alt="")
+                        .howtobuy__images__block
+                            a(rel="group" href="img/howtobuy-img.jpg").fancybox.howtobuy__images__block__ico
+                                +icon("ico_order")
+                            img(src="img/howtobuy-img.jpg" alt="")
+                    div
+                        span.with-sidebar__subtitle оформить заказ без регистрации
+                        p.with-sidebar__text.
+                            При оформлении заказа Вам будет предложено оформить заказ без регистрации. Обязательно укажите контактный номер телефона, по которому наш оператор сможет с Вами связаться. Обращаем Ваше внимание, что срок резервирования заказов без регистрации 2 дня. Если в течение 2-х дней наш оператор не смог связаться с Вами, заказ аннулируется. Скидка 10% не распространяется на заказы без регистрации.
+                    div
+                        span.with-sidebar__subtitle оформить заказ по телефону
+                        p.with-sidebar__text.
+                            Для этого Вам надо позвонить нам в рабочие дни с 10-00 до 18-00 и продиктовать артикула выбранных товаров. Обращаем Ваше внимание, что на заказы принятые по телефону скидка 10% не распространяется, даже если Вы уже оформляли заказы неоднократно.
+                        p.with-sidebar__text Тел.:
+                            a(href="tel:+74959309954").with-sidebar__link +7(495) 930-99-54
+                            | ;
+                            a(href="tel:+79250702570").with-sidebar__link +7(925) 070-25-70
+                        p.with-sidebar__text
+                            | Вы можете написать нам на почту и указать артикула выбранных товаров. Обращаем Ваше внимание, что на заказы принятые по электронной почте скидка 10% не распространяется, даже если Вы уже оформляли заказы неоднократно. Наша почта
+                            a(href="mailto:info@1000platkov.ru").with-sidebar__link info@1000platkov.ru
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

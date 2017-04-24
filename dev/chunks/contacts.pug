@@ -1,0 +1,141 @@
+.contacts
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Контакты
+        .contacts__title
+            span.subtitle__text.subtitle--b контакты
+        .row
+            .col-lg-4.col-md-12
+                span.contacts__subtitle телефоны:
+                .contacts__phones
+                    a(href="tel:+74959309954").contacts__phones__number +7 (495) 930-99-54
+                    a(href="tel:+79250702570").contacts__phones__number +7 (925) 070-25-70
+                a(href="#" data-pop="#callback").js-show-pop-up.btn-black.contacts__btn.contacts__btn__callback
+                    span заказать обратный звонок
+                span.contacts__subtitle email:
+                a(href="mailto:info@venera-store.ru").contacts__text.contacts__margin info@venera-store.ru
+                span.contacts__subtitle время работы:
+                span.contacts__text.contacts__margin
+                    |   Вы можете сформировать заказ на сайте <br>
+                    |   в любое удобное для Вас время.
+                span.contacts__subtitle заказы по телефону:
+                span.contacts__text ПН-ПТ с 10-00 до 18-00
+                span.contacts__text.contacts__text--grey (по московскому времени)
+            .col-lg-8.col-md-12
+                form.contacts__form.js-contacts-form.clearfix
+                    span.contacts__form__title связаться с нами
+                    .contacts__form__block
+                        label(for="contacts__name").contacts__form__label
+                            span.contacts__form__text Имя
+                            input(type="text", name="name").index-subscribe__form__input.contacts__form__input#contacts__name
+                        label(for="contacts__phone").contacts__form__label
+                            span.contacts__form__text.contacts__form__text--dec Телефон
+                            input(type="phone", name="phone" placeholder="+7 (___) ___-____").index-subscribe__form__input.contacts__form__input#contacts__phone
+                        label(for="contacts__email").contacts__form__label
+                            span.contacts__form__text.contacts__form__text--dec E-mail
+                            span.contacts__form__text--grey (для ответа на Ваше письмо)
+                            input(type="email", name="email").index-subscribe__form__input.contacts__form__input#contacts__email
+                    .contacts__form__block
+                        label(for="contacts__textarea").contacts__form__label.contacts__form__label--textarea
+                            span.contacts__form__text.contacts__form__text--dec Ваше сообщение
+                            textarea(name="textarea").index-subscribe__form__input.contacts__form__textarea#contacts__textarea
+                    .clearfix
+                    button(type="submit").btn-black.contacts__form__btn
+                        span отправить
+        span.contacts__subtitle.contacts__requisites реквизиты:
+        p.contacts__text.contacts__info
+            |   This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+        span.contacts__subtitle.contacts__adress Адреса пунктов выдачи товаров:
+        .delivery__map-block
+
+            span(data-lat="55.683328", data-lng="37.511515").delivery__map-block__item.clearfix
+                span.delivery__map-block__number 1
+                span.delivery__map-block__text
+                    span.delivery__map-block__text--title
+                        |   Москва, проспект Вернадского дом 12, корпус 3, подъезд 2 <br>
+                    span.delivery__map-block__text--info
+                        |   Пн-Пт: с 12:00 до 18:00, Сб: с 12:00 до 17:00
+                span.delivery__map-block__view смотреть на карте
+
+            span(data-lat="55.829773", data-lng="37.589899").delivery__map-block__item.clearfix
+                span.delivery__map-block__number 2
+                span.delivery__map-block__text
+                    span.delivery__map-block__text--title
+                        |   Москва, проспект Вернадского дом 12, корпус 3, подъезд 2 <br>
+                    span.delivery__map-block__text--info
+                        |   Пн-Пт: с 12:00 до 18:00, Сб: с 12:00 до 17:00
+                span.delivery__map-block__view смотреть на карте
+            span(data-lat="55.741551", data-lng="37.784885").delivery__map-block__item.clearfix
+                span.delivery__map-block__number 3
+                span.delivery__map-block__text
+                    span.delivery__map-block__text--title
+                        |   Москва, проспект Вернадского дом 12, корпус 3, подъезд 2 <br>
+                    span.delivery__map-block__text--info
+                        |   Пн-Пт: с 12:00 до 18:00, Сб: с 12:00 до 17:00
+                span.delivery__map-block__view смотреть на карте
+
+            .map-info-wrap.contacts__map
+                .delivery__map#map
+                .delivery__map__tabs
+                    span(data-tab="map-tab1", data-lat="55.693330", data-lng="37.534516", data-travel="TRANSIT").delivery__map__tab.js-map-tab от м. Университет
+                    span(data-tab="map-tab2", data-lat="55.677618", data-lng="37.507136", data-travel="TRANSIT").delivery__map__tab.js-map-tab от м. Проспект Вернадского
+                    span(data-tab="map-tab3", data-lat="55.753559", data-lng="37.609218", data-travel="DRIVING").delivery__map__tab.js-map-tab на автомобиле из центра
+                    span(data-tab="map-tab4", data-lat="69.069980", data-lng="33.587119", data-travel="DRIVING").delivery__map__tab.js-map-tab на автомобиле из области
+                .delivery__map__info.map-tab1.active
+                    .clearfix
+                        .delivery__map__img
+                            img(src="img/img-map-univer.jpg")
+                        span.delivery__text.delivery__map__text
+                            |   Станция м. «Университет», последний вагон из центра, дальше вдоль Проспекта Вернадского по направлению в область. Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                        a(href="#").btn-black.delivery__map__btn
+                            span распечатать схему проезда
+                .delivery__map__info.map-tab2
+                    .delivery__map__img
+                        img(src="img/img-map-univer.jpg")
+                    span.delivery__text.delivery__map__text
+                        |   Станция м. «Проспект Вернадского», последний вагон из центра, дальше вдоль Проспекта Вернадского по направлению в область. Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                    a(href="#").btn-black.delivery__map__btn
+                        span распечатать схему проезда
+                .delivery__map__info.map-tab3
+                    .delivery__map__img
+                        img(src="img/img-map-univer.jpg")
+                    span.delivery__text.delivery__map__text
+                        |   Станция м. «Университет», последний вагон из центра, дальше вдоль Проспекта Вернадского по направлению в область. Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                    a(href="#").btn-black.delivery__map__btn
+                        span распечатать схему проезда
+                .delivery__map__info.map-tab4
+                    .delivery__map__img
+                        img(src="img/img-map-univer.jpg")
+                    span.delivery__text.delivery__map__text
+                        |   Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                    a(href="#").btn-black.delivery__map__btn
+                        span распечатать схему проезда
+
+            .delivery__payment
+                span.delivery__payment__title способы оплаты
+                .clearfix
+                ul.statyi-detail__list.delivery__courier__list
+                    li.statyi-detail__list__item.
+                        Оплата наличными курьеру при доставке;
+                    li.statyi-detail__list__item.
+                        Безналичный расчет через любой банк;
+                    li.statyi-detail__list__item.
+                        Он-лайн-оплата на сайте (Гарантируем безопасность он-лайн покупок).
+                .delivery__payment__icons
+                    .payment.clearfix
+                        a(href="#").payment__item.payment--mastercard
+                            +icon("ico-mastercard")
+                        a(href="#").payment__item.payment--visa
+                            +icon("ico-visa")
+                        a(href="#").payment__item.payment--paypal
+                            +icon("ico-paypal")
+.index-subscribe.processed__subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

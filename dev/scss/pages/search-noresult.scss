@@ -1,0 +1,28 @@
+.search-noresult {
+  &__text {
+    display: inline-block;
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    letter-spacing: .7px;
+  }
+  .search__title {
+    margin: 38px 0 29px;
+  }
+  &__block {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .search__text {
+    margin-bottom: 14px;
+  }
+  &__interesting {
+    text-align: center;
+    margin: 63px 0 62px;
+    letter-spacing: 2px;
+    @media (max-width: $screen-sm-max) {
+      margin: 30px 0;
+    }
+  }
+}

@@ -1,0 +1,578 @@
+.stores {
+  &__title {
+    display: block;
+    text-align: center;
+    margin: 33px 0 49px;
+    font-family: $avantdemi;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 1.8px;
+    color: #000;
+    text-transform: uppercase;
+    @media (max-width: $screen-sm-max) {
+      line-height: 1.5em;
+      margin: 30px 0;
+    }
+  }
+  &__number {
+    display: inline-block;
+    font-family: $bignooble;
+    font-size: 30px;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: 1px;
+    @media (max-width: $screen-xs-max) {
+      vertical-align: top;
+    }
+  }
+  &__subtitle {
+    display: inline-block;
+    margin: 0 0 25px 10px;
+    font-family: $bignooble;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    @media (max-width: $screen-xs-max) {
+      width: 86%;
+    }
+  }
+  &__name {
+    letter-spacing: .8px;
+  }
+  &__item {
+    margin-bottom: 29px;
+
+    .register__subscribe {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 35px;
+    }
+    &__left {
+      width: 554px;
+      display: inline-block;
+      vertical-align: top;
+      @media (max-width: 1270px) {
+        width: 100%;
+      }
+    }
+    &__right {
+      margin-left: 71px;
+      display: inline-block;
+      vertical-align: top;
+      width: 446px;
+      @media (max-width: 1270px) {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    &__block {
+      display: none;
+    }
+  }
+  &__input {
+    width: 100%;
+    padding: 8px 47px 9px 18px;
+    margin-bottom: 31px;
+    letter-spacing: .8px;
+  }
+  &__checkbox {
+    border-radius: 50px;
+    margin: 6px 14px 0 1px;
+    vertical-align: top;
+    width: 13px;
+    height: 13px;
+  }
+  &__checkbox-name {
+    display: inline-block;
+    width: 90%;
+    @media (max-width: $screen-xs-max) {
+      width: 88%;
+    }
+    &__title {
+      display: block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.7px;
+      color: #000;
+    }
+    &__text {
+      display: block;
+      font-family: $avantdemi;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.7px;
+      color: #000;
+    }
+  }
+  &__courier {
+    position: relative;
+    display: block;
+    background-color: #f2f2f2;
+    padding: 44px 92px;
+    margin: 0 -15px 42px -15px;
+    @media (max-width: $screen-sm-max) {
+      margin: 0 0 42px 0;
+      padding: 44px 30px;
+    }
+
+    .jq-selectbox__select {
+      height: 45px;
+      padding: 13px 46px 0 18px;
+    }
+
+    .jq-selectbox__select-text {
+      text-align: left;
+    }
+
+    .jq-selectbox__trigger-arrow {
+      top: 17px;
+    }
+
+    .jq-selectbox__trigger {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 42px;
+      height: 45px;
+      border-bottom: 2px solid #f2f2f2;
+      border-top: 2px solid #f2f2f2;
+      border-right: 2px solid #f2f2f2;
+      border-left: 2px solid #000;
+      &:before {
+        position: absolute;
+        content: '';
+        height: calc(100% + 4px);
+        background-color: #000;
+        width: 2px;
+        left: -2px;
+        top: -2px;
+      }
+    }
+
+    .jq-selectbox li {
+      padding: 7px 38px 7px 26px;
+      text-align: left;
+      letter-spacing: .8px;
+    }
+
+    .jq-selectbox ul {
+      padding: 15px 0;
+      background-color: #f2f2f2;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 23.5px 24px 23.5px;
+      border-color: transparent transparent #f2f2f2 transparent;
+      top: -24px;
+      left: 92px;
+    }
+    &__title {
+      display: inline-block;
+      font-family: $avantdemi;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.9px;
+      color: #000;
+      text-transform: uppercase;
+    }
+    &__grey {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.7px;
+      color: #848484;
+    }
+  }
+  &__map {
+    margin: 0 -15px 30px;
+    padding: 45px 50px;
+    background-color: #f2f2f2;
+    @media (max-width: $screen-md-max) {
+      padding: 45px 0;
+    }
+    @media (max-width: $screen-sm-max) {
+      margin: 0 0 30px;
+      padding: 0;
+    }
+    @media (max-width: $screen-xs-max) {
+      //text-align: center;
+    }
+    &__subblock {
+      width: 461px;
+      float: left;
+      @media (max-width: 1270px) {
+        width: 440px;
+      }
+      @media (max-width: $screen-md-max) {
+        width: 100%;
+        padding: 30px 30px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 30px 15px;
+      }
+    }
+    &__title {
+      display: inline-block;
+      margin-bottom: 25px;
+      padding-left: 41px;
+      letter-spacing: 1px;
+      font-family: $avantdemi;
+      font-size: 18px;
+      line-height: 26px;
+      color: #000;
+      text-transform: uppercase;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+      }
+    }
+    &__item {
+      padding: 28px 74px 28px 41px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      @media (max-width: $screen-sm-max) {
+        padding: 30px;
+      }
+      @media (max-width: $screen-xs-max) {
+        padding: 15px;
+      }
+      &.active {
+        background-color: #fff;
+        .stores__map__btn {
+          display: inline-block;
+        }
+      }
+      &:hover {
+        background-color: #fff;
+      }
+      .stores__subtitle {
+        margin-bottom: 16px;
+      }
+    }
+    &__text {
+      display: block;
+      margin-bottom: 16px;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .8px;
+    }
+    &__day {
+      display: inline-block;
+      float: left;
+      font-family: $avantbook;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000;
+      text-align: left;
+      letter-spacing: .7px;
+      @media (max-width: $screen-xs-max) {
+        float: none;
+        width: 100%;
+        //text-align: center;
+      }
+    }
+    &__time {
+      display: inline-block;
+      float: right;
+      font-family: $avantbook;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000;
+      text-align: right;
+      margin-right: 28px;
+      letter-spacing: .7px;
+      @media (max-width: $screen-xs-max) {
+        float: none;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    &__btn {
+      display: none;
+      padding: 13px 0;
+    }
+  }
+  &__grey-wrap {
+    float: right;
+    margin-top: 3px;
+    margin-bottom: 24px;
+  }
+  &__select {
+    width: 100%;
+    text-align: left;
+  }
+  &__comments {
+    margin-top: 31px;
+  }
+  &__payments {
+    padding-top: 7px;
+    margin-left: 30px;
+  }
+  &__textarea {
+    overflow: hidden;
+    resize: none;
+    width: 100%;
+    min-height: 130px;
+    background-color: #f2f2f2;
+    border: 2px solid #000;
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    padding: 8px 18px;
+    letter-spacing: .8px;
+  }
+  &__onmap {
+    margin-top: 5px;
+    float: left;
+    width: 698px;
+    padding: 6px;
+    background-color: #fff;
+    @media (max-width: 1270px) {
+      width: 400px;
+    }
+    @media (max-width: $screen-md-max) {
+      width: 100%;
+      margin-top: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      border-top: 6px solid #fff;
+    }
+    #map {
+      height: 795px;
+      @media (max-width: $screen-md-max) {
+        height: 450px;
+      }
+    }
+  }
+  &__noun {
+    background-color: #f2f2f2;
+    padding: 64px 0 70px;
+    margin-top: 41px;
+
+    &__title {
+      display: block;
+      letter-spacing: 1.8px;
+      text-align: center;
+      margin-bottom: 49px;
+    }
+
+    &__block {
+      margin-left: 34%;
+      @media (max-width: 1270px) {
+        margin-left: 28%;
+      }
+      @media (max-width: $screen-md-max) {
+        margin-left: 22%;
+      }
+      @media (max-width: $screen-sm-max) {
+        margin-left: 0;
+        text-align: center;
+      }
+      //.cart-reg__buy__price {
+      //  display: block;
+      //  padding: 0;
+      //  text-align: center;
+      //}
+    }
+
+    &__btn {
+      float: left;
+      @media (max-width: $screen-md-max) {
+        float: none;
+      }
+    }
+
+    &__text {
+      float: left;
+      font-family: $avantbook;
+      font-size: 12px;
+      line-height: 22px;
+      color: #848484;
+      margin: 51px 0 0 39px;
+      display: inline-block;
+      letter-spacing: .6px;
+      a {
+        font-family: $avantbook;
+        font-size: 12px;
+        line-height: 22px;
+        color: #848484;
+        display: inline-block;
+        margin-left: 4px;
+      }
+      @media (max-width: $screen-md-max) {
+        float: none;
+        width: 100%;
+        margin: 30px 0 0 0;
+      }
+    }
+
+    .cart-reg__buy__text {
+      width: 217px;
+      @media (max-width: $screen-sm-max) {
+        text-align: center;
+        padding: 0;
+        width: 160px;
+      }
+    }
+  }
+  .jq-selectbox__dropdown {
+    @media (max-width: $screen-xs-max) {
+      width: 100%!important;
+    }
+  }
+  &__delivery {
+    margin-bottom: 44px!important;
+  }
+  &__sm-login {
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.placeholder-black {
+  &::-webkit-input-placeholder {
+    color: #000;
+  }
+  &::-moz-placeholder {
+    color: #000;
+  }
+  &:-moz-placeholder {
+    color: #000;
+  }
+  &:-ms-input-placeholder {
+    color: #000;
+  }
+}
+.no-register {
+  &__login {
+    background-color: #c401b1;
+    position: relative;
+    top: -43px;
+    padding: 12px 16px;
+    @media (max-width: $screen-md-max) {
+      top: auto;
+    }
+    &__close {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+      right: 13px;
+      top: 8px;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #fff;
+    }
+    &__text {
+      font-family: $avantbook;
+      font-size: 12px;
+      line-height: 22px;
+      color: #fff;
+      border-color: #fff;
+      letter-spacing: .75px;
+    }
+  }
+  &__town {
+    width: 260px;
+    display: inline-block;
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    input {
+      background-color: #f2f2f2;
+    }
+  }
+  &__street {
+    width: 262px;
+    display: inline-block;
+    margin-left: 28px;
+    @media (max-width: $screen-md-max) {
+      margin-left: 8px;
+    }
+    @media (max-width: $screen-sm-max) {
+      margin-left: 0;
+      width: 100%;
+    }
+    input {
+      background-color: #f2f2f2;
+      &.error {
+        border: 2px solid #e6005c;
+        color: #e6005c;
+      }
+    }
+  }
+  &__small-input {
+    width: 116px;
+    display: inline-block;
+    input {
+      background-color: #f2f2f2;
+    }
+    @media (max-width: $screen-md-max) {
+      width: 122px;
+    }
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+    &:not(:last-child) {
+      margin-right: 26px;
+      @media (max-width: $screen-md-max) {
+        margin-right: 12px;
+      }
+      @media (max-width: $screen-sm-max) {
+        margin-right: 0;
+      }
+    }
+  }
+  .stores__comments {
+    margin-top: 0;
+  }
+  .stores__textarea {
+    min-height: 159px;
+  }
+  &__delivery-price {
+    display: block;
+    padding: 10px 0 11px 16px;
+    margin-top: 10px;
+    background-color: #fff;
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: .7px;
+  }
+  .register__wrap-input {
+    label.error {
+      display: inline-block !important;
+      position: absolute;
+      bottom: -35px;
+      left: 20px;
+      color: #e6005c;
+      font-family: $avantbook;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+.text-dotted {
+  border-bottom: 1px dotted;
+}
+#adress-on-map {
+  display: none;
+}

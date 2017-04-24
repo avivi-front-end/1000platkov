@@ -1,0 +1,97 @@
+.requisites
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Личный кабинет
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Реквизиты и адреса
+
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help Личный кабинет
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link информация о пользователе
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link реквизиты компании
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link история заказов
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link выход
+                            .sidebar__manager
+                                span.sidebar__manager__title ваш личный менeджер
+                                span.sidebar__manager__text Зайцева Наталья
+                                .clearfix
+                                span.sidebar__manager__text Телефон:&nbsp;
+                                a(href="tel:+74950000000").sidebar__manager__text + 7 495 000 00 00
+                                .clearfix
+                                span.sidebar__manager__text Email:&nbsp;
+                                a(href="mailto:info@vs.ru").sidebar__manager__text info@vs.ru
+                                .clearfix
+                                a(href="#").btn-white.sidebar__opt__btn.sidebar__manager__btn
+                                    span обратиться
+
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title реквизиты компании
+                    span.requisites__text Заполните реквизиты Вашей организации для того чтобы стать нашим парнером
+                .col-md-12.col-lg-4
+                    form.requisites__form
+
+                        span.requisites__form__title Название организации
+                        .register__wrap-input.form-select.clearfix.requisites__select
+                            select(name="org__select").cart-reg__item__size__select.js-cart-select
+                                option(value="org-1") ООО
+                                option(value="org-2") ОАО
+                                option(value="org-3") ЗАО
+                            input(type="text" name="org_name").index-subscribe__form__input.requisites__org.requisites__input#org_name
+
+                        label(for="yur__adress").requisites__label
+                            span.requisites__form__title Юридический адрес организации
+                            .register__wrap-input
+                                input(type="text" name="yur__adres").index-subscribe__form__input.requisites__input#yur__adress
+
+                        label(for="inn").requisites__label
+                            span.requisites__form__title ИНН
+                            span.requisites__form__grey 9 цифр
+                            .register__wrap-input
+                                input(type="text" name="inn" placeholder="_________").index-subscribe__form__input.requisites__input.js-inn#inn
+
+                        label(for="inn2").requisites__label
+                            span.requisites__form__title ИНН
+                            span.requisites__form__grey 9 цифр
+                            .register__wrap-input
+                                input(type="text" name="inn2" placeholder="_________").index-subscribe__form__input.requisites__input.js-inn#inn2
+
+                        label(for="ogrn").requisites__label
+                            span.requisites__form__title ОГРН
+                            span.requisites__form__grey 13 цифр
+                            .register__wrap-input
+                                input(type="text" name="ogrn" placeholder="_____________").index-subscribe__form__input.requisites__input.js-ogrn#ogrn
+
+                        label(for="bank").requisites__label
+                            span.requisites__form__title Название банка
+                            .register__wrap-input
+                                input(type="text" name="bank").index-subscribe__form__input.requisites__input#bank
+
+                        label(for="count").requisites__label
+                            span.requisites__form__title Рассчетный счет
+                            span.requisites__form__grey 20 цифр
+                            .register__wrap-input
+                                input(type="text" name="count").index-subscribe__form__input.requisites__input.js-count#count
+
+                        label(for="bik").requisites__label
+                            span.requisites__form__title БИК
+                            .register__wrap-input
+                                input(type="text" name="#bik").index-subscribe__form__input.requisites__input#bik
+
+                        button(type="submit").btn-black.requisites__btn
+                            span отправить реквизиты

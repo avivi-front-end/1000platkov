@@ -1,0 +1,306 @@
+// $avantbook: 'AvantGarde-Book',Arial,sans-serif;
+// $avantdemi: 'AvantGardeGothicC-Demi',Arial,sans-serif;
+// $bignooble: 'BigNoodleTitlingCyr',Arial,sans-serif;
+
+.footer {
+    padding-top: 84px;
+    padding-bottom: 21px;
+    position: relative;
+    @media (max-width: $screen-md-max) {
+        padding-top: 30px;
+    }
+    @media (max-width: $screen-sm-max) {
+        padding-top: 10px;
+    }
+
+    &__payment {
+        padding-top: 5px;
+    }
+
+    &__item {
+        @media (max-width: $screen-md-max) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__social-link {
+        float: left;
+        width: 43px;
+        height: 43px;
+        margin-right: 3px;
+        margin-bottom: 2px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: #000;
+            transition: fill 0.3s ease;
+        }
+
+        &:hover {
+            svg {
+                transition: fill 0.3s ease;
+            }
+
+            .icon-soc-vk {
+                fill: #5d83ac;
+            }
+
+            .icon-soc-fb {
+                fill: #3c5b9a;
+            }
+
+            .icon-soc-inst {
+                fill: #cab892;
+            }
+
+            .icon-soc-ytube {
+                fill: #ca2f2c;
+            }
+
+            .icon-soc-ok {
+                fill: #ee812a;
+            }
+
+            .icon-soc-tw {
+                fill: #42c8f4;
+            }
+
+            .icon-soc-pinterest {
+                fill: #b72029;
+            }
+
+            .icon-soc-watsup {
+                fill: #44b749;
+            }
+
+            .icon-soc-viber {
+                fill: #8053a2;
+            }
+            .icon-soc-gplus {
+                fill: #333132;
+            }
+            .icon-soc-email {
+                fill: #3396D3;
+            }
+        }
+    }
+
+    &__enter-wrap {
+        list-style-type: none;
+        margin-top: -21px;
+        @media (max-width: $screen-sm-max) {
+            display: none;
+        }
+
+        &:hover {
+            .footer__enter-wrap-link {
+                color: #969696;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+    }
+
+    &__enter-wrap-item {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: 36px;
+        }
+
+        &:last-child {
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 1px;
+                height: 66%;
+                @include position(absolute,4px null null -19px);
+                background: #969696;
+            }
+
+        }
+    }
+
+    &__work-info-wrapper {
+        margin: 82px 0 78px;
+        @media (max-width: $screen-sm-max) {
+            margin: 30px 0;
+        }
+    }
+
+    &__enter-wrap-link {
+        font-family: $bignooble;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #969696;
+        -webkit-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+
+        &--black {
+            color: #000;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-top: 7px;
+        margin-bottom: 36px;
+        @media (max-width: $screen-sm-max) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__phone {
+        font-family: $avantdemi;
+        font-size: 18px;
+        text-decoration: none;
+        color: #000;
+        display: block;
+        letter-spacing: 1px;
+        margin-bottom: 13px;
+    }
+
+    &__work-info {
+        font-family: $avantbook;
+        font-size: 14px;
+        color: #000;
+        letter-spacing: 0.8px;
+        margin-bottom: 13px;
+
+        a {
+            color: #000;
+        }
+    }
+
+    &__socials-wrapper {
+        padding-right: 35px;
+    }
+
+    &__socials-title {
+        font-family: $bignooble;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 27px;
+    }
+
+    &__category-wrapper {
+        margin-bottom: 70px;
+
+        &--present {
+            padding-top: 24px;
+            margin-bottom: 63px;
+        }
+        @media (max-width: $screen-sm-max) {
+            margin-bottom: 45px;
+        }
+    }
+
+    &__category-title {
+        font-size: 18px;
+        font-family: $bignooble;
+        line-height: (24/18);
+        text-transform: uppercase;
+        color: #000;
+        display: block;
+        margin-bottom: 20px;
+        letter-spacing: 0.7px;
+    }
+
+    &__category-item {
+        font-size: 14px;
+        line-height: (30/14);
+        color: #000;
+        font-family: $avantbook;
+        display: block;
+        letter-spacing: 0.7px;
+
+        &--bold {
+            font-size: 18px;
+            font-family: $bignooble;
+            line-height: (24/18);
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            margin-bottom: 7px;
+        }
+    }
+}
+
+.copyright {
+    // height: 70px;
+    background: #000;
+    padding: 29px 0 19px;
+
+    &__container {
+        height: 100%;
+    }
+
+    &__wrapper {
+        // display: flex;
+        // justify-content: space-between;
+        //height: 100%;
+        // align-items: center;
+    }
+
+    &__item {
+        color: #fff;
+        font-size: 12px;
+        font-family: $avantbook;
+        text-decoration: none;
+        letter-spacing: 0.6px;
+        height: 100%;
+        white-space: nowrap;
+
+        &:before {
+            content: '';
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(:last-child) {
+            float: left;
+            margin-right: 123px;
+            margin-bottom: 10px;
+        }
+        @media (min-width: $screen-xl-min) {
+            &:last-child {
+                float: right;
+            }
+        }
+        @media (max-width: $screen-lg-max) {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+.scroll-up-btn {
+    @include position(absolute,null 0 0 null);
+    width: 70px;
+    height: 70px;
+    background: #c401b1;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    &:hover {
+        background: #000;
+    }
+
+    svg {
+        width: 42%;
+        height: 45%;
+        @include position(absolute,0 0 0 0);
+        margin: auto;
+        fill: #fff;
+    }
+    @media (max-width: $screen-sm-max) {
+        width: 50px;
+        height: 50px;
+    }
+}

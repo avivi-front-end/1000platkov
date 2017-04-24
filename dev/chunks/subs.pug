@@ -1,0 +1,61 @@
+.subs
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Личный кабинет
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Подписка
+
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help Личный кабинет
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link личные данные
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link адреса доставки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link история заказов
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link скидки
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link подписка
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link совместные и оптовые покупки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link выход
+
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title подписка
+                    span.subs__subtitle Вы можете подписаться на следующие виды рассылок нашего магазина для получения новостей про акции, распродажи и специальные предложения
+                    .subs__check.clearfix
+                        label.clearfix.register__subscribe
+                            input(type="checkbox" name="subs__check").catalog-sidebar__check-item-input.js-subs-check
+                            span.catalog-sidebar__check-icon
+                            span.catalog-sidebar__check-name Хочу получать информацию на email
+                    .subs__radio.clearfix
+                        span.subs__text
+                            | Помогите сделать нашу рассылку максимально полезной.
+                            br
+                            | Какие категории Вам интересны?
+                        label.clearfix.register__subscribe.subs__radio__item
+                            input(type="checkbox" name="subs__radio" checked="checked").catalog-sidebar__check-item-input
+                            span.catalog-sidebar__check-icon
+                            span.catalog-sidebar__check-name Для женщин
+                        label.clearfix.register__subscribe.subs__radio__item
+                            input(type="checkbox" name="subs__radio").catalog-sidebar__check-item-input
+                            span.catalog-sidebar__check-icon
+                            span.catalog-sidebar__check-name Для мужчик
+                        label.clearfix.register__subscribe.subs__radio__item
+                            input(type="checkbox" name="subs__radio").catalog-sidebar__check-item-input
+                            span.catalog-sidebar__check-icon
+                            span.catalog-sidebar__check-name Для детей

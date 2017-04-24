@@ -1,0 +1,205 @@
+.adress {
+  &__title {
+    margin: 20px 0 23px;
+    display: inline-block;
+    font-family: $avantdemi;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: .8px;
+  }
+  &__text {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: .75px;
+    float: left;
+    max-width: 620px;
+    padding: 0;
+    border: none;
+    width: 100%;
+    transition: none;
+    @media (max-width: 1270px) {
+      max-width: none;
+      width: 100%;
+      float: none;
+    }
+  }
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+  &__btns {
+    float: right;
+    position: relative;
+    vertical-align: top;
+    top: -9px;
+    @media (max-width: 1270px) {
+      float: none;
+      top: auto;
+      width: 100%;
+      margin-bottom: 15px;
+      .profile__form__edit {
+        margin: 0;
+      }
+      .adress__del {
+        margin-left: 20px;
+      }
+    }
+    .profile__form__edit {
+      width: auto;
+    }
+  }
+  &__radio {
+
+  }
+  &__add {
+    margin-top: 21px;
+    padding: 13px 0;
+    @media (max-width: $screen-xs-max) {
+      text-align: center;
+      width: 100%;
+    }
+    span {
+      letter-spacing: 1px;
+    }
+  }
+  &__new-adress {
+    display: none;
+    input, select {
+      background-color: #fff;
+    }
+    @media (max-width: $screen-xs-max) {
+      text-align: left;
+    }
+    &__title {
+      display: block;
+      font-family: $bignooble;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: 1.1px;
+      margin-bottom: 24px;
+    }
+    .no-register__town {
+      width: 385px;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+      }
+      .adress__select .jq-selectbox__select {
+        padding: 13px 46px 0 18px;
+      }
+      .jq-selectbox ul {
+        padding: 20px 0 20px 0;
+      }
+      .jq-selectbox li {
+        padding: 4px 37px 4px 18px;
+        text-align: left;
+      }
+    }
+    .no-register__street {
+      width: 390px;
+      @media (max-width: 1270px) {
+        margin-left: 0;
+        margin-top: 25px;
+        width: 385px;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+      }
+    }
+    .no-register__small-input {
+      width: 180px;
+      @media (max-width: 1270px) {
+        margin-left: 0;
+        width: 385px;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+      }
+    }
+    .js-adress-form {
+      margin-top: 0;
+    }
+    .register__wrap-input {
+      label {
+        display: inline-block!important;
+        position: absolute;
+        color: #e6005c;
+        font-family: $avantbook;
+        font-size: 12px;
+        line-height: 18px;
+        left: 25px;
+        bottom: -25px;
+        max-width: 280px;
+        @media (max-width: $screen-md-max) {
+          left: 21%;
+        }
+        @media (max-width: $screen-sm-max) {
+          left: 15%;
+        }
+        @media (max-width: $screen-xs-max) {
+          display: none!important;
+        }
+      }
+    }
+  }
+  &__select {
+    width: 100%;
+    .jq-selectbox__select {
+      height: 45px;
+      padding: 13px 46px 0 26px;
+      background-color: #fff;
+    }
+
+    .jq-selectbox__select-text {
+      text-align: left;
+    }
+
+    .jq-selectbox__trigger-arrow {
+      top: 17px;
+    }
+
+    .jq-selectbox__trigger {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 42px;
+      height: 45px;
+      border-bottom: 2px solid #fff;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      border-left: 2px solid #000;
+      &:before {
+        position: absolute;
+        content: '';
+        height: calc(100% + 4px);
+        background-color: #000;
+        width: 2px;
+        left: -2px;
+        top: -2px;
+      }
+    }
+
+    .jq-selectbox li {
+      padding: 7px 38px 7px 26px;
+      text-align: left;
+      letter-spacing: .8px;
+    }
+
+    .jq-selectbox ul {
+      padding: 15px 0;
+      background-color: #fff;
+    }
+  }
+  &__radio-btn {
+    border-radius: 100%;
+  }
+  &__metro {
+    display: none;
+  }
+}

@@ -1,0 +1,237 @@
+.cart-reg
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Корзина
+        .cart-reg__title
+            a(href="cart-reg.html").cart-reg__order ваш заказ
+            a(href="favorite-opt.html").cart-reg__favorite избранное(12)
+        .cart-opt__head-wrap
+            a(href="#").header__logined-link.js-height.header__logined-link--list
+                +icon('list-offer')
+                | Заказ по списку
+            .cart-opt__head-wrap-helper.
+                Просто загрузите список артикулов товаров
+                и мы сформируем Ваш заказ за считанные секунды
+            .catalog-opt-filter__view
+                a(href="#").catalog-opt-filter__view-link.catalog-opt-filter__view-link--column
+                    +icon('column')
+                a(href="#").catalog-opt-filter__view-link.catalog-opt-filter__view-link--list.active
+                    +icon('list')
+
+        .cart-reg__gift.clearfix
+            .container
+                span.cart-opt__text
+                    | Загрузить Excel файл&nbsp;
+                    a(href="#", download="download").cart-opt__link-file
+                        |(пример файла)
+                    | &nbsp;со списком и количеством товаров и состав заказа сформируется автоматически
+
+                a(href="#").cart-opt__btn.btn-black.js-show-present
+                    span.
+                        загрузить файл
+        .wrapper-cart
+
+            .cart-reg__what.clearfix
+                span.cart-reg__what__text.cart-reg__what__photo Фото и название товара
+                span.cart-reg__what__text.cart-reg__what__size Размер
+                span.cart-reg__what__text.cart-reg__what__price Цена
+                span.cart-reg__what__text.cart-reg__what__quantity Количество
+                span.cart-reg__what__text.cart-reg__what__sum Сумма
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-6.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s") S
+                            option(value="size_m") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl" selected="selected") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text 1 054 руб.
+                    span.cart-reg__item__price__text2 1 054 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="1" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1 054 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    span.item-block__discount.cart-reg__item__img__discount.item-block__discount30 30%
+                    img(src="img/index-item-1.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s" selected="selected") S
+                            option(value="size_m") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text.cart-reg__item__price__text--non-discount 540 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="2" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1080 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/cart-item.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s") S
+                            option(value="size_m" selected="selected") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text.cart-reg__item__price__text--non-discount 540 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="2" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1080 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+            .cart-reg__item.clearfix
+                a(href="#").cart-reg__item__block.cart-reg__item__img
+                    img(src="img/index-item-3.jpg" alt="")
+                a(href="#").cart-reg__item__block.cart-reg__item__info
+                    span.cart-reg__item__info__title Платок VENERA (57007-26) Красный Красный Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Артикул:
+                        span.cart-reg__item__info__text 3146895444
+                    .clearfix
+                        span.cart-reg__item__info__grey Цает:
+                        span.cart-reg__item__info__text Красный
+                    .clearfix
+                        span.cart-reg__item__info__grey Размер:(см)
+                        span.cart-reg__item__info__text 140х140
+                .cart-reg__item__block.cart-reg__item__size
+                    //span.cart-reg__item__size__mobile Размер:
+                    form.cart-reg__item__size__form
+                        select.cart-reg__item__size__select.js-cart-select
+                            option(value="size_s") S
+                            option(value="size_m") M
+                            option(value="size_l") L
+                            option(value="size_xl") XL
+                            option(value="size_xxl" selected="selected") XXL
+                a(href="#").cart-reg__item__block.cart-reg__item__price
+                    //span.cart-reg__item__price__mobile Цена:
+                    span.cart-reg__item__price__text 1 054 руб.
+                    span.cart-reg__item__price__text2 1 054 руб.
+                .cart-reg__item__block.cart-reg__item__quantity
+                    //span.cart-reg__item__quantity__mobile Количество:
+                    form.cart-reg__item__quantity__form
+                        input(type="number" value="1" min="1" step="1").js-cart-quantity.cart-reg__item__quantity__input
+                a(href="#").cart-reg__item__block.cart-reg__item__sum
+                    span.cart-reg__item__sum__text-sum Сумма:
+                    span.cart-reg__item__sum__text 1 054 руб.
+                span.cart-reg__item__close
+                    +icon("ico_close")
+                span.cart-reg__item__like.item-block__like.js-like
+                    +icon("ico_like")
+
+    .container.clearfix
+        .row
+            .col-md-4.col-md-offset-2.cart-opt__info
+                .clearfix
+                    .cart-opt__info-name Вес:
+                    .cart-opt__info-value  5 кг
+                .clearfix
+                    .cart-opt__info-name Сумма:
+                    .cart-opt__info-value  36 750 руб.
+                .cart-opt__info-text НДС 18%, включен в цену - 6 615 руб)
+                .clearfix
+                    .cart-opt__info-name Скидка:
+                    .cart-opt__info-value  (1 837 руб)
+            .col-md-4.col-md-offset-1.cart-opt__payment
+                .cart-reg__buy__sum
+                    span.cart-reg__buy__text Итого:
+                    span.cart-reg__buy__sum__text 8 998 руб.
+                a(href="#").btn.cart-reg__buy__btn
+                    span оформить заказ
+
+        //- .cart-reg__promo
+        //-     .cart-reg__promo__quastion
+        //-     form.cart-reg__promo__form.js-promocode-form
+        //-         label(for="promocode")
+        //-             span.cart-reg__promo__text Промо-код на скидку
+        //-             input(type="text" name="promo" placeholder="____  _______").cart-reg__promo__input.js-promo-input#promocode
+        //-             button(type="submit").btn-black.cart-reg__promo__btn
+        //-                 span применить
+        //- .cart-reg__buy
+        //-     span.cart-reg__buy__text Сумма заказа:
+        //-     span.cart-reg__buy__price 8 748 руб.
+        //-     .clearfix
+        //-     span.cart-reg__buy__text Ваша скидка:
+        //-     span.cart-reg__buy__price 250 руб.
+        //-     .clearfix
+
+    .index-subscribe.cart-reg__subscribe
+        .container
+            span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+            form.index-subscribe__form.js-index-subscribe__form
+                input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+                button(type="submit").btn-white.index-subscribe__form__submit
+                    span подписаться

@@ -1,0 +1,73 @@
+.register
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Регистрация
+        span.page-title.statyi__title.register__title Регистрация
+        .row
+            .col-md-6
+                p.register__text
+                    | Для быстрой регистрации и входа на сайт, Вы можете связать свой аккаунт в соц.сети с личным кабинетом на нашем сайте. Гарантируем сохранность Ваших личных данных.
+                .register__soc
+                    -  var socials =  ["soc-vk", "soc-fb", "soc-email", "soc-ok", "soc-gplus", "soc-inst"]
+                    .footer__socials-wrapper.clearfix
+                        each social in socials
+                            a(href="#").footer__social-link
+                                +icon(social)
+                form.register__form.js-register-form
+                    label(for="register__email").contacts__form__label
+                        span.contacts__form__text.contacts__form__text--dec E-mail
+                        span.contacts__form__text--grey (будущий логин для входа в личный кабинет)
+                        .register__wrap-input
+                            input(type="email", name="email").index-subscribe__form__input.register__input#register__email
+                    label(for="register__pass").contacts__form__label
+                        span.contacts__form__text.contacts__form__text--dec Пароль
+                        span.contacts__form__text--grey (должен содержать не менее 6 символов)
+                        .register__wrap-input
+                            input(type="password", name="pass").index-subscribe__form__input.register__input#register__pass
+                            span.register__ico.js-pass-input
+                                +icon("ico-pass-true").ico-true
+                                +icon("ico-pass-false").ico-false
+                    label(for="register__r_pass").contacts__form__label
+                        span.contacts__form__text.contacts__form__text--dec Повторите пароль
+                        .register__wrap-input
+                            input(type="password", name="r_pass").index-subscribe__form__input.register__input#register__r_pass
+                            span.register__ico.js-pass-input
+                                +icon("ico-pass-true")
+                                +icon("ico-pass-false")
+                    label.clearfix.register__subscribe
+                        input(type="checkbox").catalog-sidebar__check-item-input
+                        span.catalog-sidebar__check-icon
+                        span.catalog-sidebar__check-name.
+                            Согласен получать информацию о скидках и новостях магазина на email
+                    button(type="submit").btn-black.register__btn
+                        span подтвердить регистрацию
+                    span.register__text-grey.register__submit-text
+                        | Нажимая на кнопку «Подтвердить», я соглашаюсь с условиями&nbsp;
+                        a(href="#").register__text-grey.text-underline
+                            | Публичной оферты.
+                    span.register__dec *
+                    span.register__text-grey.
+                        - обязательные поля для заполнения
+            .col-md-6
+                .register__info
+                    span.register__info__title Преимущества регистрации
+                    ul.discounts__block__list.discounts__block__list--small
+                        li.discounts__block__item 10 % скидка для зарегистрированных пользователей
+                        li.discounts__block__item Экономьте время на оформление заказа, заполнив данные в личном кабинете
+                        li.discounts__block__item Отслеживайте статус заказов, просматривайте детализацию, оформляйте возврат через личный кабинет
+                        li.discounts__block__item Управляйте подпиской
+                    span.register__info__title.
+                        Просим указывать корректные <br>
+                        личные данные
+                    p.register__text Необходимо указывать актуальный адрес электронной почты для отправки подтверждения о регистрации а так же уведомлений о статусе заказа.
+                    p.register__text Гарантируем, что персональные данные, указанные при регистрации не будут переданы третьим лицам.
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

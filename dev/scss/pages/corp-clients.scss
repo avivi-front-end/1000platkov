@@ -1,0 +1,387 @@
+.corp-clients {
+  &__title {
+    text-align: center;
+    padding: 0 20px;
+    letter-spacing: 1.2px;
+    display: block;
+    margin: 43px 0 51px;
+    @media (max-width: $screen-xs-max) {
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      padding: 0;
+      margin: 30px 0;
+    }
+  }
+  &__subtitle {
+    display: block;
+    text-align: center;
+    padding: 0 75px;
+    @media (max-width: $screen-sm-max) {
+      padding: 0;
+    }
+    &__text {
+      font-family: $avantbook;
+      font-size: 18px;
+      line-height: 46px;
+      color: #000;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      @media (max-width: 1270px) {
+        line-height: 36px;
+      }
+      @media (max-width: $screen-sm-max) {
+        letter-spacing: .8px;
+      }
+      @media (max-width: $screen-xs-max) {
+        line-height: 28px;
+      }
+    }
+    &__text-b {
+      font-family: $avantdemi;
+    }
+  }
+  &__list {
+    list-style: none;
+    margin: 14px 0 64px 78px;
+    @media (max-width: $screen-xs-max) {
+      margin: 14px 0 40px 0;
+    }
+    &__item {
+      position: relative;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .7px;
+      padding-left: 28px;
+      &:before {
+        content: '•';
+        position: absolute;
+        font-family: $avantbook;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000;
+        left: -2px;
+        top: -1px;
+      }
+    }
+  }
+  &__item {
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 20px;
+    }
+    &__color {
+      padding: 64px 18px 64px 31px;
+      height: 319px;
+      @media (max-width: 1270px) {
+        padding: 30px 18px 30px 31px;
+        height: 330px;
+      }
+      @media (max-width: $screen-md-max) {
+        height: 265px;
+      }
+      @media (max-width: $screen-xs-max) {
+        height: auto;
+      }
+      &--pink {
+        background-color: #c401b1;
+        .corp-clients__item__btn {
+          background-color: #c401b1;
+        }
+      }
+      &--red {
+        background-color: #e6005c;
+        .corp-clients__item__btn {
+          background-color: #e6005c;
+        }
+      }
+      &--violet {
+        background-color: #7801c4;
+        .corp-clients__item__btn {
+          background-color: #7801c4;
+        }
+      }
+    }
+    &__title {
+      display: inline-block;
+      width: 100%;
+      font-family: $bignooble;
+      font-size: 18px;
+      line-height: 25px;
+      color: #fff;
+      letter-spacing: 1.2px;
+      margin-bottom: 25px;
+      @media (max-width: $screen-md-max) {
+        font-size: 20px;
+      }
+    }
+    &__text {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      letter-spacing: .8px;
+      margin-bottom: 15px;
+      min-height: 72px;
+    }
+    &__btn {
+      padding: 13px 0;
+      &:hover {
+        span {
+          color: #fff;
+        }
+      }
+      &:active {
+        span {
+          &:after {
+            background-color: #fff;
+          }
+        }
+      }
+      span {
+        letter-spacing: .8px;
+      }
+    }
+    &__help {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      letter-spacing: .8px;
+      margin-left: 58px;
+      @media (max-width: 1270px) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+    &__img {
+      position: relative;
+      height: 400px;
+      @media (max-width: 1270px) {
+        height: 293px;
+      }
+      @media (max-width: $screen-md-max) {
+        height: 690px;
+      }
+      @media (max-width: $screen-sm-max) {
+        height: 564px;
+      }
+      @media (max-width: $screen-xs-max) {
+        height: auto;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    }
+  }
+  &__port {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    bottom: 39px;
+    left: 45px;
+    @media (max-width: 1270px) {
+      left: 20px;
+    }
+    @media (max-width: $screen-md-max) {
+      left: 45px;
+    }
+    @media (max-width: 330px) {
+      left: 30px;
+    }
+    &__img {
+      position: relative;
+      display: inline-block;
+      width: 31px;
+      height: 24px;
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__text {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      letter-spacing: .8px;
+      vertical-align: top;
+      margin-left: 16px;
+    }
+  }
+  &__pack {
+    padding: 37px 30px 30px 36px;
+    margin: 70px 0 84px;
+    background-color: #06ae84;
+    @media (max-width: 1270px) {
+      margin: 60px 0;
+    }
+    @media (max-width: $screen-xs-max) {
+      padding: 20px;
+      margin: 60px 0 30px;
+    }
+    &__info {
+      float: left;
+      display: inline-block;
+      width: 87%;
+      margin: 8px 0 0 40px;
+      @media (max-width: 1270px) {
+        width: 75%;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        float: none;
+        //text-align: center;
+        margin: 0;
+      }
+    }
+    &__title {
+      display: inline-block;
+      font-family: $bignooble;
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 16px;
+      letter-spacing: 1.9px;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+        letter-spacing: 1.2px;
+      }
+    }
+    &__text {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      letter-spacing: .75px;
+      @media (max-width: $screen-xs-max) {
+        width: 100%;
+      }
+    }
+  }
+  &__info {
+    &__block {
+      float: left;
+      width: 580px;
+      @media (max-width: 1270px) {
+        float: none;
+        width: 100%;
+      }
+      &--right {
+        margin-left: 52px;
+        @media (max-width: 1270px) {
+          margin-left: 0
+        }
+      }
+    }
+    &__item {
+      margin-bottom: 24px;
+    }
+    &__title {
+      display: block;
+      font-family: $avantdemi;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: 1px;
+      margin-bottom: 54px;
+      text-transform: uppercase;
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 20px;
+      }
+    }
+    &__subtitle {
+      display: inline-block;
+      font-family: $avantdemi;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .8px;
+      margin-right: 6px;
+    }
+    &__text {
+      display: inline;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .75px;
+    }
+    &__btn {
+      margin-top: 20px;
+      padding: 13px 0;
+    }
+    .corp-clients__list {
+      margin: 0 0 0 2px;
+    }
+    &__link {
+      display: inline-block;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .75px;
+    }
+  }
+  &__interesting {
+    margin-top: 69px;
+  }
+  &__section {
+    padding: 0 105px;
+    @media (max-width: 1270px) {
+      padding: 0 50px;
+    }
+    @media (max-width: $screen-md-max) {
+      padding: 0;
+    }
+    &__title {
+      font-family: $avantdemi;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      margin: 90px 0 59px;
+      letter-spacing: 1.2px;
+      @media (max-width: $screen-sm-max) {
+        margin: 30px 0;
+      }
+    }
+    &__text1 {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .75px;
+    }
+    &__text2 {
+      display: inline-block;
+      text-align: center;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .75px;
+      padding: 0 13px;
+    }
+    .corp-clients__subtitle {
+      margin-top: 35px;
+    }
+    .corp-clients__list {
+      list-style: none;
+      margin: 14px 0 83px 4px;
+    }
+  }
+}

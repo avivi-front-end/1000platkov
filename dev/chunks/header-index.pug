@@ -1,0 +1,309 @@
+
+-  var list = ["Доставка и оплата", "Помощь", "Скидки", "Контакты", "Опт"]
+header.wrapper.header#header
+    .header__top
+        a(href="#").header__mobile-menu.js-show-menu
+            span
+        .header__right-wrapper.clearfix
+            .header__right-icon.header__right-icon--cart
+                +icon ('ico_cart')
+                span.header__right-icon-number 3
+                .cart-info
+                    .cart-info__wrapper
+                        .cart-info__title.
+                            4 товара на сумму: 2 848 руб.
+                        a(href="#").cart-info__item.clearfix
+                            img(src="img/upload/cart-small-1.jpg" alt="cart preview image").cart-info__image
+                            span.cart-info__text
+                                span.cart-info__text-wrapper
+                                    span.cart-info__item-name.
+                                        Платок VENERA
+                                    span.cart-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.cart-info__price
+                                span.cart-info__text-wrapper
+                                    span.cart-info__current-price.
+                                        1 054 руб.
+                        a(href="#").cart-info__item.clearfix
+                            img(src="img/upload/cart-small-2.jpg" alt="cart preview image").cart-info__image
+                            span.cart-info__text
+                                span.cart-info__text-wrapper
+                                    span.cart-info__item-name.
+                                        Платок VENERA (5700
+                                    span.cart-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.cart-info__price
+                                span.cart-info__text-wrapper
+                                    span.cart-info__current-price.
+                                        1 054 руб.
+                        a(href="#").cart-info__item.clearfix
+                            img(src="img/upload/cart-small-3.jpg" alt="cart preview image").cart-info__image
+                            span.cart-info__text
+                                span.cart-info__text-wrapper
+                                    span.cart-info__item-name.
+                                        Платок VENERA (5700
+                                    span.cart-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.cart-info__price
+                                span.cart-info__text-wrapper
+                                    span.cart-info__current-price.
+                                        1 054 руб.
+                                    span.cart-info__old-price.
+                                        1 054 руб.
+                        a(href="#").cart-info__item.clearfix
+                            img(src="img/upload/cart-small-1.jpg" alt="cart preview image").cart-info__image
+                            span.cart-info__text
+                                span.cart-info__text-wrapper
+                                    span.cart-info__item-name.
+                                        Платок VENERA
+                                    span.cart-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.cart-info__price
+                                span.cart-info__text-wrapper
+                                    span.cart-info__current-price.
+                                        1 054 руб.
+            .header__right-icon.header__right-icon--likes
+                +icon ('ico_head-likes')
+                span.header__right-icon-number 25
+                .likes-info
+                    .likes-info__wrapper
+                        .likes-info__title.
+                            4 товара на сумму: 2 848 руб.
+                        a(href="#").likes-info__item.clearfix
+                            img(src="img/upload/cart-small-1.jpg" alt="cart preview image").likes-info__image
+                            span.likes-info__text
+                                span.likes-info__text-wrapper
+                                    span.likes-info__item-name.
+                                        Платок VENERA
+                                    span.likes-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.likes-info__buy-status
+                                +icon('buy-status')
+                            span.likes-info__price
+                                span.likes-info__text-wrapper
+                                    span.likes-info__current-price.
+                                        1 054 руб.
+                        a(href="#").likes-info__item.clearfix
+                            img(src="img/upload/cart-small-2.jpg" alt="cart preview image").likes-info__image
+                            span.likes-info__text
+                                span.likes-info__text-wrapper
+                                    span.likes-info__item-name.
+                                        Платок VENERA
+                                    span.likes-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.likes-info__buy-status.active
+                                +icon('buy-status-active')
+                            span.likes-info__price
+                                span.likes-info__text-wrapper
+                                    span.likes-info__current-price.
+                                        1 054 руб.
+                        a(href="#").likes-info__item.clearfix
+                            img(src="img/upload/cart-small-3.jpg" alt="cart preview image").likes-info__image
+                            span.likes-info__text
+                                span.likes-info__text-wrapper
+                                    span.likes-info__item-name.
+                                        Платок VENERA
+                                    span.likes-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.likes-info__buy-status
+                                +icon('buy-status')
+                            span.likes-info__price
+                                span.likes-info__text-wrapper
+                                    span.cart-info__current-price.
+                                        1 054 руб.
+                                    span.cart-info__old-price.
+                                        1 054 руб.
+                        a(href="#").likes-info__item.clearfix
+                            img(src="img/upload/cart-small-2.jpg" alt="cart preview image").likes-info__image
+                            span.likes-info__text
+                                span.likes-info__text-wrapper
+                                    span.likes-info__item-name.
+                                        Платок VENERA
+                                    span.likes-info__item-art.
+                                        Артикул: <b>3146895444</b>
+                            span.likes-info__buy-status
+                                +icon('buy-status')
+                            span.likes-info__price
+                                span.likes-info__text-wrapper
+                                    span.likes-info__current-price.
+                                        1 054 руб.
+
+            .header__right-icon.header__right-icon--user
+                +icon ('ico_head-user')
+                .user-info
+                    ul.user-info__menu
+                        -  var userMenu = ["личные данные", "Адреса доставки", "Мои заказы", "Подписка", "Скидки","Выход"]
+                        each userItem in userMenu
+                            li.user-info__item
+                                a(href="#").user-info__link= userItem
+            a(href="#").header__mobile-phone
+                +icon ('ico_phone')
+        .container
+            ul.header__top-list
+                each item in list
+                    li.header__top-list-item
+                        a(href="#").header__top-link= item
+            .header__top-right-wrap
+                span.header__top-work-time.
+                    пн-пт (10°° - 18°°)
+                a(href="#").header__top-phone.
+                    +7 (495) 930-9954
+            ul.header__top-enter-wrap
+                li.header__top-enter-item
+                    a(href="#" data-pop="#login").js-show-pop-up.header__top-enter-link.header__top-enter-link--white.
+                        Вход
+                li.header__top-enter-item
+                    a(href="#").header__top-enter-link.
+                        Регистрация
+
+
+    .header__main.header__main--index
+        img(src="img/header-1.jpg").header__image
+        .header__background-fallback(style="background:url(../img/header-1.jpg); background-size:cover;")
+        .container.header__main-container
+            a(href="index.html").header__logo
+                +icon ('ico_logo')
+            .header__main-wrapper.clearfix
+                .header__main-top-wrap.clearfix
+                    .row
+                        .header__search-wrap.header__search-wrap--index-page
+                            form.header__search-form
+                                input(type="text").header__search-input.js-header-search
+                                button(type="submit").header__search-submit
+                                    +icon ('ico_zoom')
+                                .header__search-block
+                                    span.header__search-block__title Товары
+                                    a(href="#").likes-info__item.clearfix
+                                        img(src="img/upload/cart-small-1.jpg" alt="cart preview image").likes-info__image
+                                        span.likes-info__text
+                                            span.likes-info__text-wrapper
+                                                span.likes-info__item-name.
+                                                    Платок VENERA
+                                                span.likes-info__item-art.
+                                                    Артикул: <b>3146895444</b>
+                                        span.likes-info__buy-status
+                                            +icon('buy-status')
+                                        span.likes-info__price
+                                            span.likes-info__text-wrapper
+                                                span.likes-info__current-price.
+                                                    1 054 руб.
+                                    a(href="#").likes-info__item.clearfix
+                                        img(src="img/upload/cart-small-2.jpg" alt="cart preview image").likes-info__image
+                                        span.likes-info__text
+                                            span.likes-info__text-wrapper
+                                                span.likes-info__item-name.
+                                                    Платок VENERA
+                                                span.likes-info__item-art.
+                                                    Артикул: <b>3146895444</b>
+                                        span.likes-info__buy-status.active
+                                            +icon('buy-status-active')
+                                        span.likes-info__price
+                                            span.likes-info__text-wrapper
+                                                span.likes-info__current-price.
+                                                    1 054 руб.
+                                    a(href="#").likes-info__item.clearfix
+                                        img(src="img/upload/cart-small-3.jpg" alt="cart preview image").likes-info__image
+                                        span.likes-info__text
+                                            span.likes-info__text-wrapper
+                                                span.likes-info__item-name.
+                                                    Платок VENERA
+                                                span.likes-info__item-art.
+                                                    Артикул: <b>3146895444</b>
+                                        span.likes-info__buy-status
+                                            +icon('buy-status')
+                                        span.likes-info__price
+                                            span.likes-info__text-wrapper
+                                                span.cart-info__current-price.
+                                                    1 054 руб.
+                                                span.cart-info__old-price.
+                                                    1 054 руб.
+                                    a(href="#").header__search-block__all-items Все товары
+                                    span.header__search-block__subtitle Статьи
+                                    a(href="#").header__search-block__text Как подобрать платок
+                                    a(href="#").header__search-block__text Как правильно завязывать платок
+                                    span.header__search-block__subtitle Акции
+                                    a(href="#").header__search-block__text Скидка на шелковые платки 20%
+                        .col-lg-12.header__category-wrap.clearfix
+                            a(href="#", data-cat="kat1").header__main-category.active.
+                                Женщинам
+                            a(href="#", data-cat="kat2").header__main-category.
+                                Мужчинам
+                            a(href="#", data-cat="kat3").header__main-category.
+                                Детям
+                            .header__category-wrap__before
+
+                -  var menulist = ["Платки", "Палантины и шарфы", "Пляжная мода", "Пончо и накидки", "Головные уборы","Перчатки и варежки","Аксессуары","Распродажа","Акции"]
+                -  var menulist2 = ["Пляжная мода", "Пончо и накидки", "Головные уборы","Перчатки и варежки","Аксессуары","Распродажа","Акции"]
+                -  var menulist3 = ["Палантины и шарфы", "Пляжная мода", "Пончо и накидки", "Головные уборы","Перчатки и варежки","Аксессуары","Распродажа","Акции"]
+
+                .header__main-bottom-wrap
+                    ul.header__menu.active-kat#kat1
+                        each menuitem in menulist
+                            li.header__menu-item
+                                a(href="#").header__menu-link= menuitem
+                    ul.header__menu#kat2
+                        each menuitem2 in menulist2
+                            li.header__menu-item
+                                a(href="#").header__menu-link= menuitem2
+                    ul.header__menu#kat3
+                        each menuitem3 in menulist3
+                            li.header__menu-item
+                                a(href="#").header__menu-link= menuitem3
+        .container
+            .row
+                .header__main-banner-wrapper.col-xl-6.col-xl-offset-6.col-lg-8.col-lg-offset-4
+                    .header__main-banner-title.
+                        Стильные <br>
+                        образы
+                    .header__main-sub-title.
+                        с одеждой и аксессуарами <br>
+                        от бренда <b>Venera</b>
+
+                .col-xl-4.col-xl-offset-8.col-lg-6.col-lg-offset-6
+                    .header__main-banner-text-wrapper
+                        .header__main-type-name.
+                            АКЦИЯ
+                        .header__main-banner-date.
+                            12 сентября - 2 октября
+                        .header__main-banner-text.
+                            КОЛЬЦО ДЛЯ ПЛАТКА <br>
+                            <b>В ПОДАРОК</b> ПРИ ПОКУПКЕ <br>
+                            ОТ 1000 РУБЛЕЙ
+    .mobile-menu-wrapper
+        .mobile-menu
+            ul.mobile-menu__list
+                li.mobile-menu__item
+                    a(href="#").mobile-menu__link.js-show-mobile-sub-menu
+                        | Женщинам
+                        +icon('down-arrow')
+                    ul.mobile-menu__down-menu
+                        each menuitem in menulist
+                            li.mobile-menu__down-menu-item
+                                a(href="#").mobile-menu__down-menu-link= menuitem
+                li.mobile-menu__item
+                    a(href="#").mobile-menu__link.js-show-mobile-sub-menu
+                        | Мужчинам
+                        +icon('down-arrow')
+                    ul.mobile-menu__down-menu
+                        each menuitem in menulist
+                            li.mobile-menu__down-menu-item
+                                a(href="#").mobile-menu__down-menu-link= menuitem
+                li.mobile-menu__item
+                    a(href="#").mobile-menu__link.js-show-mobile-sub-menu
+                        | Детям
+                        +icon('down-arrow')
+                    ul.mobile-menu__down-menu
+                        each menuitem in menulist
+                            li.mobile-menu__down-menu-item
+                                a(href="#").mobile-menu__down-menu-link= menuitem
+            ul.mobile-menu__list
+                each item in list
+                    li.mobile-menu__item
+                        a(href="#").mobile-menu__link= item
+            ul.mobile-menu__list
+                li.mobile-menu__item
+                    a(href="#" data-pop="#login").mobile-menu__link.js-show-pop-up.
+                        Вход
+                li.mobile-menu__item
+                    a(href="#").mobile-menu__link.
+                        Регистрация

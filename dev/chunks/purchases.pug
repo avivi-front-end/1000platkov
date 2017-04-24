@@ -1,0 +1,161 @@
+.purchases
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Личный кабинет
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Совместные покупки
+
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help Личный кабинет
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link личные данные
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link адреса доставки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link история заказов
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link скидки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link подписка
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link совместные и оптовые покупки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link выход
+
+                .col-md-12.col-lg-9.col-md-12
+                    span.with-sidebar__title Совместные покупки
+                    span.subs__subtitle Наш магазин предоставляет скидку до 65 % для организаторов совместных покупок.
+                    br
+                    span.purchases__link.js-purschases-link Для кого?
+                    .purchases__link__text Текст с информацией для кого
+                    br
+                    span.purchases__link.js-purschases-link Условия совместной покупки
+                    .purchases__link__text Текст с информацией условий о покупке
+                .col-lg-3.col-md-12.purchases__fine-submit
+
+                    span.purchases__subtitle как получить
+                    span.purchases__subtitle.purchases__subtitle--b.purchases__subtitle--text-right скидку?
+                    form.purchases__form.js-purchases-form
+                        div
+                            span.stores__number 1.
+                            span.stores__subtitle Заполните и отправьте карту партнера.
+                        .purchases__check.clearfix
+
+                            label.clearfix.register__subscribe.purchases__check__block
+                                input(type="radio" name="purchases" checked="checked").catalog-sidebar__check-item-input
+                                span.catalog-sidebar__check-icon
+                                span.catalog-sidebar__check-name Физ. лицо
+
+                            label.clearfix.register__subscribe.purchases__check__block
+                                input(type="radio" name="purchases").catalog-sidebar__check-item-input
+                                span.catalog-sidebar__check-icon
+                                span.catalog-sidebar__check-name Юр. лицо
+
+                        label(for="pur__name").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Имя
+                            .register__wrap-input
+                                input(type="text", name="name").purchases__input#pur__name
+
+                        label(for="pur__last").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Фамилия
+                            .register__wrap-input
+                                input(type="text", name="last").purchases__input#pur__last
+
+                        label(for="pur__ot").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Отчество
+                            .register__wrap-input
+                                input(type="text", name="ot").purchases__input#pur__ot
+
+                        .purchases__passport.purchases__label
+
+                            label(for="pur__passport1")
+                                span.contacts__form__text.stores__name.purchases__name Паспорт
+                                .register__wrap-input
+                                    input(type="text", name="pass1" placeholder="Номер").purchases__input.purchases__passport__input#pur__passport1
+                                .register__wrap-input
+                                    input(type="text", name="pass2" placeholder="Серия").purchases__input.purchases__passport__input#pur__passport2
+
+                        label(for="pur__vidan").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Кем выдан
+                            .register__wrap-input
+                                textarea(name="vidan").purchases__input.purchases__textarea#pur__vidan
+
+                        label(for="pur__tel").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Телефон
+                            .register__wrap-input
+                                input(type="phone", name="tel", placeholder="+7 (___) ___ __ __").purchases__input#pur__tel
+
+                        label(for="pur__mail").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Email
+                            .register__wrap-input
+                                input(type="email", name="mail").purchases__input#pur__mail
+
+                        label(for="pur__adress").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Адрес
+                            .register__wrap-input
+                                textarea(name="adress").purchases__input.purchases__textarea#pur__adress
+
+                        label(for="pur__transport").purchases__label
+                            span.contacts__form__text.stores__name.purchases__name Транспортная компания
+                                span.purchases__name--transport
+                                    span.quest-info.
+                                        Информация о транспортной компании, Информация о транспортной компании
+                            span.register__wrap-input
+                                input(type="text", name="transport").purchases__input#pur__transport
+
+                        button(type="submit").btn-black.purchases__btn
+                            span отправить заявку
+
+
+                .col-lg-offset-1.col-lg-5.col-md-12.purchases__fine-submit
+                    .purchases__garant
+                        span.purchases__garant__title Гарантия конфиденциальности Ваших личных данных
+                        span.purchases__garant__text
+                            | Для чего необходимо указание паспортных данных:
+                            br
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor
+                        span.purchases__garant__text
+                            |Так же для получения  доступа к оптовым ценам и скидок на совместные покупки Вы можете выслать данную информацию по почте:&nbsp;
+                            a(href="mailto:info@venera-store.ru") info@venera-store.ru
+
+                        span.purchases__garant__text Вы можете связаться с нами для уточнения получения условий организации совместных покупок по телефонам:
+                        span.purchases__garant__text
+                            a(href="tel:+74959309954") 7 (495) 930-99-54
+                            br
+                            a(href="tel:+89250702570") 8 (925) 070-25-70
+
+                .col-lg-offset-3.col-lg-9.col-md-12
+
+                    .purchases__item.purchases__success
+                        div
+                            span.stores__number 1.
+                            span.stores__subtitle Заполните и отправьте карту партнера.
+                        .purchases__success__block
+                            span.purchases__success__text.purchases__success__ico Заявка отправлена.
+                            br
+                            span.purchases__success__text Она будет рассмотрена и в ближайшее время Вы получите ответ по почте а так же в данном разделе ЛК
+                        span.purchases__success__text.purchases__success__title Ваша заявка принята.
+                        span.purchases__success__text
+                            | Теперь Вы являетесь организатором  совместных покупок и имеете доступ к скидке - х %
+                            br
+                            | при выполнении условий совместной покупки
+
+                    .purchases__item
+                        span.stores__number 2.
+                        span.stores__subtitle Ожидайте уведомление о принятии и одобреннии заявки на Вашу почту, а так же в данном разделе личного кабинета.
+
+                    .purchases__item
+                        span.stores__number 3.
+                        span.stores__subtitle Получайте доступ к оптовым ценами и пользуйтесь скидкой при совместных покупках.

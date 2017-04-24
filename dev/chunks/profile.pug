@@ -1,0 +1,125 @@
+.profile.requisites
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Личный кабинет
+
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help Личный кабинет
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link личные данные
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link адреса доставки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link история заказов
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link скидки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link подписка
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link совместные и оптовые покупки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link выход
+
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title личные данные
+                    span.requisites__text Заполните личные данные, чтобы экономить время при совершении заказа или возврата товаров.
+                .col-md-12.col-lg-3
+                    form.profile__form.js-form-profile
+
+                        label(for="profile__name").requisites__label
+                            span.requisites__form__title Имя
+                            .register__wrap-input
+                                input(type="text" name="profile__name").index-subscribe__form__input.requisites__input#profile__name
+
+                        label(for="profile__last").requisites__label
+                            span.requisites__form__title Фамилия
+                            .register__wrap-input
+                                input(type="text" name="profile__last").index-subscribe__form__input.requisites__input#profile__last
+
+                        label(for="profile__patronymic").requisites__label
+                            span.requisites__form__title Отчество
+                            .register__wrap-input
+                                input(type="text" name="profile__patronymic").index-subscribe__form__input.requisites__input#profile__patronymic
+                .col-lg-offset-3.col-lg-9.col-md-12
+                    form.profile__form__email.js-profile-form-email
+                        label(for="profile__email").requisites__label
+                            span.requisites__form__title Адрес электронной почты (логин)
+                            .register__wrap-input.clearfix
+                                input(type="email" name="profile__email" value="user@mail.ru" disabled="disabled").index-subscribe__form__input.requisites__input.profile__input__email.profile__input#profile__email
+                                span.profile__form__edit.js-edit-form.js-edit-form-email
+                                    span.profile__form__ico
+                                        +icon("ico-edit")
+                                    span.profile__form__edit__text.text-underline Изменить
+                                button(type="submit").profile__form__submit.btn-black
+                                    span подтвердить
+                                span.profile__form__info Потребуется подтверждение нового адреса по почте
+                                span.profile__form__info.profile__form__info-show
+                                    | На указанный Вами электронный адрес будет выслано письмо с ссылкой, перейдите по ней для подтверждения адреса электронной почты. Новыя электронная почта будет служить новым логином для входа в личный кабинет
+                                    | <br>
+                                    | <br>
+                                    | Подписки на рассылки, выбранные Вами ранее, сохраняются при изменении электронного адреса.
+
+                    form.profile__form__tel.js-profile-form-tel
+                        label(for="profile__tel").requisites__label.clearfix
+                            span.requisites__form__title Номер телефона
+                            .register__wrap-input
+                                input(type="phone", name="profile__tel" value="+7 (888) 333-4444" disabled="disabled").index-subscribe__form__input.requisites__input.profile__input__tel.profile__input#profile__tel
+                                span.profile__form__edit.js-edit-form.js-edit-form-tel
+                                    span.profile__form__ico
+                                        +icon("ico-edit")
+                                    span.profile__form__edit__text.text-underline Изменить
+                                button(type="submit").profile__form__submit.btn-black
+                                    span сохранить номер
+                                span.profile__form__info.profile__form__info--tel Укажите актуальный номер телефона, для того чтобы курьер мог связаться с вами при доставке товара
+                                span.profile__form__info.profile__form__info-show
+                                    | Укажите актуальный номер телефона, для того чтобы курьер мог связаться с вами при доставке товара
+
+                    form.profile__form__pass.js-profile-form-pass
+                        label(for="profile__pass").requisites__label.clearfix
+                            span.requisites__form__title Пароль
+                            .purchases__success__block.profile__form__pass__success
+                                span.purchases__success__text.purchases__success__ico Пароль успешно изменен
+                            .register__wrap-input
+                                input(type="password", name="profile__pass", value="asjfsdkfjlkd", disabled="disabled").index-subscribe__form__input.requisites__input.profile__input__pass.profile__input#profile__pass
+                                span.register__ico.profile__pass-view.js-pass-input
+                                    +icon("ico-pass-true")
+                                    +icon("ico-pass-false")
+                                a(href="#" data-pop="#pass-recovery").profile__form__edit.js-edit-form.js-show-pop-up
+                                    span.profile__form__ico
+                                        +icon("ico-edit")
+                                    span.profile__form__edit__text.text-underline Изменить
+                                span.profile__form__info.profile__form__info--pass Здесь Вы можете изменить свой пароль для входа в личный кабинет
+                .col-lg-offset-3.col-lg-9.col-md-12
+                    span.profile__subtitle Социальные сети
+                    span.profile__text-info
+                        | Для быстрого входа на сайт, Вы можете связать свой аккаунт в соц.сети с личным кабинетом на нашем сайте. <br>
+                        | Гарантируем сохранность Ваших личных данных
+
+                    .profile__soc
+                        -  var socials =  ["soc-vk", "soc-fb", "soc-email", "soc-ok", "soc-gplus", "soc-inst"]
+                        .footer__socials-wrapper.clearfix
+                            each social in socials
+                                a(href="#").footer__social-link
+                                    +icon(social)
+
+                    .profile__btns
+                        a(href="#").btn-black
+                            span выйти из личного кабинета
+                        a(href="#" data-pop="#del-profile").btn-black.profile__btns__grey.js-show-pop-up
+                            span удалить личный кабинет
+
+
+
+

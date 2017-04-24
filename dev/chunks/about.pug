@@ -1,0 +1,262 @@
+.container
+    ul.bread-crumbs.clearfix
+        li.bread-crumbs__item
+            a(href="#").bread-crumbs__link Главная
+        li.bread-crumbs__item.current
+            a(href="#").bread-crumbs__link О компании
+.about
+    .container
+        .about__block
+            span.about__title Venera-store.ru
+            .row.small-margin
+                .col-lg-7.col-md-12
+                    span.about__sub-title.
+                        Интернет - магазин модных женских аксессуаров<br>
+                        от крупнейших мировых производителей.
+                    span.about__text.
+                        Поможем с выбором актуальных и красивых <br>
+                        аксессуаров, которые дополнят любой образ
+                    ul.about__menu.clearfix
+                        li.about__menu__item
+                            a(href="#about-green").scrollto.about__menu__link преимущества
+                        li.about__menu__item
+                            a(href="#about-reviews").scrollto.about__menu__link отзывы
+                        li.about__menu__item
+                            a(href="#about-news").scrollto.about__menu__link новости
+                .col-lg-5.col-md-12
+                    .action__img
+                        img(src="img/about-img.jpg")
+
+            .about__block__opt
+                span.about__block__opt__title интересует опт
+                span.about__block__opt__question ?
+                a(href="#").btn-white.about__block__opt__btn
+                    span сайт оптового магазина
+        .subtitle.about__subtitle
+            span.subtitle__text.subtitle--b начните выбирать образ
+            span.subtitle__text.subtitle__right-text прямо сейчас
+        .about__text-b.
+            Наш интернет-магазин редоставляет огромный выбор модных аксессуаров от лучших мировых производителей. Причем европейские товары отличного качества продаются у нас по вполне демократичным ценам, и тысячи покупателей уже убедились в этом. Удобный каталог дает возможность выбрать вещи, не выходя из дома!
+        p.text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+        p.text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
+        .about__block__who
+            .row
+                .index-shares__wrap.col-md-6
+                    a(href="#").index-shares__block.index-shares__big
+                        span.content
+                            img.index-shares__img(src="img/about-img-2.jpg")
+                            span.about__title-big женщинам
+                .index-shares__wrap.col-md-6
+                    a(href="#").index-shares__block.index-shares__small
+                        span.content
+                            img.index-shares__img(src="img/about-img-3.jpg")
+                            span.about__title-small мужчинам
+                    a(href="#").index-shares__block.index-shares__small
+                        span.content
+                            img.index-shares__img(src="img/about-img-4.jpg")
+                            span.about__title-small детям
+.about-green#about-green
+    .container
+        .row.small-margin
+            .col-md-4.small-padding
+                a(href="#").about-green__block
+                    .about-green__ico
+                        +icon("ico_logistic")
+                    span.about-green__title доставка
+                    span.about-green__text.
+                        Удобная система доставки дает Вам возможность получить товар в самые короткие сроки, как по Москве, так и в другие города России!
+                    span.about-green__text.
+                        Так же  забрать заказ можно самому из пункта самовывоза, которы находится в 5 минутах от метро!
+            .col-md-4.small-padding
+                a(href="#").about-green__block
+                    .about-green__ico
+                        +icon("ico_round")
+                    span.about-green__title помощь и сервис
+                    span.about-green__text.
+                        Наши менеджеры рады помочь Вам с выбором нужного товара!
+                    span.about-green__text.
+                        Так же мы собрали для Вас информацию в разделе  Частые вопросы , которая поможет выбрать оформить и получить свой заказ!
+            .col-md-4.small-padding
+                a(href="#").about-green__block
+                    .about-green__ico
+                        +icon("ico_medal")
+                    span.about-green__title гарантия и качество
+                    span.about-green__text.
+                        Мы гарантируем качество продукции представленной на сайте.
+                    span.about-green__text.
+                        Вся продукция, подлежащая обязательным сертификации или декларированию, имеет документ, подтверждающий ее соответствие установленным стандартам.
+.container
+    .about-reviews#about-reviews
+        .subtitle.about-reviews__subtitle
+            span.subtitle__text.subtitle--b отзывы
+            span.subtitle__text.subtitle__right-text покупателей
+        .about-reviews__block.clearfix
+            .about-reviews__main.first.small
+            .about-reviews__main.central
+                .block-date.about-reviews__main__date 18.01
+                .block-year.about-reviews__main__year 2017
+                .about-reviews__main__btn.about-reviews__main__btn--prev.js-feedback-prev
+                    +icon("ico_left")
+                .about-reviews__main__btn.about-reviews__main__btn--next.js-feedback-next
+                    +icon("ico_right")
+                .span.about-reviews__main__name Вася Пупкин
+                .rating.clearfix
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico
+                        +icon("ico_star")
+                    span.rating__ico
+                        +icon("ico_star")
+                    span.rating__ico
+                        +icon("ico_star")
+                div
+                    span.about-reviews__main__text2 Отличный магазин
+                    span.about-reviews__main__logistic Способ покупки: Самовывоз
+                p.about-reviews__main__text.
+                    Внимательное отношение, консультация по товару, быстрая доставка, качество продукции (пончо venera арт. 7700803-02). Получили огромное удовольствие от общения и покупки.
+                span.about-reviews__market Отзыв с
+                    a(href="#").about-reviews__market.about-reviews__yandex Яндекс Маркета
+            .about-reviews__main.small
+                .block-date.about-reviews__main__date 12.04
+                .block-year.about-reviews__main__year 2016
+                .about-reviews__main__btn.about-reviews__main__btn--prev.js-feedback-prev
+                    +icon("ico_left")
+                .about-reviews__main__btn.about-reviews__main__btn--next.js-feedback-next
+                    +icon("ico_right")
+                .span.about-reviews__main__name донец ольга
+                .rating.clearfix
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico
+                        +icon("ico_star")
+                div
+                    span.about-reviews__main__text2 Хороший магазин
+                    span.about-reviews__main__logistic Способ покупки: Самовывоз
+                p.about-reviews__main__text.
+                    Внимательное отношение, консультация по товару, быстрая доставка, качество продукции (пончо venera арт. 7700803-02). Получили огромное удовольствие от общения и покупки.
+                span.about-reviews__market Отзыв с
+                    a(href="#").about-reviews__market.about-reviews__yandex Яндекс Маркета
+            .about-reviews__main
+                .block-date.about-reviews__main__date 27.12
+                .block-year.about-reviews__main__year 2017
+                .about-reviews__main__btn.about-reviews__main__btn--prev.js-feedback-prev
+                    +icon("ico_left")
+                .about-reviews__main__btn.about-reviews__main__btn--next.js-feedback-next
+                    +icon("ico_right")
+                .span.about-reviews__main__name Кирилл Куклачов
+                .rating.clearfix
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                div
+                    span.about-reviews__main__text2 Супер магазин
+                    span.about-reviews__main__logistic Способ покупки: Самовывоз
+                p.about-reviews__main__text.
+                    Внимательное отношение, консультация по товару, быстрая доставка, качество продукции (пончо venera арт. 7700803-02). Получили огромное удовольствие от общения и покупки.
+                span.about-reviews__market Отзыв с
+                    a(href="#").about-reviews__market.about-reviews__yandex Яндекс Маркета
+            .about-reviews__main
+                .block-date.about-reviews__main__date 12.04
+                .block-year.about-reviews__main__year 2016
+                .about-reviews__main__btn.about-reviews__main__btn--prev.js-feedback-prev
+                    +icon("ico_left")
+                .about-reviews__main__btn.about-reviews__main__btn--next.js-feedback-next
+                    +icon("ico_right")
+                .span.about-reviews__main__name донец ольга
+                .rating.clearfix
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico
+                        +icon("ico_star")
+                div
+                    span.about-reviews__main__text2 Хороший магазин
+                    span.about-reviews__main__logistic Способ покупки: Самовывоз
+                p.about-reviews__main__text.
+                    Внимательное отношение, консультация по товару, быстрая доставка, качество продукции (пончо venera арт. 7700803-02). Получили огромное удовольствие от общения и покупки.
+                span.about-reviews__market Отзыв с
+                    a(href="#").about-reviews__market.about-reviews__yandex Яндекс Маркета
+            .about-reviews__main
+                .block-date.about-reviews__main__date 12.04
+                .block-year.about-reviews__main__year 2016
+                .about-reviews__main__btn.about-reviews__main__btn--prev.js-feedback-prev
+                    +icon("ico_left")
+                .about-reviews__main__btn.about-reviews__main__btn--next.js-feedback-next
+                    +icon("ico_right")
+                .span.about-reviews__main__name донец ольга
+                .rating.clearfix
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico.rate
+                        +icon("ico_star")
+                    span.rating__ico
+                        +icon("ico_star")
+                div
+                    span.about-reviews__main__text2 Хороший магазин
+                    span.about-reviews__main__logistic Способ покупки: Самовывоз
+                p.about-reviews__main__text.
+                    Внимательное отношение, консультация по товару, быстрая доставка, качество продукции (пончо venera арт. 7700803-02). Получили огромное удовольствие от общения и покупки.
+                span.about-reviews__market Отзыв с
+                    a(href="#").about-reviews__market.about-reviews__yandex Яндекс Маркета
+.about-news#about-news
+    .container
+        .about-news__wrap
+            a(href="#").btn-black.about-news__btn
+                span все новости
+            span.about-news__title новости
+            .about-news__block
+                .row.small-margin
+                    .col-md-4.small-padding
+                        a(href="#").about-news__item
+                            .block-date.about-news__date 12.04
+                            .block-year.about-news__year 2016
+                            span.about-news__item__title Заголовок, название публикации, можно написать в 2-3 строки
+                            p.about-news__item__text.
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    .col-md-4.small-padding
+                        a(href="#").about-news__item
+                            .block-date.about-news__date 12.04
+                            .block-year.about-news__year 2016
+                            span.about-news__item__title Заголовок, название публикации, можно написать в 2-3 строки
+                            p.about-news__item__text.
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    .col-md-4.small-padding
+                        a(href="#").about-news__item
+                            .block-date.about-news__date 12.04
+                            .block-year.about-news__year 2016
+                            span.about-news__item__title Заголовок, название публикации, можно написать в 2-3 строки
+                            p.about-news__item__text.
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться

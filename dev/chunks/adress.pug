@@ -1,0 +1,194 @@
+.profile.requisites
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Личный кабинет
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Адреса доставки
+
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help Личный кабинет
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link личные данные
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link адреса доставки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link история заказов
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link скидки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link подписка
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link совместные и оптовые покупки
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link выход
+
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title Адреса доставки
+                    span.requisites__text
+                        | Заполнение адреса доставки упростит и ускорит процесс покупки в нашем магазине. <br>
+                        | Основной адрес автоматически будет указываться при оформлении заказа для экономии Вашего времени.
+                .col-md-12.col-lg-9
+                    span.adress__title Адрес доставки
+                    .adress__block
+                        .adress__item.hidden-block
+                            .clearfix
+                                span.adress__text.index-subscribe__form__input.adress__edit Москва, ул. Ленина 28 корп 2, квартра 62, подъезд 5, этаж 10
+                                .adress__btns
+                                    span.profile__form__edit.js-adress-edit
+                                        span.profile__form__ico
+                                            +icon("ico-edit")
+                                        span.profile__form__edit__text.text-underline Изменить
+                                    span.profile__form__edit.adress__del.js-adress-del
+                                        span.profile__form__ico
+                                            +icon("ico_close")
+                                        span.profile__form__edit__text.text-underline Удалить
+                            .adress__radio.clearfix
+                                label.clearfix.register__subscribe
+                                    input(type="radio" name="adress__radio").catalog-sidebar__check-item-input
+                                    span.catalog-sidebar__check-icon.adress__radio-btn
+                                    span.catalog-sidebar__check-name Основной адрес
+
+                        .adress__item
+                            .clearfix
+                                span.adress__text.index-subscribe__form__input.adress__edit Москва, ул. Ленина 28 корп 2, квартра 62, подъезд 5, этаж 10
+                                .adress__btns
+                                    span.profile__form__edit.js-adress-edit
+                                        span.profile__form__ico
+                                            +icon("ico-edit")
+                                        span.profile__form__edit__text.text-underline Изменить
+                                    span.profile__form__edit.adress__del.js-adress-del
+                                        span.profile__form__ico
+                                            +icon("ico_close")
+                                        span.profile__form__edit__text.text-underline Удалить
+                            .adress__radio.clearfix
+                                label.clearfix.register__subscribe
+                                    input(type="radio" name="adress__radio").catalog-sidebar__check-item-input
+                                    span.catalog-sidebar__check-icon.adress__radio-btn
+                                    span.catalog-sidebar__check-name Основной адрес
+
+                        .adress__item
+                            .clearfix
+                                span.adress__text.index-subscribe__form__input.adress__edit Москва, ул. Ленина 28 корп 2, квартра 62, подъезд 5, этаж 10
+                                .adress__btns
+                                    span.profile__form__edit.js-adress-edit
+                                        span.profile__form__ico
+                                            +icon("ico-edit")
+                                        span.profile__form__edit__text.text-underline Изменить
+                                    span.profile__form__edit.adress__del.js-adress-del
+                                        span.profile__form__ico
+                                            +icon("ico_close")
+                                        span.profile__form__edit__text.text-underline Удалить
+                            .adress__radio.clearfix
+                                label.clearfix.register__subscribe
+                                    input(type="radio" name="adress__radio").catalog-sidebar__check-item-input
+                                    span.catalog-sidebar__check-icon.adress__radio-btn
+                                    span.catalog-sidebar__check-name Основной адрес
+
+
+                    form.adress__new-adress.js-adress-form
+                        span.adress__new-adress__title Добавление нового адреса
+                        label.no-register__town
+                            span.contacts__form__text.stores__name.contacts__form__text--dec Город
+                            .register__wrap-input
+                                select(size="4" name="stores__select").cart-reg__item__size__select.js-delivery-select.adress__select
+                                    option(value="Москва") Москва
+                                    option(value="Москва") Москва
+                                    option(value="Москва") Москва
+                                    option(value="Москва") Москва
+                                    option(value="Москва") Москва
+                                    option(value="Москва") Москва
+
+                        label.no-register__street
+                            span.contacts__form__text.stores__name.contacts__form__text--dec Улица
+                            .register__wrap-input
+                                input(type="text" name="stores__street").index-subscribe__form__input.stores__input#stores__street
+                        .clearfix
+                        label.no-register__small-input
+                            span.contacts__form__text.stores__name Дом | Строение
+                            .register__wrap-input
+                                input(type="text" name="stores__house").index-subscribe__form__input.stores__input#stores__house
+                        label.no-register__small-input
+                            span.contacts__form__text.stores__name Квартира | Офис
+                            .register__wrap-input
+                                input(type="text" name="stores__office").index-subscribe__form__input.stores__input#stores__office
+                        label.no-register__small-input
+                            span.contacts__form__text.stores__name Подъезд
+                            .register__wrap-input
+                                input(type="text" name="stores__pod").index-subscribe__form__input.stores__input#stores__pod
+                        label.no-register__small-input
+                            span.contacts__form__text.stores__name Код | Домофон
+                            .register__wrap-input
+                                input(type="text" name="stores__code").index-subscribe__form__input.stores__input#stores__code
+
+                        .adress__radio.clearfix
+                            label.clearfix.register__subscribe
+                                input(type="checkbox" name="adress__radio").catalog-sidebar__check-item-input
+                                span.catalog-sidebar__check-icon
+                                span.catalog-sidebar__check-name Сделать основным
+
+                        button(type="submit").btn-black.adress__add
+                            span добавить адрес
+
+                    span.btn-black.adress__add.js-add-adress-form
+                            span добавить адрес
+
+                    .adress_edit-form.hidden-block
+                        form.js-adress-form.adress__new-adress
+                            span.adress__new-adress__title Изменить адрес
+                            label.no-register__town
+                                span.contacts__form__text.stores__name.contacts__form__text--dec Город
+                                .register__wrap-input
+                                    select(size="4" name="stores__select").cart-reg__item__size__select.js-delivery-select.adress__select
+                                        option(value="Москва") Москва
+                                        option(value="Москва") Москва
+                                        option(value="Москва") Москва
+                                        option(value="Москва") Москва
+                                        option(value="Москва") Москва
+                                        option(value="Москва") Москва
+
+                            label.no-register__street
+                                span.contacts__form__text.stores__name.contacts__form__text--dec Улица
+                                .register__wrap-input
+                                    input(type="text" name="stores__street").index-subscribe__form__input.stores__input#stores__street
+                            .clearfix
+                            label.no-register__small-input
+                                span.contacts__form__text.stores__name Дом | Строение
+                                .register__wrap-input
+                                    input(type="text" name="stores__house").index-subscribe__form__input.stores__input#stores__house
+                            label.no-register__small-input
+                                span.contacts__form__text.stores__name Квартира | Офис
+                                .register__wrap-input
+                                    input(type="text" name="stores__office").index-subscribe__form__input.stores__input#stores__office
+                            label.no-register__small-input
+                                span.contacts__form__text.stores__name Подъезд
+                                .register__wrap-input
+                                    input(type="text" name="stores__pod").index-subscribe__form__input.stores__input#stores__pod
+                            label.no-register__small-input
+                                span.contacts__form__text.stores__name Код | Домофон
+                                .register__wrap-input
+                                    input(type="text" name="stores__code").index-subscribe__form__input.stores__input#stores__code
+
+                            .adress__radio.clearfix
+                                label.clearfix.register__subscribe
+                                    input(type="checkbox" name="adress__radio").catalog-sidebar__check-item-input
+                                    span.catalog-sidebar__check-icon
+                                    span.catalog-sidebar__check-name Сделать основным
+
+                            button(type="submit").btn-black.adress__add
+                                span Сохранить
+
+
+
+

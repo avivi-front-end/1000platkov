@@ -1,0 +1,98 @@
+footer.wrapper.footer#footer
+    a(href="#").scroll-up-btn.js-scroll-up
+        +icon('ico_arrow-up')
+    .container
+        .row
+            .col-lg-3.col-md-6.footer__item.js-height
+                a(href="index.html").footer__logo
+                    img(src="img/footer_logo.png")
+                a(href="#").footer__phone.
+                    7 (495) 930-99-54
+                a(href="#").footer__phone.
+                    8 (925) 070-25-70
+                .footer__work-info-wrapper
+                    .footer__work-info.
+                        Пн-пт: 10:00 - 18:00
+                    .footer__work-info
+                        span Email:
+                        a(href="#") info@veneras-tore.ru
+                .footer__socials
+                    .footer__socials-title.
+                        Мы в социальных сетях:
+                    -  var socials =  ["soc-vk", "soc-fb", "soc-inst", "soc-ytube", "soc-ok", "soc-tw", "soc-pinterest", "soc-watsup", "soc-viber"]
+                    .footer__socials-wrapper.clearfix
+                        each social in socials
+                            a(href="#").footer__social-link
+                                +icon(social)
+            .col-lg-3.col-md-6.footer__item.js-height
+                .footer__category-wrapper
+                    a(href="#").footer__category-title.
+                        женщинам
+                    -  var list1 = ["Платки на голову", "Шейные платки", "Арафатки", "Платки-картины", "Большие платки","Шали"]
+                    each item1 in list1
+                        a(href="#").footer__category-item= item1
+                .footer__category-wrapper
+                    a(href="#").footer__category-title.
+                        Мужчинам
+                    -  var list2 = ["Шейные платки", "Платки и палантины", "Галстуки", "Шапки"]
+                    each item2 in list2
+                        a(href="#").footer__category-item= item2
+                ul.footer__enter-wrap.clearfix
+                    li.footer__enter-wrap-item
+                        a(href="#").footer__enter-wrap-link.footer__enter-wrap-link--black.
+                            Вход
+                    li.footer__enter-wrap-item
+                        a(href="#").footer__enter-wrap-link.
+                            Регистрация
+            .col-lg-3.col-md-6.footer__item.js-height
+                .footer__category-wrapper
+                    a(href="#").footer__category-title.
+                        Детям
+                    -  var list3 = ["Головные уборы ", "Платки", "Перчатки и варежки", "Ремни", "Подтяжки","Бижутерия"]
+                    each item3 in list3
+                        a(href="#").footer__category-item= item3
+                .footer__category-wrapper
+                    a(href="#").footer__category-title.
+                        Покупателям
+                    -  var list4 = ["Доставка и оплата", "Условия возврата", "Гарантии", "Частые вопросы", "Опт"]
+                    each item4 in list4
+                        a(href="#").footer__category-item= item4
+            .col-lg-3.col-md-6.footer__item.js-height
+                .footer__category-wrapper
+                    a(href="#").footer__category-title.
+                        Компания
+                    -  var list5 = ["О нас", "Отзывы", "Новости", "Статьи","Контакты"]
+                    each item5 in list5
+                        a(href="#").footer__category-item= item5
+                .footer__category-wrapper.footer__category-wrapper--present
+                    -  var list6 = ["Подарочная упаковка", "Скидки", "Акции", "Распродажа товаров"]
+                    each item6 in list6
+                        a(href="#").footer__category-item.footer__category-item--bold= item6
+                .footer__category-wrapper
+                    span.footer__category-title.
+                        Способы оплаты
+                    .footer__payment.payment.clearfix
+                        a(href="#").payment__item.payment--mastercard
+                            +icon("ico-mastercard")
+                        a(href="#").payment__item.payment--visa
+                            +icon("ico-visa")
+                        a(href="#").payment__item.payment--paypal
+                            +icon("ico-paypal")
+.copyright
+    .container.copyright__container
+        .copyright__wrapper
+            span.copyright__item
+                span.
+                    © 2016 venera-store.ru
+            a(href="#").copyright__item
+                span.
+                    Политика конфиденциальности
+            a(href="#").copyright__item
+                span.
+                    Публичная оферта
+            a(href="#").copyright__item
+                span.
+                    Карта сайта
+            a(href="#").copyright__item
+                span.
+                    Разработка сайта Webtrend

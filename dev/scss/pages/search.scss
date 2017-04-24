@@ -1,0 +1,93 @@
+.search {
+  &__title {
+    text-align: center;
+    letter-spacing: 1.6px;
+    margin: 38px 0 26px;
+    display: block;
+    @media (max-width: $screen-sm-max) {
+      margin: 20px 0;
+    }
+  }
+  &__text {
+    display: block;
+    font-family: $avantdemi;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .6px;
+    margin-bottom: 26px;
+  }
+  &__block {
+    position: relative;
+  }
+  &__input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    color: #000;
+    padding: 0 25px 0 0;
+    letter-spacing: .7px;
+    font-family: $avantbook;
+    font-size: 14px;
+  }
+  &__submit {
+    position: absolute;
+    top: -6px;
+    right: -15px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+    svg {
+      fill: none;
+      stroke: #000;
+      stroke-width: 2px;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+  &__list {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 45px 0 64px;
+    @media (max-width: $screen-sm-max) {
+      margin: 30px 0;
+    }
+  }
+  &__item {
+    float: left;
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
+  &__link {
+    font-family: $bignooble;
+    font-size: 18px;
+    line-height: 24px;
+    color: #b3b3b3;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    letter-spacing: 1.2px;
+    &.active {
+      color: #000;
+    }
+  }
+  &__subscribe {
+    margin-top: 53px
+  }
+}

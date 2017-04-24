@@ -1,0 +1,68 @@
+.lk-discounts {
+  &__item {
+    position: relative;
+    padding-left: 30px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 1px;
+      top: 2px;
+      width: 6px;
+      height: 94%;
+      @media (max-width: $screen-sm-max) {
+        height: 100%;
+      }
+    }
+    &__title {
+      display: block;
+      font-family: $avantdemi;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .78px;
+      text-align: left;
+    }
+    &__list {
+      list-style: none;
+      margin-top: 14px;
+      text-align: left;
+    }
+    &__text {
+      position: relative;
+      font-family: $avantbook;
+      font-size: 14px;
+      line-height: 24px;
+      color: #000;
+      letter-spacing: .77px;
+      padding-left: 30px;
+      &:before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: $avantbook;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000;
+      }
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 64px;
+    }
+    &--green {
+      &:before {
+        background-color: #06ae84;
+      }
+    }
+    &--violet {
+      &:before {
+        background-color: #7801c4;
+      }
+    }
+    &--red {
+      &:before {
+        background-color: #e6005c;
+      }
+    }
+  }
+}

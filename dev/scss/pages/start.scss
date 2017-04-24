@@ -1,0 +1,29 @@
+.start {
+  padding-top: 30px;
+  &__block {
+    float: left;
+    width: 50%;
+    text-align: center;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  a {
+    display: block;
+    font-family: $avantbook;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    letter-spacing: 0.5px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.new {
+      font-family: $avantdemi;
+      color: green;
+    }
+  }
+  &__mb {
+    margin-bottom: 30px;
+  }
+}

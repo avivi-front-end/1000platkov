@@ -1,0 +1,301 @@
+.delivery
+    .container
+        ul.bread-crumbs.clearfix
+            li.bread-crumbs__item
+                a(href="#").bread-crumbs__link Главная
+            li.bread-crumbs__item.current
+                a(href="#").bread-crumbs__link Доставка и оплата
+        .with-sidebar
+            .row
+                .col-md-12.col-lg-3
+                    .sidebar
+                        .overlay.js-sidebar-overlay
+                        span.sidebar__help помощь покупателю
+                            span.sidebar__humb.js-sidebar-humb
+                                +icon("ico_humb")
+                                +icon("ico_humb-close")
+                        .sidebar__slide.js-sidebar-slide
+                            ul.sidebar__menu
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link как купить ?
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link гарантии
+                                li.sidebar__menu__item.sidebar__menu__active
+                                    a(href="#").sidebar__menu__link доставка и оплата
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link обмен и возврат
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link преимущества регистрации
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link часто задаваемые вопросы
+                                li.sidebar__menu__item
+                                    a(href="#").sidebar__menu__link корпоративным клиентам
+                            .sidebar__opt
+                                span.sidebar__opt__text интересует опт
+                                a(href="#").btn-white.sidebar__opt__btn
+                                    span сайт оптового магазина
+                            .sidebar__question
+                                span.sidebar__question__title.
+                                    остались вопросы по способам покупки?
+                                span.sidebar__question__text.
+                                    Мы с радостью дадим консультацию в удобное для Вас время время!
+                                a(href="#" data-pop="#question").js-show-pop-up.btn-white.sidebar__question__btn
+                                    span задать вопрос
+                .col-md-12.col-lg-9
+                    span.with-sidebar__title доставка и оплата
+                    .delivery__tabs.clearfix
+                        span(data-tab="delivery-tab1").delivery__tabs__btn.js-delivery-tab.delivery__tabs__active.
+                            Доставка курьером в Москве, <br>
+                            МO и Санкт-Петербурге
+                        span(data-tab="delivery-tab2").delivery__tabs__btn.js-delivery-tab.
+                            Самовывоз из пункта <br>
+                            выдачи в Москве
+                        span(data-tab="delivery-tab3").delivery__tabs__btn.js-delivery-tab.
+                            Доставка в регионы России почтой <br>
+                            или странспортной компанией
+                    .delivery__tab.delivery-tab1.delivery__courier.active
+                        span.delivery__title Курьерская доставка Москва, МО, Санкт-Петербург
+                        .delivery__courier__contacts
+                            span.delivery__text
+                                |   Партнерская курьерская служба RED EXPRESS <br>
+                                |   Телефон :&nbsp;
+                                a(href="tel:+74952767000").delivery__text.delivery__courier__phone +7 (495) 276-70-00
+                        span.delivery__subtitle Стоимость
+                        table.delivery__courier__table
+                            tr
+                                td.left
+                                    span.delivery__text Доставка по Москве и Санкт-Петербурга в пределах МКАД и КАД.
+                                td.right
+                                    span.delivery__bold 250 руб.
+                            tr
+                                td.left
+                                    span.delivery__text За пределами МКАД и КАД (рассчитывается оператором при оформлении заказа)
+                                td.right
+                                    span.delivery__bold от 250 руб.
+                                    span.delivery__courier__remotely в зависимости от удаленности
+                            tr
+                                td(colspan='2')
+                                    span.delivery__text.delivery__courier__table__info В случае отказа от товара в момент доставки Вы оплачиваете стоимость доставки в соответствии с тарифом.
+                        .delivery__courier__terms
+                            span.delivery__subtitle Сроки доставки:
+                            ul.statyi-detail__list.delivery__courier__list
+                                li.statyi-detail__list__item.
+                                    1-3 рабочих дня после комплектации и согласования заказа.
+                        .delivery__courier__terms
+                            span.delivery__subtitle В будни(пн-пт)::
+                            ul.statyi-detail__list.delivery__courier__list
+                                li.statyi-detail__list__item.
+                                    Возможен 3-х часовой интервал. Только внутри МКАД и КАД.
+                                li.statyi-detail__list__item.
+                                    Вечерняя доставка - с 18-00 до 21-00. Только внутри МКАД и КАД.
+                                li.statyi-detail__list__item.
+                                    Заказы за МКАДс 9-00 до 18-00  (только по будням)
+                        .delivery__courier__terms
+                            span.delivery__subtitle В выходные дни (сб-вск):
+                            ul.statyi-detail__list.delivery__courier__list
+                                li.statyi-detail__list__item.
+                                    с 9-00 до 18-00. Только внутри МКАД.
+                        span.delivery__text.delivery__courier__last-block
+                            | В предпраздничные дни вводится стандартный интервал доставки заказов <br>
+                            | с 9-00 до 18-00 (пн-вс).  Просим отнестись с пониманием к возможным задержкам по времени.
+                        .delivery__payment
+                            span.delivery__payment__title способы оплаты
+                            .clearfix
+                            ul.statyi-detail__list.delivery__courier__list
+                                li.statyi-detail__list__item.
+                                    Оплата наличными курьеру при доставке;
+                                li.statyi-detail__list__item.
+                                    Безналичный расчет через любой банк;
+                                li.statyi-detail__list__item.
+                                    Он-лайн-оплата на сайте (Гарантируем безопасность он-лайн покупок).
+                            .delivery__payment__icons
+                                // иконки оплаты
+                                .payment.clearfix
+                                    a(href="#").payment__item.payment--mastercard
+                                        +icon("ico-mastercard")
+                                    a(href="#").payment__item.payment--visa
+                                        +icon("ico-visa")
+                                    a(href="#").payment__item.payment--paypal
+                                        +icon("ico-paypal")
+                    .delivery__tab.delivery-tab2.delivery__pickup
+                        span.delivery__title Самовывоз из пункта выдачи в Москве
+                        .delivery__courier__contacts
+                            span.delivery__text
+                                |   Партнерская курьерская служба RED EXPRESS <br>
+                                |   Телефон :&nbsp;
+                                a(href="tel:+74952767000").delivery__text.delivery__courier__phone +7 (495) 276-70-00
+                                |   <br> День доставки заказа в пункт выдачи заказов оговаривается при подтверждении заказа.
+                        span.delivery__subtitle Стоимость услуги: 100 руб.
+                        .delivery__map-block
+                            span(data-lat="55.683328", data-lng="37.511515").delivery__map-block__item.active.clearfix
+                                span.delivery__map-block__number 1
+                                span.delivery__map-block__text
+                                    span.delivery__map-block__text--title
+                                        |   Москва, проспект Вернадского дом 12, корпус 3, подъезд 2 <br>
+                                    span.delivery__map-block__text--info
+                                        |   Пн-Пт: с 12:00 до 18:00, Сб: с 12:00 до 17:00
+                                span.delivery__map-block__view смотреть на карте
+
+                            .map-info-wrap
+                                .delivery__map#map
+                                .delivery__map__tabs
+                                    span(data-tab="map-tab1", data-lat="55.693330", data-lng="37.534516", data-travel="TRANSIT").delivery__map__tab.js-map-tab от м. Университет
+                                    span(data-tab="map-tab2", data-lat="55.677618", data-lng="37.507136", data-travel="TRANSIT").delivery__map__tab.js-map-tab от м. Проспект Вернадского
+                                    span(data-tab="map-tab3", data-lat="55.753559", data-lng="37.609218", data-travel="DRIVING").delivery__map__tab.js-map-tab на автомобиле из центра
+                                    span(data-tab="map-tab4", data-lat="69.069980", data-lng="33.587119", data-travel="DRIVING").delivery__map__tab.js-map-tab на автомобиле из области
+                                .delivery__map__info.map-tab1.active
+                                    .clearfix
+                                        .delivery__map__img
+                                            img(src="img/img-map-univer.jpg")
+                                        span.delivery__text.delivery__map__text
+                                            |   Станция м. «Университет», последний вагон из центра, дальше вдоль Проспекта Вернадского по направлению в область. Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                                        a(href="#").btn-black.delivery__map__btn
+                                            span распечатать схему проезда
+                                .delivery__map__info.map-tab2
+                                    .delivery__map__img
+                                        img(src="img/img-map-univer.jpg")
+                                    span.delivery__text.delivery__map__text
+                                        |   Станция м. «Проспект Вернадского», последний вагон из центра, дальше вдоль Проспекта Вернадского по направлению в область. Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                                    a(href="#").btn-black.delivery__map__btn
+                                        span распечатать схему проезда
+                                .delivery__map__info.map-tab3
+                                    .delivery__map__img
+                                        img(src="img/img-map-univer.jpg")
+                                    span.delivery__text.delivery__map__text
+                                        |   Станция м. «Университет», последний вагон из центра, дальше вдоль Проспекта Вернадского по направлению в область. Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                                    a(href="#").btn-black.delivery__map__btn
+                                        span распечатать схему проезда
+                                .delivery__map__info.map-tab4
+                                    .delivery__map__img
+                                        img(src="img/img-map-univer.jpg")
+                                    span.delivery__text.delivery__map__text
+                                        |   Поворот направо после высотного здания вдоль проезжей части. Далее поворот налево, следующий поворот – направо до конца (ориентир:  вывеска «Еврозвук»). Проход на территорию через ворота прямо. Вход в пункт выдачи заказов с  торца правой стороны, вывеска «REDEXPRESS».
+                                    a(href="#").btn-black.delivery__map__btn
+                                        span распечатать схему проезда
+                            span(data-lat="55.829773", data-lng="37.589899").delivery__map-block__item.clearfix
+                                span.delivery__map-block__number 2
+                                span.delivery__map-block__text
+                                    span.delivery__map-block__text--title
+                                        |   Москва, проспект Вернадского дом 12, корпус 3, подъезд 2 <br>
+                                    span.delivery__map-block__text--info
+                                        |   Пн-Пт: с 12:00 до 18:00, Сб: с 12:00 до 17:00
+                                span.delivery__map-block__view смотреть на карте
+                            span(data-lat="55.741551", data-lng="37.784885").delivery__map-block__item.clearfix
+                                span.delivery__map-block__number 3
+                                span.delivery__map-block__text
+                                    span.delivery__map-block__text--title
+                                        |   Москва, проспект Вернадского дом 12, корпус 3, подъезд 2 <br>
+                                    span.delivery__map-block__text--info
+                                        |   Пн-Пт: с 12:00 до 18:00, Сб: с 12:00 до 17:00
+                                span.delivery__map-block__view смотреть на карте
+
+                            .delivery__payment
+                                span.delivery__payment__title способы оплаты
+                                .clearfix
+                                ul.statyi-detail__list.delivery__courier__list
+                                    li.statyi-detail__list__item.
+                                        Оплата наличными курьеру при доставке;
+                                    li.statyi-detail__list__item.
+                                        Безналичный расчет через любой банк;
+                                    li.statyi-detail__list__item.
+                                        Он-лайн-оплата на сайте (Гарантируем безопасность он-лайн покупок).
+                                .delivery__payment__icons
+                                    .payment.clearfix
+                                        a(href="#").payment__item.payment--mastercard
+                                            +icon("ico-mastercard")
+                                        a(href="#").payment__item.payment--visa
+                                            +icon("ico-visa")
+                                        a(href="#").payment__item.payment--paypal
+                                            +icon("ico-paypal")
+                    .delivery__tab.delivery-tab3.delivery__regions
+                        span.delivery__title ДОСТАВКА ЕМС ПОЧТОЙ РОССИИ В РЕГИОНЫ
+                        span.delivery__subtitle Стоимость
+                        span.delivery__text.delivery__after-subtitle
+                            | Доставка ЕМС почтой России производится после 100% предоплаты. Стоимость доставки зависит от веса заказа и региона доставки и в соответствии с тарифами "EMS Почта России"
+                            | &nbsp;
+                            a(href="http://WWW.EMSPOST.RU").delivery__courier__phone.delivery__text WWW.EMSPOST.RU
+                        span.delivery__subtitle Условия
+                        ul.statyi-detail__list.delivery__courier__list
+                            li.statyi-detail__list__item.
+                                Стоимость доставки рассчитывается автоматически при оформлении заказа.
+                            li.statyi-detail__list__item.
+                                После оформления заказа наш менеджер собирает заказ и отправляет Вам счет на оплату.
+                            li.statyi-detail__list__item.
+                                В счет также входит стоимость доставки, поэтому при получении заказа Вы больше ничего не платите.
+                            li.statyi-detail__list__item.
+                                Оплата производится через любой банк.
+                            li.statyi-detail__list__item.
+                                Заказ отправляется после подтверждения банком поступления денежных средств на наш расчетный счет.
+                            li.statyi-detail__list__item.
+                                Срок резервирования заказа – 7 дней. После указанного срока заказ отменяется. Поэтому, обязательно уведомите нас о произведенной оплате.
+                            li.statyi-detail__list__item.
+                                Заказы наложенным платежом не отправляются.
+                        span.delivery__title ДОСТАВКА ПОЧТОЙ РОССИИ В РЕГИОНЫ
+                        span.delivery__subtitle Стоимость
+                        span.delivery__text.delivery__after-subtitle
+                            | Доставка Почтой России производится после 100% предоплаты. Стоимость и сроки доставки зависит от веса заказа и региона доставки и в соответствии с тарифами "Почта России"
+                            | &nbsp;
+                            a(href="http://WWW.RUSSIANPOST.RU").delivery__courier__phone.delivery__text WWW.RUSSIANPOST.RU
+                        span.delivery__subtitle Условия
+                        ul.statyi-detail__list.delivery__courier__list
+                            li.statyi-detail__list__item.
+                                Стоимость доставки рассчитывается автоматически при оформлении заказа.
+                            li.statyi-detail__list__item.
+                                После оформления заказа наш менеджер собирает заказ и отправляет Вам счет на оплату.
+                            li.statyi-detail__list__item.
+                                В счет также входит стоимость доставки, поэтому при получении заказа Вы больше ничего не платите.
+                            li.statyi-detail__list__item.
+                                Оплата производится через любой банк.
+                            li.statyi-detail__list__item.
+                                Заказ отправляется после подтверждения банком поступления денежных средств на наш расчетный счет.
+                            li.statyi-detail__list__item.
+                                Срок резервирования заказа – 7 дней. После указанного срока заказ отменяется. Поэтому, обязательно уведомите нас о произведенной оплате.
+                            li.statyi-detail__list__item.
+                                Заказы наложенным платежом не отправляются.
+                        span.delivery__title ДОСТАВКА ТРАНСПОРТНОЙ КОМПАНИЕЙ
+                        span.delivery__subtitle Стоимость
+                        span.delivery__text.delivery__after-subtitle
+                            | Доставка транспортной компанией производится после 100% предоплаты. По Москве доставка до транспортной компании бесплатная, стоимость доставки Вы оплачиваете при получении заказа. Стоимость услуги и сроки доставки зависят от веса заказа и региона доставки  и в соответствии с тарифами транспортной компании.
+                        span.delivery__subtitle Условия
+                        ul.statyi-detail__list.delivery__courier__list
+                            li.statyi-detail__list__item.
+                                Услуга «доставка транспортными компаниями» предоставляется организаторам совместных покупок, ИП и юридическим лицами, а также всем покупателям, если заказ превышает стандартный вес и объем.
+                            li.statyi-detail__list__item.
+                                Транспортная компания – на Ваш выбор.
+                            li.statyi-detail__list__item.
+                                После оформления заказа наш менеджер собирает заказ и отправляет Вам счет на оплату.
+                            li.statyi-detail__list__item.
+                                В счет не входит стоимость доставки.
+                            li.statyi-detail__list__item.
+                                Оплата производится через любой банк.
+                            li.statyi-detail__list__item.
+                                Заказ отправляется после подтверждения банком поступления денежных средств на наш расчетный счет.
+                            li.statyi-detail__list__item.
+                                Срок резервирования заказа – 7 дней. После указанного срока заказ отменяется
+                        .delivery__payment
+                            span.delivery__payment__title способы оплаты
+                            .clearfix
+                            ul.statyi-detail__list.delivery__courier__list
+                                li.statyi-detail__list__item.
+                                    100% предоплата через любой банк
+                                li.statyi-detail__list__item.
+                                    Он-лайн оплата на сайте гарантирует безопасность он-лайн покупок
+                            .delivery__payment__icons
+                                // иконки оплаты
+                                .payment.clearfix
+                                    a(href="#").payment__item.payment--mastercard
+                                        +icon("ico-mastercard")
+                                    a(href="#").payment__item.payment--visa
+                                        +icon("ico-visa")
+                                    a(href="#").payment__item.payment--paypal
+                                        +icon("ico-paypal")
+.index-subscribe
+    .container
+        span.index-subscribe__text Подпишитесь на рассылку и получайте скидки на покупки!
+        form.index-subscribe__form.js-index-subscribe__form
+            input(type="email" placeholder="Введите e-mail" name="email").index-subscribe__form__input
+            button(type="submit").btn-white.index-subscribe__form__submit
+                span подписаться
+
+
+

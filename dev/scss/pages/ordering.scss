@@ -1,6 +1,7 @@
 .ordering {
   &__block {
     padding: 64px 25px 69px 104px;
+    background-color: rgba(184,159,134,.7);
     @media (max-width: 1270px) {
       padding: 50px 25px 50px 50px;
     }
@@ -9,42 +10,6 @@
     }
     @media (max-width: $screen-sm-max) {
       margin-bottom: 15px;
-    }
-    &--pink {
-      background-color: #c401b1;
-      .ordering__btn {
-        background-color: #c401b1;
-        &:hover {
-          span {
-            color: #fff;
-          }
-        }
-        &:active {
-          span {
-            &:after {
-              background-color: #fff;
-            }
-          }
-        }
-      }
-    }
-    &--green{
-      background-color: #06ae84;
-      .ordering__btn {
-        background-color: #06ae84;
-        &:hover {
-          span {
-            color: #fff;
-          }
-        }
-        &:active {
-          span {
-            &:after {
-              background-color: #fff;
-            }
-          }
-        }
-      }
     }
   }
   &__text-b {
@@ -65,7 +30,7 @@
   }
   &__btn {
     margin-top: 15px;
-    padding: 13px 0;
+    padding: 13px 20px;
     @media (max-width: $screen-md-max) {
       margin-bottom: 15px;
     }

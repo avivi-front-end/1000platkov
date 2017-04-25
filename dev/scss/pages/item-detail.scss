@@ -123,7 +123,7 @@
             padding-left: 16px;
 
             &:nth-child(1) {
-                color: #848484;
+                color: $bro;
                 width: 42%;
             }
 
@@ -161,7 +161,7 @@
         @include position(absolute, 0 0 null null);
         font-family: $avantbook;
         font-size: 14px;
-        color: #b3b3b3;
+        color: $bro;
         border-bottom: 1px dotted #b3b3b3;
     }
 
@@ -229,7 +229,7 @@
 
     &__price-current {
         font-size: 30px;
-        color: #06ae84;
+        color: $bro;
         font-family: $bignooble;
         display: inline-block;
         letter-spacing: 1.7px;
@@ -343,7 +343,7 @@
         width: 70px;
         height: 70px;
         float: left;
-        background-color: #e6005c;
+        background-color: $bro;
         position: relative;
 
         svg {
@@ -361,7 +361,7 @@
         display: block;
         height: 70px;
         font-family: $bignooble;
-        color: #e6005c;
+        color: $bro;
         font-size: 18px;
         width: 100%;
         letter-spacing: 1px;
@@ -369,7 +369,7 @@
         &:hover {
             color: #fff;
             .item-detail__favorite-text {
-                background-color: #e6005c;
+                background-color: $bro;
             }
         }
 
@@ -404,7 +404,7 @@
 }
 
 .unreg-wrapper {
-    background: #c401b1;
+    background: $bro;
     color: #fff;
     font-family: $avantbook;
     font-size: 12px;
@@ -427,7 +427,7 @@
     }
 
     &--discount {
-        background: #06ae84;
+        background: $bro;
     }
 
     &__close {
@@ -479,11 +479,11 @@ input[type=number]::-webkit-outer-spin-button {
         }
 
         &:hover {
-            color: #b3b3b3;
+            color: $bro;
         }
 
         &.active {
-            color: #b3b3b3;
+            color: $bro;
         }
         @media (max-width: $screen-md-max) {
             margin-bottom: 10px;
@@ -504,7 +504,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .present-wrap {
-    background: #06ae84;
+    background: rgba(184,159,134,.8);
     padding: 23px 0 22px;
     margin-bottom: 83px;
     @media (max-width: $screen-sm-max) {
@@ -563,8 +563,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &__link {
-        padding: 13px 0;
-        background: transparent;
+        padding: 13px 20px;
+        background-color: $bro;
         position: relative;
 
         &:before {
@@ -577,16 +577,9 @@ input[type=number]::-webkit-outer-spin-button {
         }
 
         &:hover {
+            background-color: #000;
             span {
-                color: #06ae84;
-            }
-        }
-
-        &:active {
-            span {
-                &:after {
-                    background: #06ae84;
-                }
+                color: #fff;
             }
         }
 
@@ -644,9 +637,21 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     &__show-more {
+        background-color: #fff;
+        span {
+            color: $bro;
+        }
+
+        &:hover {
+            background-color: #fff;
+            span {
+                color: #000;
+            }
+        }
         @include position(absolute, -2px -34px null null);
         @media (max-width: $screen-sm-max) {
             position: static;
+
             margin-bottom: 15px;
         }
     }

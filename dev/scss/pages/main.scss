@@ -6,6 +6,9 @@ html {
     }
 }
 $bro: #b89f86;
+.color-bro {
+    color: $bro!important;
+}
 .page-wrapper {
     &.hidden {
         overflow-y: scroll;
@@ -217,18 +220,24 @@ p {
         width: 70px;
         height: 70px;
         display: block;
-        background: rgba(6,174,132,0.8);
+        background-color: rgba(184,159,134,.8);
         // overflow: hidden;
         position: absolute;
         top: 0;
         right: 7px;
         z-index: 1;
+        -webkit-transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: rgba(184,159,134,1);
+        }
 
         svg {
             @include position(absolute, 0 0 0 0);
             margin: auto;
             width: 33px;
             height: 31px;
+            fill: #fff;
         }
         &:hover{
             .item-block__bonus-helper{
@@ -409,13 +418,12 @@ p {
         top: 0;
         width: 70px;
         height: 70px;
-        background-color: #c4b3a1;
+        background-color: rgba(184,159,134,.8);
         transform: translateX(-100%);
         text-decoration: none;
         -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
         z-index: 2;
-        opacity: 0.8;
         cursor: pointer;
         @media (max-width: $screen-lg-max) {
             width: 50px;
@@ -430,7 +438,7 @@ p {
         }
 
         &:hover {
-            opacity: 1;
+            background-color: rgba(184,159,134,1);
         }
 
         svg {

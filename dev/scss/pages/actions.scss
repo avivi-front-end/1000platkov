@@ -17,7 +17,7 @@
     position: relative;
     display: inline-block;
     width: 400px;
-    height: 400px;
+    height: 400px!important;
     text-decoration: none;
     padding: 60px 30px 20px;
     background-color: rgba(255,255,255,.8);
@@ -31,12 +31,12 @@
     }
     @media (max-width: $screen-md-max) {
       width: 220px;
-      height: 220px;
+      height: 220px!important;;
       padding: 10px;
     }
     @media (max-width: $screen-sm-max) {
       width: 100%;
-      height: 265.5px;
+      height: 265.5px!important;;
       padding: 15px 10px;
     }
     @media (max-width: $screen-xs-max) {
@@ -50,43 +50,15 @@
       }
     }
     &.green {
-      background-color: rgba(6,174,132,.8);
+      background-color: rgba(184,159,134,.7);
       &:hover {
-        background-color: rgba(6,174,132,1);
-      }
-      .actions__btn {
-        &:hover {
-          span {
-            color: rgba(6, 174, 132, 1);
-          }
-        }
-        &:active {
-          span {
-            &:after {
-              background-color: rgba(6, 174, 132, 1);
-            }
-          }
-        }
+        background-color: rgba(184,159,134,1);
       }
     }
     &.pink {
-      background-color: rgba(230,0,92,.8);
+      background-color: rgba(184,159,134,.7);
       &:hover {
-        background-color: rgba(230,0,92,1);
-      }
-      .actions__btn {
-        &:hover {
-          span {
-            color: rgba(230,0,92,1);
-          }
-        }
-        &:active {
-          span {
-            &:after {
-              background-color: rgba(230,0,92,1);
-            }
-          }
-        }
+        background-color: rgba(184,159,134,1);
       }
     }
   }
@@ -103,6 +75,9 @@
     opacity: .9;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    @media (max-width: $screen-xs-max) {
+      object-fit: cover;
+    }
   }
   &__title {
     position: relative;
@@ -158,8 +133,11 @@
     position: absolute;
     left: 30px;
     bottom: 30px;
-    background-color: transparent;
+    background-color: $bro;
     z-index: 2;
+    &:hover {
+      background-color: #000;
+    }
     @media (max-width: $screen-lg-max) {
       left: 10px;
       bottom: 35px;

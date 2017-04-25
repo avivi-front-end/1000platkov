@@ -493,7 +493,7 @@
 
             &:hover {
                 > svg {
-                    fill: #d034c1;
+                    fill: #c6b29e;
                     transition: fill 0.3s ease;
                 }
 
@@ -505,16 +505,16 @@
 
         &--likes {
             svg {
-                fill: #e6005c;
+                fill: $bro;
             }
 
             .header__right-icon-number {
-                color: #e6005c;
+                color: $bro;
             }
 
             &:hover {
                 > svg {
-                    fill: #eb337d;
+                    fill: #c6b29e;
                     transition: fill 0.3s ease;
                 }
 
@@ -530,17 +530,17 @@
             }
 
             svg {
-                fill: #06ae84;
+                fill: $bro;
                 transition: fill 0.3s ease;
             }
 
             .header__right-icon-number {
-                color: #06ae84;
+                color: $bro;
             }
 
             &:hover {
                 > svg {
-                    fill: #38be9d;
+                    fill: #c6b29e;
                     transition: fill 0.3s ease;
                 }
 
@@ -955,7 +955,7 @@
             font-family: $avantbook;
             font-size: 14px;
             line-height: 22px;
-            color: #b3b3b3;
+            color: $bro;
             letter-spacing: 0.7px;
             margin-bottom: 9px;
         }
@@ -978,7 +978,7 @@
             font-family: $avantbook;
             font-size: 14px;
             line-height: 22px;
-            color: #b3b3b3;
+            color: $bro;
             letter-spacing: 0.7px;
             &:last-of-type{
                 margin-top: 26px;
@@ -1021,14 +1021,14 @@
             background-color: #fff;
 
             svg {
-                fill: #c401b1;
+                fill: $bro;
                 width: 100%;
                 height: 100%;
             }
 
             &.active {
                 svg {
-                    fill: #d8d8d8;
+                    fill: #000;
                 }
             }
         }
@@ -1345,7 +1345,7 @@
 .cart-info {
     @include position(absolute, 100% 0 null null);
     width: 410px;
-    background: rgba(196,1,177,.8);
+    background-color: #c6b29e;
     padding: 25px 15px 15px;
     display: none;
     @media (max-width: $screen-sm-max) {
@@ -1429,7 +1429,7 @@
     &__old-price {
         font-family: $avantbook;
         font-size: 12px;
-        color: #848484;
+        color: $bro;
         letter-spacing: 0.7px;
         width: 100%;
         display: inline-block;
@@ -1457,7 +1457,7 @@
         width: 100%;
         font-family: $avantbook;
         font-size: 12px;
-        color: #848484;
+        color: $bro;
         letter-spacing: 0.7px;
         white-space: nowrap;
         overflow: hidden;
@@ -1474,7 +1474,7 @@
 .likes-info {
     @include position(absolute, 100% -70px null null);
     width: 482px;
-    background: rgba(230,0,92,.8);
+    background-color: #c6b29e;
     padding: 25px 15px 15px;
     display: none;
     @media (max-width: $screen-sm-max) {
@@ -1494,7 +1494,7 @@
         float: right;
         width: 70px;
         height: 70px;
-        background: #eb337d;
+        background-color: #c6b29e;
 
         svg {
             fill: #fff;
@@ -1503,7 +1503,7 @@
         &.active {
             // background: #bc2964;
             svg {
-                fill: #bc2964;
+                fill: #000;
             }
         }
         @media (max-width: $screen-sm-max) {
@@ -1617,7 +1617,7 @@
         width: 100%;
         font-family: $avantbook;
         font-size: 12px;
-        color: #848484;
+        color: $bro;
         letter-spacing: 0.7px;
         white-space: nowrap;
         overflow: hidden;
@@ -1634,7 +1634,7 @@
 .user-info {
     @include position(absolute, 100% -140px null null);
     width: 210px;
-    background: rgba(6,174,132,.8);
+    background-color: #c6b29e;
     padding: 23px 15px 19px;
     display: none;
     z-index: 105;
@@ -1663,7 +1663,7 @@
         transition: color 0.3s ease;
 
         &:hover {
-            color: #afe0d2;
+            color: #000;
             transition: color 0.3s ease;
         }
     }

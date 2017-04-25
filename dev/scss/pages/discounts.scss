@@ -14,11 +14,11 @@
       font-size: 18px;
       line-height: 24px;
       text-transform: uppercase;
-      color: #000;
+      color: $bro;
       letter-spacing: .8px;
       &--red {
         margin: 0 5px;
-        color: #e6005c;
+        color: #000;
       }
     }
   }
@@ -51,32 +51,32 @@
     }
     &--green {
       .discounts__block__number {
-        background-color: #06ae84;
+        background-color: $bro;
       }
       .discounts__block__title--modify {
-        color: #06ae84;
+        color: $bro;
       }
     }
     &--red {
       .discounts__block__number {
-        background-color: #e6005c;
+        background-color: $bro;
       }
       .discounts__block__title--modify {
-        color: #e6005c;
+        color: $bro;
       }
     }
     &--purple {
       .discounts__block__number {
-        background-color: #7801c4;
+        background-color: $bro;
       }
       .discounts__block__title--modify {
-        color: #7801c4;
+        color: $bro;
       }
     }
     &--violet{
       .discounts__block__number {
         padding-top: 30px;
-        background-color: #c401b1;
+        background-color: $bro;
         &:after {
           content: 'до';
           position: absolute;
@@ -90,7 +90,7 @@
         }
       }
       .discounts__block__title--modify {
-        color: #c401b1;
+        color: $bro;
       }
     }
     &__title {
@@ -133,7 +133,7 @@
       }
     }
     &__btn {
-      padding: 13px 0;
+      padding: 13px 20px;
       margin-top: 14px;
       span {
         letter-spacing: .84px;
@@ -193,9 +193,10 @@
     }
     &--underline {
       text-decoration: underline;
+      color: $bro;
     }
     &--link-black {
-      color: #000;
+      color: $bro;
     }
     &__margin {
       margin-bottom: 24px;
@@ -203,7 +204,7 @@
   }
   &__opt {
     padding: 51px 0 55px;
-    background-color: #06ae84;
+    background-color: rgba(184,159,134,.7);
     text-align: center;
     &__title {
       display: inline-block;
@@ -254,7 +255,6 @@
     }
     &__btn {
       margin: -3px 0 0 15px;
-      background-color: #06ae84;
       vertical-align: top;
       span {
         letter-spacing: 1px;
@@ -264,12 +264,6 @@
         margin: 0 auto;
         width: 230px;
         margin-top: 15px;
-      }
-      &:hover {
-        background-color: #fff;
-        span {
-          color: #06ae84;
-        }
       }
     }
   }

@@ -20,7 +20,7 @@
     left: 34.5%;
     text-align: center;
     font-family: $avantdemi;
-    color: #c401b1;
+    color: $bro;
     text-transform: uppercase;
     font-size: 100px;
     padding-right: 14px;
@@ -171,12 +171,12 @@
         padding: 5px 0;
       }
       &:hover {
-        color: #848484;
+        color: $bro;
       }
     }
     &__active {
       a {
-        color: #848484;
+        color: $bro;
       }
     }
   }
@@ -213,7 +213,7 @@
       font-family: $bignooble;
       font-size: 18px;
       line-height: 24px;
-      color: #848484;
+      color: $bro;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       @media (max-width: $screen-xs-max) {

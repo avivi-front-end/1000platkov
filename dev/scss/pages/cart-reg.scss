@@ -65,7 +65,7 @@
             font-family: $avantbook;
             font-size: 14px;
             line-height: 24px;
-            color: #b3b3b3;
+            color: $bro;
             letter-spacing: 0.7px;
             //@media (max-width: $screen-sm-max) {
             //    float: none;
@@ -223,7 +223,7 @@
                 display: inline-block;
                 text-align: left;
                 width: 109px;
-                color: #848484;
+                color: $bro;
                 font-family: $avantbook;
                 font-size: 12px;
                 line-height: 22px;
@@ -327,7 +327,7 @@
                 font-family: $avantbook;
                 font-size: 12px;
                 line-height: 24px;
-                color: #848484;
+                color: $bro;
                 width: 100%;
                 text-decoration: line-through;
                 text-align: center;
@@ -580,30 +580,23 @@
         }
 
         &__btn {
-            padding: 13px 0;
-            background-color: transparent;
+            padding: 13px 0!important;
+            background-color: transparent!important;
+            span {
+                color: #000 !important;
+                letter-spacing: 1px;
+            }
 
             &:before {
                 color: #000!important;
             }
 
-            span {
-                letter-spacing: 1px;
-            }
-
             &:hover {
                 span {
-                    color: #f2f2f2!important;
+                    color: $bro!important;
                 }
             }
 
-            &:active {
-                span {
-                    &:after {
-                        background-color: #f2f2f2!important;
-                    }
-                }
-            }
         }
 
         &__text {
@@ -767,7 +760,7 @@
         }
 
         &__btn {
-            padding: 13px 0;
+            padding: 13px 20px;
             margin-top: 11px;
 
             span {
@@ -853,7 +846,7 @@
         &__btn {
             margin-top: 40px;
             padding: 23px 38px;
-            background-color: #06ae84;
+            background-color: $bro;
             @media (max-width: $screen-md-max) {
                 display: block;
                 width: 200px;
@@ -872,18 +865,7 @@
             }
 
             &:hover {
-                background-color: transparent;
-                span {
-                    color: #06ae84;
-
-                    &:after {
-                        background-color: #06ae84;
-                    }
-                }
-            }
-
-            &:active {
-                background-color: transparent;
+                background-color: #000;
             }
         }
     }

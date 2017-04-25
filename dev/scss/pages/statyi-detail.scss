@@ -229,7 +229,6 @@
       position: absolute;
       right: 0;
       top: -1px;
-      padding: 13px 20px;
       @media (max-width: 1270px) {
         position: relative;
         right: auto;
@@ -239,16 +238,28 @@
   }
   &__navigation {
     position: relative;
-    padding: 0 104px 0 106px;
-    margin: 56px 0 25px;
+    padding: 0 70px;
+    margin: 47px 0 25px;
     @media (max-width: $screen-md-max) {
       margin: 56px 0 75px;
+    }
+    @media (max-width: $screen-xs-max) {
+      padding: 0 50px;
     }
     &__left {
       text-align: left;
       float: left;
+      @media (max-width: $screen-sm-max) {
+        float: none;
+        display: flex;
+        justify-content: center;
+      }
+      @media (max-width: $screen-xs-max) {
+        justify-content: flex-end;
+        width: 200px;
+      }
       span {
-        left: -105px;
+        left: -70px;
       }
       .statyi-detail__navigation__btn {
         &:after {
@@ -259,8 +270,17 @@
     &__right {
       text-align: right;
       float: right;
+      @media (max-width: $screen-sm-max) {
+        float: none;
+        display: flex;
+        justify-content: center;
+      }
+      @media (max-width: $screen-xs-max) {
+        justify-content: flex-start;
+        width: 200px;
+      }
       span {
-        right: -105px;
+        right: -70px;
       }
       .statyi-detail__navigation__btn {
         &:after {
@@ -272,34 +292,24 @@
       position: relative;
       display: block;
       text-decoration: none;
-      color: #000;
+      color: #fff;
       height: 70px;
       font-family: $bignooble;
       font-size: 18px;
       line-height: 24px;
-      max-width: 165px;
+      max-width: 230px;
+      padding: 13px 20px;
       vertical-align: middle;
       letter-spacing: 1.1px;
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 10px;
-        opacity: 1;
-        background-color: #000;
-        -webkit-transition: all 0.1s ease;
-        transition: all 0.1s ease;
-        width: 80%;
-        height: 6px;
-      }
+      background-color: rgba(184,159,134,.7);
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
       span {
         position: absolute;
         width: 70px;
         height: 70px;
-        opacity: .85;
-        top: -10px;
-        background-color: #c401b1;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
+        top: 0;
+        background-color: $bro;
         svg {
           display: block;
           position: absolute;
@@ -314,9 +324,7 @@
         }
       }
       &:hover {
-        span {
-          opacity: 1;
-        }
+        background-color: rgba(184,159,134,1);
       }
     }
   }
@@ -331,6 +339,9 @@
     top: -4px;
     @media (max-width: $screen-md-max) {
       top: 95px;
+    }
+    @media (max-width: $screen-sm-max) {
+      top: 160px;
     }
   }
   &__interesting {
